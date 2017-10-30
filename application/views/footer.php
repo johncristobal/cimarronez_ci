@@ -1,3 +1,19 @@
+<style>
+    .contact{
+        background: rgba(0, 0, 0,0.7);
+        font-size: 35px;
+        padding-left: 15px;
+        text-align:center;
+    }
+</style>
+         <div class="row contact">
+            <div class="col-md-4 col-xs-4">
+                Te interesa saber màs.
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <a href="<?php echo base_url();?>contacto" style="color:rgb(136, 62, 7);">Clic aquì para contactarnos</a>
+            </div>
+        </div>
 <footer id="fh5co-footer" role="contentinfo" class="fh5co-section" style="background-color: rgba(0,0,0,0.5);">
 		<div class="container">
 			<div class="row row-pb-md">

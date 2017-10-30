@@ -9,7 +9,7 @@
 					<br>
 						<ul>
 							<!--li class="active"><a href="index.html">Home</a></li-->
-                                                        <li><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/red.png" alt="" width="15" height="15"></a></li>
+                                                        <li><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/red.png" alt="" width="25" height="25" style="margin-bottom: 10px;"> Inicio</a></li>
                                                         <!--li><a href="">C.A.C.A.O.</a></li-->
 							<li class="has-dropdown">
 								<a href="">C.A.C.A.O.</a>
@@ -21,6 +21,9 @@
                                                         <li class="has-dropdown">
 								<a href="<?php echo base_url();?>productos">PRODUCTOS</a>
 								<ul class="dropdown">
+                                                                    <li>
+                                                                    <a href="<?php echo base_url();?>productos/chocolate">Chocolate</a>
+                                                                    </li>                                                              
                                                                     <li><a href="<?php echo base_url();?>productos/mezcal">Mezcal</a></li>
                                                                     <li><a href="<?php echo base_url();?>productos/avellana">Avellana</a></li>
                                                                     <li><a href="<?php echo base_url();?>productos/cacahuate">Cacahuate</a></li>
@@ -33,6 +36,7 @@
 							<!--li><a href="about.html">CACAO Y SALUD</a></li-->
 							<!--li><a href="<?php echo base_url();?>nosotros">NOSOTROS</a></li-->
 							<!--li><a href="<?php echo base_url();?>">MEZCAL</a></li-->
+                                                        <li><a href="<?php echo base_url();?>eventos">EVENTOS</a></li>
                                                         <li><a href="<?php echo base_url();?>nosotros/videos">VIDEOS</a></li>
 							<li><a href="<?php echo base_url();?>contacto">CONTÁCTANOS</a></li>
 						</ul>

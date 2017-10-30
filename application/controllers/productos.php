@@ -19,7 +19,7 @@ class productos extends CI_Controller{
 
     //show a list of elements
     public function index(){
-        
+        $this->load->view('productos/todos');
     }
     
     public function mezcal(){

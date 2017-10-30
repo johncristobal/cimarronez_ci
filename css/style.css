@@ -15,12 +15,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.3);
-  background: rgb(39, 18, 2);
+  color: rgba(255, 255, 255, 0.9);
+  background: rgb(136, 62, 7);
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body {
-    background: rgb(39, 18, 2);
+    background: rgb(136, 62, 7);
   }
 }
 
@@ -451,7 +451,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-section p {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   line-height: 1.5;
 }
@@ -603,7 +603,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 992px) {
   #fh5co-featured-testimony blockquote .author {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.9);
   }
 }
 
@@ -819,7 +819,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
   margin-bottom: 20px;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 #fh5co-timeline {
@@ -1087,7 +1087,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 14px !important;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.9);
 }
 .fh5co-blog .blog-text .stuff {
   margin: 0;
@@ -1174,7 +1174,7 @@ h1, h2, h3, h4, h5, h6, figure {
   list-style: none;
   display: inline-block;
   margin-left: 10px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.9);
 }
 .fh5co-portfolio .portfolio-text .stuff li:first-child {
   margin-left: 0;
@@ -1312,7 +1312,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: .3em;
   left: 0;
   font-size: 22px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.9);
 }
 .contact-info li a {
   color: #fff;
@@ -1734,7 +1734,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.9);
   height: 54px;
   font-size: 20px;
   font-weight: 300;

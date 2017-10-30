@@ -7,25 +7,21 @@
  */
 
 /**
- * Description of nosotros
+ * Description of eventos
  *
  * @author john.cristobal
  */
-class nosotros extends CI_Controller{
-    
+class eventos extends CI_Controller{
+    //put your code here
     public function __construct() {
         parent::__construct();
     }
     
     public function index(){
-        $this->load->view('nosotros');
+        $this->load->view('eventos/eventos');
     }
     
-    public function rumbos(){
-        $this->load->view('rumbos');        
+    public function ver($id){
+        $this->load->view('eventos/showe');        
     }
-    public function videos(){
-        $this->load->view('videos');        
-    }
-    
 }
