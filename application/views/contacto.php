@@ -40,14 +40,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-        <style type="text/css">
-            @media screen and (max-width: 768px){
-                .fh5co-cover{
-                    padding: 3em 0;
-                    height: 120px;
-                }
-                }
-        </style>
+        
 	</head>
 	<body>
 		
@@ -88,7 +81,7 @@
                                         <p>WhatsApp: 55 36 73 33 17</p>
                                         <p>Youtube: Paliacatv</p>
                                         <p>Twitter: @cimarronezcacao</p>
-                                        <p>Instagram: </p>
+                                        <!--p>Instagram: </p-->
 				</div>
 			
                                 <div class="col-md-2"></div>

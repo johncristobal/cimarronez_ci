@@ -41,13 +41,7 @@
 
 
         <style type="text/css">
-            @media screen and (max-width: 768px){
-                .fh5co-cover{
-                    padding: 3em 0;
-                    height: 120px;
-                }
-                }
-                
+            
                 .setheigth{
                     color: #6c4836 !important;
                     height: auto;
@@ -112,21 +106,46 @@
 
                     background-color: #ce7c28 !important;
                 }
-                
-                .contact{
-                    background: #cc7215;
-                    height: 80px;    
-                    font-size: 35px;
-                    padding-left: 15px;
-                    text-align:center;
-                }
+                                
         </style>
         
+            
         <script>
 
+            
+
             function topFunction() {
+            var isMobile = {
+                Android: function() {
+                    return navigator.userAgent.match(/Android/i);
+                },
+                BlackBerry: function() {
+                    return navigator.userAgent.match(/BlackBerry/i);
+                },
+                iOS: function() {
+                    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                },
+                Opera: function() {
+                    return navigator.userAgent.match(/Opera Mini/i);
+                },
+                Windows: function() {
+                    return navigator.userAgent.match(/IEMobile/i);
+                },
+                any: function() {
+                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                }
+            };
+                        
+            if(isMobile.any()) {
+               // It is mobile
+                document.body.scrollTop = 900; // For Chrome, Safari and Opera 
+                document.documentElement.scrollTop = 900; // For IE and Firefox
+            }else{
+                
                 document.body.scrollTop = 300; // For Chrome, Safari and Opera 
                 document.documentElement.scrollTop = 300; // For IE and Firefox
+            }
+            
             }
         </script>
             
@@ -170,7 +189,7 @@
                                     &nbsp;
                                 </div>
                             </div>
-                            <div class="row-fluid">
+                            <div class="row-fluid hidden-xs">
                                 <div class="col-md-12 row-header">
                                     <div class="col-md-2">
                                         &nbsp;
@@ -193,7 +212,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <ul class="nav nav-pills nav-stacked">
-                                <li class="active"><a class="ligaprod" data-toggle="pill" href="#home">Chocolate</a></li>
+                                <li class="active"><a class="ligaprod" data-toggle="pill" href="#home" onclick="topFunction()">Chocolate</a></li>
                                 <li><a class="ligaprod" data-toggle="pill" href="#menu1" onclick="topFunction()">Cafe</a></li>
                                 <li><a class="ligaprod" data-toggle="pill" href="#menu2" onclick="topFunction()">Miel</a></li>
                                 <li><a class="ligaprod" data-toggle="pill" href="#menu3" onclick="topFunction()">Vainilla</a></li>
@@ -218,7 +237,7 @@
                                         <div class="vcenter">Chocolate</div>
                                     </div-->
                                     <!--Choclate-->
-                                    <div class="col-md-9 col-xs-9 paddingfive">
+                                    <div class="col-md-9 col-xs-8 paddingfive">
                                         <p class="setheigth first-row">Tablillas de chocolate con: solo cacao, almendra, cacahuate, avellana, almendra, café, nuez, vainilla, mezcal, ron, amaranto, coco, menta, chile, sin azúcar, cardamomo, especias, sal, jengibre.</p>
                                         <p class="setheigth second-row">Cacao crudo</p>
                                         <p class="setheigth first-row">Cacao tostado</p>
@@ -231,8 +250,9 @@
                                         <p class="setheigth second-row">Cacao en Polvo con Coco</p>
                                         <p class="setheigth first-row">Cacao en Polvo con Almendra</p>                                    
                                     </div>
-                                    <div class="col-md-3 col-xs-3 paddingfive">
-                                        <p class="setheigth first-row">$25.00 c/u<br><br><br></p>
+                                    <div class="col-md-3 col-xs-4 paddingfive">
+                                        <p class="setheigth first-row hidden-sm hidden-md hidden-lg">$25.00 c/u<br><br><br><br><br><br></p>
+                                        <p class="setheigth first-row hidden-xs">$25.00 c/u<br><br><br></p>
                                         <p class="setheigth second-row">1⁄4Kg x $40.00<br> 1⁄2Kg x $80.00<br> 1kg x $150.00</p>
                                         <p class="setheigth first-row"> 1/4Kg x $50.00<br> 1⁄2Kg x $100.00<br> 1kg x $200.00</p>
                                         <p class="setheigth second-row"> 1⁄4Kg x $60.00<br> 1⁄2Kg x $120.00<br> 1kg x $240.00</p>
@@ -248,13 +268,13 @@
 
                                     <!--cafe-->                                    
                                 <div id="menu1" class="tab-pane fade">
-                                    <div class="col-md-9 col-xs-9 paddingfive">
+                                    <div class="col-md-9 col-xs-7 paddingfive">
                                         <p class="setheigth first-row">Café en grano.</p>
                                         <p class="setheigth second-row">Café (molido, 9 diferentes tipos)</p>
                                         <p class="setheigth first-row">Kawfé, (Cacao con café)</p>
                                         <p class="setheigth second-row">Mocca Cimarrón</p>
                                     </div>
-                                    <div class="col-md-3 col-xs-3 paddingfive">
+                                    <div class="col-md-3 col-xs-5 paddingfive">
                                         <p class="setheigth first-row">1Kg x $180.00<br> 1⁄2 Kg x $90.00<br> 1⁄4 Kg x $45.00</p>
                                         <p class="setheigth second-row">1Kg x $180.00<br> 1⁄2 Kg x $90.00</p>
                                         <p class="setheigth first-row"> 30g x $20.00</p>

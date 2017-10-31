@@ -7,10 +7,10 @@
     }
 </style>
          <div class="row contact">
-            <div class="col-md-4 col-xs-4">
+            <div class="col-md-4">
                 Te interesa saber màs.
             </div>
-            <div class="col-md-4 col-xs-4">
+            <div class="col-md-4">
                 <a href="<?php echo base_url();?>contacto" style="color:rgb(136, 62, 7);">Clic aquì para contactarnos</a>
             </div>
         </div>

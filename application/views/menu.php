@@ -1,3 +1,11 @@
+<style type="text/css">
+            @media screen and (max-width: 768px){
+                .fh5co-cover{
+                    padding: 3em 0;
+                    height: 140px;
+                }
+                }
+        </style>
 <nav class="fh5co-nav" role="navigation">
 		<!-- <div class="top-menu"> -->
 			<div class="container">
