@@ -28,4 +28,11 @@ class nosotros extends CI_Controller{
         $this->load->view('videos');        
     }
     
+    public function salud(){
+        $this->load->view('salud');
+    }
+    
+    public function originario(){
+        $this->load->view('originario');        
+    }
 }

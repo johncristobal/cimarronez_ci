@@ -66,25 +66,30 @@
 								<ul class="dropdown">
 									<li><a href="<?php echo base_url();?>nosotros">Nuestros orígenes</a></li>
 									<li><a href="<?php echo base_url();?>nosotros/rumbos">Nuestros rumbos</a></li>
+									<li><a href="<?php echo base_url();?>nosotros/originario">Originario y Cimarron</a></li>
 								</ul>
 							</li>
 							<!--li><a href="reservation.html">KAKAW AL XOCOLATL</a></li-->
 							<!--li><a href="about.html">CACAO Y SALUD</a></li-->
 							<!--li><a href="<?php echo base_url();?>nosotros">NOSOTROS</a></li-->
                                                         <li class="has-dropdown">
-                                                            <a href="<?php echo base_url();?>productos">PRODUCTOS</a>
-                                                            <ul class="dropdown">
-                                                                <li>
-                                                                    <a href="<?php echo base_url();?>productos/chocolate">Chocolate</a>
-                                                                </li>
-                                                                <li><a href="<?php echo base_url();?>productos/mezcal">Mezcal</a></li>
-                                                                <li><a href="<?php echo base_url();?>productos/avellana">Avellana</a></li>
-                                                                <li><a href="<?php echo base_url();?>productos/cacahuate">Cacahuate</a></li>
-                                                                <li><a href="<?php echo base_url();?>productos/almendra">Almendra</a></li>
-                                                                <li><a href="<?php echo base_url();?>productos/nuez">Nuez</a></li>
-                                                                <li><a href="<?php echo base_url();?>productos">Más...</a></li>
-                                                            </ul>
-							</li>							
+								<a href="<?php echo base_url();?>productos">PRODUCTOS</a>
+								<ul class="dropdown">
+                                                                    <li>
+                                                                    <a href="<?php echo base_url();?>productos">Chocolate</a>
+                                                                    </li>                                                              
+                                                                    <li>
+                                                                    <a href="<?php echo base_url();?>productos">Cacao</a>
+                                                                    </li>                                                              
+                                                                    <li><a href="<?php echo base_url();?>productos">Vainilla</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos">Café</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos">Sal</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos">Amaranto</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos">Mezcal</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos">Más...</a></li>
+								</ul>
+							</li>
+                                                        <li><a href="<?php echo base_url();?>nosotros/salud">CACAO Y SALUD</a></li>
                                                         <li><a href="<?php echo base_url();?>eventos">EVENTOS</a></li>
                                                         <li><a href="<?php echo base_url();?>nosotros/videos">VIDEOS</a></li>
 							<li><a href="<?php echo base_url();?>contacto">CONTÁCTANOS</a></li>

@@ -22,6 +22,11 @@ class eventos extends CI_Controller{
     }
     
     public function ver($id){
+        if($id==1)
+        {
         $this->load->view('eventos/showe');        
+        }else{
+        $this->load->view('eventos/showe2');            
+        }
     }
 }

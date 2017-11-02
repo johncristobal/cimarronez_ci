@@ -90,7 +90,7 @@
                 
                 .titleone{
                     font-size: 35px !important;
-                    color: #ee4433 !important;
+                    color: #ff0008 !important;
                     margin-bottom: 1px;
                 }
                 .titletwo{
