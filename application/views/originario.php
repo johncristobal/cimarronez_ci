@@ -70,64 +70,8 @@
 		</div>
 	</header>
 
-	<div id="fh5co-about" class="fh5co-section">
-		<div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1 style="color:white; font-weight: bold;">Cultivo de resistencias y rebelión.</h1>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                            <div class="col-md-4 animate-box">
-                                <p>La mayoría de la producción está sembrada en las tierras tropicales de la montaña, en las tierras de los pueblos originarios y en las tierras de los pueblos de afromexicanos.</p>
-                            </div>
-                            <div class="col-md-4 animate-box">
-                                <p>Otros cultivos se encuentra en grandes plantaciones y fincas coloniales y capitalistas para grandes empresas trasnacionales, donde trabajadores y campesinos viven en condiciones de pobreza y marginación, son explotados, vestido-exotizados por los dueños hacendados de las fincas para dar una imagen falsa al turismo y ecoturismo con el disfraz de flocklor salvaje o paternal.</p>
-                            </div>
-                            <div class="col-md-4 animate-box">
-                                <p>Existen cooperativas de trabajo colectivo y comunitario, de ganancia compartida, de relación no capitalista con la semilla, como los grupos de mujeres en Xochistlahuaca, en la zona norte del Istmo de Tehuantepec, en Sierra sur y Cañada de Oaxaca, en comunidades de Chiapas, del Totonacapan, en el Uxpanapa, en la Chinantla, en el Sotavento y en la cuenca del Papaloapan.</p>
-                            </div>
-                    </div>
-		</div>
-	</div>
-
-        <div class="row infoplay">
-            <div class="col-md-12 text-center">
-                <br>
-                <h1 style="color:white; font-weight: bold;">Un cultivo de las montañas.</h1>
-                <br>
-            </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <p>
-                    Los cultivos de cacao en el mundo, después de que los colonizadores y colonialistas robaron la semilla han sido súper-explotados en plantaciones capitalistas y de terratenientes, en América Latina, Asia y África, pero por otro lado, desde abajo, han sido conservados en milpas de las comunidades y pueblos de Indo-américa, en los territorios indios y cimarrones.
-                <hr>
-                </p>
-                <p>
-                    En México, la inmensa mayoría de las cosechas se dan en las milpas y en la montaña, en la agricultura de subsistencia y traspatio, con reproducción como cacao originario, en cientos de comunidades y pueblos, así es nuestro <span style="font-style: italic;">cacao cimarrón.</span>
-                    <hr>
-                </p>
-                <p>
-                    <span style="font-style: italic;">Nuestro cacao</span> está libre de pesticidas, libre del coyotaje en el mercado y libre de la extracción de sustancias en la industria.<hr>
-                </p>
-                <p>
-                    Estos cultivos se extienden por las montañas y por las cañadas mesoamericanas de los pueblos de nuestro tiempo, por las sociedades campesinas contemporáneas. Con el trabajo conjunto de productores en 13 estados del país, la Cooperativa Autónoma Cimarronez cosecha, produce y comercia un producto de abajo por la libertad, el Xocolatl.
-                <hr>
-                </p>
-                <p>
-                    El chocolate que producimos del <span style="font-style: italic;">kakaw al xócolatl</span>, está basado en formas y principios de producción y comercio justo, con cultivo de productos orgánicos, con semillas, ingredientes y sustancias obtenidas a través de redes y colectivos de pueblos indios y campesinos, así como a través de colectivos y de cooperativas de trabajadores y estudiantes de la ciudad para su fabricación y su comercio.
-                <hr>
-                </p>
-                <p>
-                   En nuestra cooperativa, luchamos por un mundo libre, sin despojo y sin explotación, donde el acceso al trabajo de nuevo tipo, al descanso, al saber, al conocimiento milenario y al disfrute sea de tod@s y no sólo de un@s cuantos que pueden pagarlo o acapararlo.  
-                <hr>
-                </p>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
             
-	<div id="fh5co-timeline" style="padding: 1em 0;">
+<div id="fh5co-timeline" style="padding: 1em 0;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0">
@@ -162,12 +106,92 @@
 								</div>
 							</div>
 						</li>
+                                                <li class="animate-box timeline-unverted">
+							<div class="timeline-badge" style="background-color: transparent;"><img src="<?php echo base_url();?>images/red.png" alt="" width="30" height="30"></div>
+							<div class="timeline-panel">
+								<!--div class="timeline-heading">
+									<h3 class="timeline-title">The Founders Meet</h3>
+								
+								</div-->
+								<div class="timeline-body">
+                                                                    <p>
+El uso del cacao en tierras mesoamericanas se remonta a más de 5 mil años donde se han encontrado vestigios en la franja atlántica y en la franja del pacífico, así como en las zonas intermontanas y llanuras desde La Venta en la zona Olmeca del actual Sur de Veracruz a la zona del Izapa en el suroriente de Chiapas, Guatemala y el Salvador; en las tierras cálidas húmedas las Honduras y Nicaragua, en las montañas de la Cañada, la Sierra Sur y el Istmo de Tehuantepec, en el Totonacapan y en la Chinantla, en la montaña de Guerrero, en la península de Yucatán y en las selvas de Tabasco y Campeche.                                                                    </p>
+								</div>
+							</div>
+						</li>
 
 			    	</ul>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>            
+
+
+        <div class="row infoplay">
+            <div class="col-md-12 text-center">
+                <br>
+                <h1 style="color:white; font-weight: bold;">Los pueblos del jaguar, el guardián del cacao, el corazón de la montaña.</h1>
+                <br>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <p>
+                    Entre los pueblos mesoamericanos, en particular en Oaxaca, en las montañas, existe el pensamiento y el significado de que el jaguar es el guardián del cacao, su rugido se asemeja al sonido del corazón del monte y al trueno, aquel que cada tanto habla, en un crujir o en pulso, en un movimiento del agua, el que en terremoto habla cuando la tierra quiere decir algo, el que en la montaña se escucha y se siente aunque no se vea, es también la conexión con el cielo y con la tierra, el corazón de tierras y aguas, el guardián, el corazón del pueblo, el jaguar, el cacao y la montaña son guardianes en los territorios.
+                <hr>
+                </p>
+                <p>
+                    En los pueblos mayas, se le llama Votán o Uotán, Ool taan, en los pueblos Cuicatecos se le llama Iviiuu, en los pueblos zapotecos del Istmo se nombra Pitáo. Entre los pueblos Mixtecos es el corazón del monte se llama Nuhu iniñuu. Entre los zapotecos Yaga se nombran los árboles grandes como el pochote, parota, guanacastle, la ceiba, el jaguar bedxe y el cocodrilo be´ñe que sostiene la ceiba madre, el Cipactli que representa la corteza de la tierra para el pueblo nahua, el Tepeyollotli, o corazón del monte, está asociado a Tezcatlipoca deidad que compartían los guerreros, brujos y esclavos.                    <hr>
+                </p>
+                <p>
+                El simbolismo asociado al jaguar guardián de la montaña y el cacao que entre los zapotecos de los valles es el corazón, entendido como hueso o semilla de donde brota nuevos seres, el monte como corazón y semilla. Entre algunos pueblos de Oaxaca el origen de los humanos actuales está dado por la transfiguración originaria de piedras y jaguares de las montañas.
+                </p>
+                <p>
+                Una, muchas cosmovisiones de nuestros pueblos, una referencia no occidental, muchas referencias para entender otros mundos, otros pensamientos, abiertos a otros.
+                <hr>
+                </p>
+                <p>
+El cacao en algunos pueblos se asocia entre el jaguar y la montaña, al rayo y al trueno, el rayo que mide distancias entre cerros en la cañada, el machete con el que pelean los cuatro dioses de la lluvia entre los mixtecos. 
+                <hr>
+                </p>
+                <p>
+El mono y el viento también están asociados como guardianes y medios de encuentro y dispersión del cacao entre los pueblos del sur y sureste de México.
+                <hr>
+                </p>
+                <p>
+El cacao en los pueblos afroamericanos cimarrones se convirtió también en una semilla de alimento y en los rituales para los orishas afroamericanos, Orí le llaman a la manteca de cacao.
+                <hr>
+                </p>
+                <p>
+El cacao fue valor de cambio algunas veces en que los libres podían intercambiar productos para sostener la resistencia en las remotas comunidades enclavadas en las montañas, un cambio de estrategia en el espacio para no ser esclavos en las plantaciones.
+                <hr>
+                </p>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+            
+         	<div id="fh5co-about" class="fh5co-section">
+		<div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 style="color:white; font-weight: bold;">Cultivo de resistencias y rebelión.</h1>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4 animate-box">
+                                <p>El cacao, junto con el maíz, es un alimento de los pueblos y no sólo de los reyes y dioses como la historiografía dominante ha querido imponer en el pensamiento de las sociedades para hacerlo un dispositivo de comunicación que jerarquiza y elitiza un conocimiento milenario.</p>
+                            </div>
+                            <div class="col-md-4 animate-box">
+                                <p>Es además una semilla dentro de los múltiples ciclos de vida y trabajo de las tierras, de enraizar constantemente para renacer, dentro del tiempo y espacio de las sociedades contemporáneas de raíz milenaria.</p>
+                            </div>
+                            <div class="col-md-4 animate-box">
+                                <p>El cultivo del cacao está asociado a los procesos de resistencia y rebelión de los pueblos en la toma de las bodegas de las rebeliones zapotecas del siglo XVI y XVII, en los levantamientos de sierra sur y norte de Oaxaca en el siglo XIX, en la guerra de independencia en torno a la toma de la ciudad de Oaxaca por José María Morelos, en las rebeliones mayas, en el proceso revolucionario de 1910, en cientos de fogatas de campamentos de huelgas de trabajadores, en las madrugadas de las luchas de los pueblos y los trabajadores, en los cotidianos usos ceremoniales.</p>
+                            </div>
+                    </div>
+		</div>
+	</div>     
+            
         <div id="fh5co-about" class="fh5co-section">
 		<div class="container">
                     <div class="row">

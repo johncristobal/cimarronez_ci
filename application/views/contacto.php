@@ -40,6 +40,11 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+        <style>
+            .colorlinnk{
+                color: #ff6464;
+            }
+        </style>
         
 	</head>
 	<body>
@@ -74,14 +79,14 @@
 			<div class="row animate-box">
 				<div class="col-md-5">
                                     <h1 style="color: white;">Comunícate con nosotros.</h1>
-					<p>Contáctanos para obtener más información acerca de nuestros productos.</p>
-                                        <p>Correo: chocolatecimarron@gmail.com</p>
-                                        <p>Facebook: Cooperativa Autónoma Cimarronez</p>
-                                        <!--p><a href="whatsapp://send?phone=525536733317">WhatsApp</a>: 55 36 73 33 17</p-->
-                                        <p>WhatsApp: 55 36 73 33 17</p>
-                                        <p>Youtube: Paliacatv</p>
-                                        <p>Twitter: @cimarronezcacao</p>
-                                        <!--p>Instagram: </p-->
+					<p>Contáctanos para obtener más información acerca de nuestros productos, de nosotros, nuestras lenguas.</p>
+                                        <p>Correo: <a href="mailto:chocolatecimarron@gmail.com" class="colorlinnk">chocolatecimarron@gmail.com</a></p>
+                                        <p>Facebook: <a class="colorlinnk" href="https://www.facebook.com/CooperativaAutonomaCimarronez/">Cooperativa Autónoma Cimarronez</a></p>
+                                        <p>WhatsApp: <a class="colorlinnk" href="whatsapp://send?phone=525536733317">55 36 73 33 17</a></p>
+                                        <!--p>WhatsApp: 55 36 73 33 17</p-->
+                                        <p>Youtube: <a class="colorlinnk" href="https://www.youtube.com/channel/UC-e3l9E5vWifs3T_aVZMJ4Q/featured">Cimarronez CACAO</a></p>
+                                        <p>Twitter: <a class="colorlinnk" href="https://twitter.com/cimarronezcacao?lang=es">@cimarronezcacao</a></p>
+                                        <p>Instagram: <a class="colorlinnk" href="https://www.instagram.com/cimarronezcacao/">cimarronezcacao</a></p>
 				</div>
 			
                                 <div class="col-md-2"></div>

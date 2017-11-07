@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Nuestros rumbos</title>
+	<title>Cacao y salud</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Acerca de C.A.C.A.O." />
+	<meta name="description" content="Cacao y salud." />
 	<meta name="author" content="cimarronez" />
 
 	<!-- 
@@ -66,21 +66,123 @@
 
 	<div id="fh5co-about" class="fh5co-section">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="section-heading">
-						<h2>Nuestros rumbos…</h2>
-                                                <p>Más de 5000 años de relación de los pueblos con la semilla y el árbol del cacao, de la tierra y el trabajo, del Kakaw al Xocolatl.</p>
-						<p>Cimarrón, flecha que busca la libertad, símbolo de las montañas donde indios y afroamericanos escapaban de la esclavitud para vivir libres con la autonomía como modo de vida en las tierras de América.</p>
-                                                <p>Los cultivos de cacao en México, América Latina y el mundo han sido superexplotados en plantaciones capitalistas y de terratenientes, pero por otro lado, desde abajo han sido conservados en milpas de las comunidades, en México la inmensa mayoría de las cosechas se dan en las milpas y en la montaña, en la agricultura de subsistencia y traspatio con reproducción como cacao criollo, en cientos de comunidades y pueblos de forma tradicional, nuestro cacao cimarrón es libre de pesticidas, libre del coyotaje en el mercado y libre de la extracción de sustancias en la industria.</p>
-                                                <p>Estos cultivos se extienden por las montañas y por las cañadas mesoamericanas de los pueblos de la actualidad, por las sociedades campesinas contemporáneas. Así con el trabajo conjunto de productores en trece estados del país, la Cooperativa Autónoma Cimarronez produce y comercia un producto de abajo por la libertad.</p>
-                                                <p>El chocolate que producimos del kakaw al xocolatl, está basado en formas y principios de producción y comercio justo, con cultivo de productos orgánicos, con semillas, ingredientes y sustancias obtenidas a través de redes y colectivos de pueblos indios y campesinos, así como a través de colectivos y de cooperativas de trabajadores y estudiantes de la ciudad para su fabricación y su comercio.</p>
-                                                <p>En nuestra cooperativa, luchamos por un mundo libre, sin despojo y sin explotación, donde el acceso al trabajo de nuevo tipo, al descanso, al saber y al conocimiento milenario y disfrute sea de tod@s y no sólo de un@s cuantos que pueden pagarlo o acapararlo.</p>
-						<!--p><a href="#" class="btn btn-primary btn-outline">Our History</a></p-->
+                    
+                    <div class="row">
+										<h2 style="color: white;">Cacao y Salud…</h2>
+                                                                                <br>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item">
+                                        <img src="<?php echo base_url();?>images/cacao/cacao1.jpg" class="img-responsive" alt="">
+                                    </div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item">
+                                        <img src="<?php echo base_url();?>images/cacao/cacao2.jpg" class="img-responsive" alt="">
+                                    </div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item">
+                                        <img src="<?php echo base_url();?>images/cacao/cacao3.jpg" class="img-responsive" alt="">
+                                    </div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item">
+                                        <img src="<?php echo base_url();?>images/cacao/cacao4.jpg" class="img-responsive" alt="">
+                                    </div>
+				</div>
+
+                                <!--div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item">
+                                        <img src="<?php echo base_url();?>images/gallery_9.jpeg" class="img-responsive" alt="">
+                                        <h3>Productos Cimarronez</h3>
+                                        <p>Listado de productos Cimarronez.</p>
+                                        <span class="bounce">Fecha</span>                                                
+                                    </div>
+				</div>
+                                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item  margin_top">
+                                        <img src="<?php echo base_url();?>images/gallery_9.jpeg" class="img-responsive" alt="">
+                                        <h3>Guía de colores y sabores</h3>
+                                        <p>Tablillas de Chocolate Cimarronez con: Sólo Cacao Nuez Almendra Cacahuate  Avellana Amaranto.</p>
+                                        <span class="bounce">Fecha</span>                                                
+                                    </div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item">
+                                        <img src="<?php echo base_url();?>images/gallery_9.jpeg" class="img-responsive" alt="">
+                                        <h3>Nuestros rumbos…</h3>
+                                        <p>Listado de productos Cimarronez.</p>
+                                        <span class="bounce">Fecha</span>                                                
+                                    </div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item margin_top">
+                                        <img src="<?php echo base_url();?>images/gallery_9.jpeg" class="img-responsive" alt="">
+                                        <h3>COOPERATIVA AUTÓNOMA CIMARRONEZ ANTICAPITALISMO ORGANIZADO</h3>
+                                        <p>De dónde venimos… Desde hace cinco años, es decir a partir del….</p>
+                                        <span class="bounce">Fecha</span>                                                
+                                    </div>
+				</div-->
+				<!--div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item margin_top">
+						<img src="<?php echo base_url();?>images/gallery_8.jpeg" class="img-responsive" alt="">
+						<h3>Salted Fried Chicken</h3>
+						<span class="fh5co-price">$19<sup>.00</sup></span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
 					</div>
 				</div>
-				<div class="col-md-5 img-wrap animate-box" data-animate-effect="fadeInRight">
-                                    <img src="<?php echo base_url();?>images/rumbos.jpg" alt="jaguar negro" style="width: 600px; height: 600px;">
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item">
+						<img src="<?php echo base_url();?>images/gallery_7.jpeg" class="img-responsive" alt="">
+						<h3>Italian Sauce Mushroom</h3>
+						<span class="fh5co-price">$17<sup>.99</sup></span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item margin_top">
+						<img src="<?php echo base_url();?>images/gallery_6.jpeg" class="img-responsive" alt="">
+						<h3>Fried Potato w/ Garlic</h3>
+						<span class="fh5co-price">$22<sup>.50</sup></span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
+					</div>
+				</div-->
+			</div>
+                    
+			<div class="row">
+				<div class="col-md-12 animate-box">
+					<div class="section-heading"> 
+                                            <br>
+                                                <p>El cacao tiene más de cien propiedades medicinales estudiadas ampliamente, su consumo cotidiano mejora la digestión y el tránsito intestinal, es un gran energizante y revitalizador, disminuye el cansancio, la fatiga, el agotamiento, la ansiedad y la depresión. </p>
+                                                <hr/>
+						<p>A partir de las semillas de cacao, también llamadas almendras de cacao se elabora el chocolate, el placer y la protección a la salud asociado al consumo del chocolate elaborado con cacao son resultado de los flavonoides contenidos en el cacao, los flavonoides son compuestos químicos orgánicos que actúan como antioxidantes que protegen a las lipoproteínas de baja densidad (LDL), al ADN del daño oxidativo, regenera las vitaminas E y C para que continúen ejerciendo su capacidad antioxidante.    </p>
+                                                <hr/>
+                                                <p>Éstas propiedades hacen que el cacao tenga un efecto protector de nuestra salud ayudándonos a prevenir enfermedades cardiovasculares, infartos, accidentes cerebrovasculares y algunos cánceres.</p>
+                                                <hr/>
+                                                <p>La manteca de cacao ayuda a mejorar la cicatrización, hidratar la piel, es antioxidante, ayuda a quitar manchas de la piel, sanar quemaduras y la regeneración de la piel. La manteca de cacao tiene un amplio uso en la industria alimenticia, la cosmética y la farmacéutica.</p>
+                                                <hr/>
+                                                <p>La cascarilla del cacao tiene un uso medicinal en infusiones para diversos malestares digestivos, relajantes, antioxidante, energizante, respiratorio.</p>
+                                                <hr/>
+                                                <p>La cáscara de la mazorca de cacao puede usarse en infusiones y como abono para la regeneración de las tierras cultivadas, así como por su alto contenido en fibra, carbohidratos y almidón. </p>
+						<!--p><a href="#" class="btn btn-primary btn-outline">Our History</a></p-->
+                                                <hr/>
+                                                <p>
+                                                    El chocolate elaborado con un alto contenido de cacao (por encima del 70%) se recomienda para:
+                                                <ul>
+                                                    <li>Ganancia de peso en pacientes desnutridos o portadores de enfermedades desgastantes como la tuberculosis.</li>
+                                                    <li>Alternativa o complemento del tratamiento médico de las personas que tienen riesgo alto de sufrir enfermedades cardiovasculares, cerebrovasculares o cánceres.</li>
+                                                    <li>Genera bienestar estimulando el sistema nervioso central en personas que sufren de apatía y/o depresión, acción que ahora podría ser atribuida a la feniletilamina, teobromina y la cafeína que posee el chocolate.</li>
+                                                    <li>Regular desordenes menstruales y favorecer la concepción.</li>
+                                                    <li>Tratar enfermedades hepáticas y del riñón.</li>
+                                                    <li>Como antioxidante y afrodisiaco.</li>
+                                                    <li>Calmar, suavizar y tranquilizar a los pacientes identificados como «sobreestimulados», o con ansiedad, pues ocasiona un efecto relajante.</li>
+                                                    <li>Mejorar la digestión y tránsito intestinal, estimular los riñones y acelerar el flujo de orina, ablandar las heces e, incluso, la curación o reducción de las hemorroides.</li>
+                                                    <li>Reducir la presión arterial y la vasodilatación periférica.</li>
+                                                </ul>
+                                                </p>
+					</div>
 				</div>
 			</div>
                     

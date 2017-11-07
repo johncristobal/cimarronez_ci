@@ -213,7 +213,7 @@
                             <div class="col-md-2">
                                 <ul class="nav nav-pills nav-stacked">
                                 <li class="active"><a class="ligaprod" data-toggle="pill" href="#home" onclick="topFunction()">Chocolate</a></li>
-                                <li><a class="ligaprod" data-toggle="pill" href="#menu1" onclick="topFunction()">Cafe</a></li>
+                                <li><a class="ligaprod" data-toggle="pill" href="#menu1" onclick="topFunction()">Café</a></li>
                                 <li><a class="ligaprod" data-toggle="pill" href="#menu2" onclick="topFunction()">Miel</a></li>
                                 <li><a class="ligaprod" data-toggle="pill" href="#menu3" onclick="topFunction()">Vainilla</a></li>
                                 <li><a class="ligaprod" data-toggle="pill" href="#menu4" onclick="topFunction()">Mezclas para infusiones</a></li>

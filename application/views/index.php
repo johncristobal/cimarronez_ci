@@ -196,7 +196,7 @@
 				
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item">
-                                        <a href="<?php echo base_url();?>productos/mezcal">
+                                        <a href="<?php echo base_url();?>productos">
                                         <img src="<?php echo base_url();?>images/mezcal.png" class="img-responsive" alt="" style="height: 175px;">
                                         <h3>Mezcal</h3>
                                         <p>La palabra mezcal se deriva de los vocablos náhuatl metl e ixcalli, que significan...</p>
@@ -206,7 +206,7 @@
 				</div>
                                 <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item  margin_top">
-                                        <a href="<?php echo base_url();?>productos/avellana">
+                                        <a href="<?php echo base_url();?>productos">
                                         <img src="<?php echo base_url();?>images/avellana.jpg" class="img-responsive" alt="">
                                         <h3>Avellana</h3>
                                         <p>Las avellanas, como todos los vegetales, no tienen colesterol.</p>
@@ -216,7 +216,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item">
-                                        <a href="<?php echo base_url();?>productos/cacahuate">
+                                        <a href="<?php echo base_url();?>productos">
                                         <img src="<?php echo base_url();?>images/cacahuate1.jpg" class="img-responsive" alt="">
                                         <h3>Cacahuate</h3>
                                         <p>Los manís o cacahuetes son alimentos naturales con propiedades alimentarias ampliamente reconocidas.</p>
@@ -226,7 +226,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item margin_top">
-                                        <a href="<?php echo base_url();?>productos/almendra">
+                                        <a href="<?php echo base_url();?>productos">
                                         <img src="<?php echo base_url();?>images/almendra1.jpg" class="img-responsive" alt="">
                                         <h3>Almendra</h3>
                                         <p>La almendra tiene un elevado valor nutritivo....</p>
@@ -296,32 +296,33 @@
 		</div>
 	</div>
 
-	<!--div id="fh5co-featured-testimony" class="fh5co-section">
+	<div id="fh5co-featured-menu" class="fh5co-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 fh5co-heading animate-box">
-					<h2>Testimony</h2>
-					<div class="row">
-						<div class="col-md-6">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis.</p>
-						</div>
-					</div>
+                           				
+				<div class="col-md-4 col-sm-4 col-xs-12 col-xxs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item">
+                                        <img src="<?php echo base_url();?>images/eduaardo/lalo1.jpg" class="img-responsive" alt="">
+                                    </div>
 				</div>
-
-				<div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
-						<img src="<?php echo base_url();?>images/person_1.jpg" alt="">
+				<div class="col-md-4 col-sm-4 col-xs-12 col-xxs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item  margin_top text-center">
+                                        <a href="<?php echo base_url();?>textos/eduardo">
+                                        <h3>Letras de cacao...</h3>
+                                        <p>Revive algunas de las frases más celebres de éste personaje.</p>
+                                        </a>
+                                    </div>
 				</div>
-				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
-					<blockquote>
-						<p> &ldquo; Quantum ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam. &rdquo;</p>
-						<p class="author"><cite>&mdash; Jane Smith</cite></p>
-					</blockquote>
+				<div class="col-md-4 col-sm-4 col-xs-12 col-xxs-12 fh5co-item-wrap animate-box">
+                                    <div class="fh5co-item">
+                                        <img src="<?php echo base_url();?>images/eduaardo/lalo2.jpg" class="img-responsive" alt="">
+                                    </div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-slider" class="fh5co-section animate-box">
+	<!--div id="fh5co-slider" class="fh5co-section animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 animate-box">
