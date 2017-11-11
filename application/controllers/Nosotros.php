@@ -35,4 +35,8 @@ class nosotros extends CI_Controller{
     public function originario(){
         $this->load->view('originario');        
     }
+    
+    public function letrascacao(){
+        $this->load->view('letrascacao');                
+    }
 }

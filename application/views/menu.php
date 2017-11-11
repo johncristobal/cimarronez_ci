@@ -25,6 +25,7 @@
 									<li><a href="<?php echo base_url();?>nosotros">Nuestros orígenes</a></li>
 									<li><a href="<?php echo base_url();?>nosotros/rumbos">Nuestros rumbos</a></li>
 									<li><a href="<?php echo base_url();?>nosotros/originario">Originario y Cimarron</a></li>
+									<li><a href="<?php echo base_url();?>nosotros/letrascacao">Letras de cacao</a></li>
 								</ul>
 							</li>
                                                         <li class="has-dropdown">

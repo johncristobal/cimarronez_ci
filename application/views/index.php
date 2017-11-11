@@ -67,6 +67,7 @@
 									<li><a href="<?php echo base_url();?>nosotros">Nuestros orígenes</a></li>
 									<li><a href="<?php echo base_url();?>nosotros/rumbos">Nuestros rumbos</a></li>
 									<li><a href="<?php echo base_url();?>nosotros/originario">Originario y Cimarron</a></li>
+									<li><a href="<?php echo base_url();?>nosotros/letrascacao">Letras de cacao</a></li>
 								</ul>
 							</li>
 							<!--li><a href="reservation.html">KAKAW AL XOCOLATL</a></li-->
@@ -296,32 +297,19 @@
 		</div>
 	</div>
 
-	<!--div id="fh5co-featured-testimony" class="fh5co-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 fh5co-heading animate-box">
-					<h2>Testimony</h2>
-					<div class="row">
-						<div class="col-md-6">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
-						<img src="<?php echo base_url();?>images/person_1.jpg" alt="">
-				</div>
-				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
-					<blockquote>
-						<p> &ldquo; Quantum ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam. &rdquo;</p>
-						<p class="author"><cite>&mdash; Jane Smith</cite></p>
-					</blockquote>
-				</div>
-			</div>
-		</div>
+	<div id="fh5co-featured-testimony" class="fh5co-section">
+            <div class="container">
+                <div class="row">
+                    <a href="<?php echo base_url()?>nosotros/letrascacao">    
+                        <div class="col-md-12 fh5co-heading animate-box text-center">
+                            <h2>Letras de cacao</h2>                                    
+                        </div>
+                    </a>
+                </div>
+            </div>
 	</div>
 
-	<div id="fh5co-slider" class="fh5co-section animate-box">
+	<!--div id="fh5co-slider" class="fh5co-section animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 animate-box">
