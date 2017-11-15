@@ -197,7 +197,7 @@
 				
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item">
-                                        <a href="<?php echo base_url();?>productos/mezcal">
+                                        <a href="<?php echo base_url();?>productos">
                                         <img src="<?php echo base_url();?>images/mezcal.png" class="img-responsive" alt="" style="height: 175px;">
                                         <h3>Mezcal</h3>
                                         <p>La palabra mezcal se deriva de los vocablos náhuatl metl e ixcalli, que significan...</p>
@@ -207,7 +207,7 @@
 				</div>
                                 <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item  margin_top">
-                                        <a href="<?php echo base_url();?>productos/avellana">
+                                        <a href="<?php echo base_url();?>productos">
                                         <img src="<?php echo base_url();?>images/avellana.jpg" class="img-responsive" alt="">
                                         <h3>Avellana</h3>
                                         <p>Las avellanas, como todos los vegetales, no tienen colesterol.</p>
@@ -217,7 +217,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item">
-                                        <a href="<?php echo base_url();?>productos/cacahuate">
+                                        <a href="<?php echo base_url();?>productos">
                                         <img src="<?php echo base_url();?>images/cacahuate1.jpg" class="img-responsive" alt="">
                                         <h3>Cacahuate</h3>
                                         <p>Los manís o cacahuetes son alimentos naturales con propiedades alimentarias ampliamente reconocidas.</p>
@@ -227,7 +227,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item margin_top">
-                                        <a href="<?php echo base_url();?>productos/almendra">
+                                        <a href="<?php echo base_url();?>productos">
                                         <img src="<?php echo base_url();?>images/almendra1.jpg" class="img-responsive" alt="">
                                         <h3>Almendra</h3>
                                         <p>La almendra tiene un elevado valor nutritivo....</p>
@@ -307,7 +307,7 @@
                     </a>
                 </div>
             </div>
-	</div>
+
 
 	<!--div id="fh5co-slider" class="fh5co-section animate-box">
 		<div class="container">
