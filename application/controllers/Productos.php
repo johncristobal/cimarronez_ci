@@ -15,11 +15,15 @@ class productos extends CI_Controller{
 
     public function __construct() {
         parent::__construct();
+        
+        $this->load->model('Producto_model');        
     }
 
     //show a list of elements
     public function index(){
-        $this->load->view('productos/categorias');
+                
+        $data['categorias'] = $this->Producto_model->getCategorias();
+        $this->load->view('productos/categorias',$data);
     }
     
     public function mezcal(){
@@ -38,4 +42,12 @@ class productos extends CI_Controller{
         $this->load->view('productos/nuez');
     }
     
+    public function categorias($id){
+        //get products with this idcategoria
+        $data['productos'] = $this->Producto_model->getCategoriasById($id);
+        $data['desc'] = $this->Producto_model->getNombreById($id)->descripcion;
+        $this->load->view('productos/productosByCategory',$data);
+
+    }    
 }
+

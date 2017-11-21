@@ -164,7 +164,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div class="display-t" style="height: 100px">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn" style="height: 100px">
+						<div class="display-tc animate-fast" data-animate-effect="fadeIn" style="height: 100px">
                                                     
                                                     <!--img src="<?php echo base_url();?>images/facepage.png" alt="">
                                                     <!--h1>Cooperativa Autónoma Cimarronez</h1-->
@@ -180,27 +180,34 @@
                 <div class="row-fluid">
                     <div class="col-md-5">
                         <p class="titleone"><b>Productos cimarronez</b></p>
-                        <p class="titletwo"><b>Flecha que busca la libertad</b></p>
+                        <p class="titletwo"><b><?=$desc;?></b></p>
                     </div>
                 </div>
             </div>
         </div>
         
         
-        <div id="" class="">
+        <div id="fh5co-featured-menu" class="">
             <div class="container">
                 
                 <?php
                     $i=0;
-                    foreach ($categorias as $value) {                                                           
+                    foreach ($productos as $value) {                                                           
                 ?>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-                    <div class="fh5co-item" style="margin-top: 15px;">
-                        <a href="<?php echo base_url();?>productos/categorias/<?=$value->id;?>">
-                        <img src="<?php echo base_url();?>images/<?=$value->nombre;?>/home.png" class="img-responsive" alt="" style="height: 175px;">
-                        <span class="text-center" style="color:white; font-size: 25px;"><?=$value->descripcion;?></span>
-                        </a>
-                        <br>
+                <div class="row">
+                    <div class="col-xs-4 col-md-4 animate-fast">
+                        <img src="<?php echo base_url();?>images/<?=$desc;?>/1.png" class="img-responsive" alt="" style="height: 75px;">                        
+                    </div>
+                    <div class="col-xs-4 col-md-4 animate-fast">
+                        <h2><?=$value->nombre;?></h2>                                              
+                    </div>
+                    <div class="col-xs-4 col-md-4 animate-fast">
+                        <h4>
+                            <?php 
+                            $va = str_replace(",","<br/>",$value->precio);    
+                            echo $va;                            
+                            ?>
+                        </h4>  
                     </div>
                 </div>
                 <?php
@@ -208,7 +215,7 @@
                 ?>
                 
                 <!--div class="row">				
-                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-fast">
                             <div class="fh5co-item">
                                 <a href="<?php echo base_url();?>productos">
                                 <img src="<?php echo base_url();?>images/mezcal.png" class="img-responsive" alt="" style="height: 175px;">
@@ -218,7 +225,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-fast">
                             <div class="fh5co-item">
                                 <a href="<?php echo base_url();?>productos">
                                 <img src="<?php echo base_url();?>images/avellana.jpg" class="img-responsive" alt="">
@@ -228,7 +235,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-fast">
                             <div class="fh5co-item">
                                 <a href="<?php echo base_url();?>productos">
                                 <img src="<?php echo base_url();?>images/cacahuate1.jpg" class="img-responsive" alt="">
@@ -238,7 +245,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-fast">
                             <div class="fh5co-item">
                                 <a href="<?php echo base_url();?>productos">
                                 <img src="<?php echo base_url();?>images/almendra1.jpg" class="img-responsive" alt="">
@@ -250,7 +257,7 @@
                         </div>                                        
                 </div>
                 				
-                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-fast">
                             <div class="fh5co-item">
                                 <a href="<?php echo base_url();?>productos">
                                 <img src="<?php echo base_url();?>images/mezcal.png" class="img-responsive" alt="" style="height: 175px;">
@@ -260,7 +267,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-fast">
                             <div class="fh5co-item">
                                 <a href="<?php echo base_url();?>productos">
                                 <img src="<?php echo base_url();?>images/avellana.jpg" class="img-responsive" alt="">
@@ -270,7 +277,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-fast">
                             <div class="fh5co-item">
                                 <a href="<?php echo base_url();?>productos">
                                 <img src="<?php echo base_url();?>images/cacahuate1.jpg" class="img-responsive" alt="">
@@ -280,7 +287,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-fast">
                             <div class="fh5co-item">
                                 <a href="<?php echo base_url();?>productos">
                                 <img src="<?php echo base_url();?>images/almendra1.jpg" class="img-responsive" alt="">
