@@ -36,6 +36,5 @@ class productos extends CI_Controller{
     }
     public function nuez(){
         $this->load->view('productos/nuez');
-    }
-    
+    }    
 }
