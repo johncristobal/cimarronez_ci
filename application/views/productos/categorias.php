@@ -195,10 +195,10 @@
                     foreach ($categorias as $value) {                                                           
                 ?>
                 <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-                    <div class="fh5co-item" style="margin-top: 15px;">
+                    <div class="fh5co-item" style="margin-top: 15px;text-align: center;">
                         <a href="<?php echo base_url();?>productos/categorias/<?=$value->id;?>">
-                        <img src="<?php echo base_url();?>images/<?=$value->nombre;?>/home.png" class="img-responsive" alt="" style="height: 175px;">
-                        <span class="text-center" style="color:white; font-size: 25px;"><?=$value->descripcion;?></span>
+                            <img src="<?php echo base_url();?>images/<?=$value->nombre;?>/home.png" class="" alt="" style="height: 175px; text-align: center;max-width: 100%;"><br>
+                            <span class="text-center" style="color:white; font-size: 25px;"><?=$value->descripcion;?></span>
                         </a>
                         <br>
                     </div>

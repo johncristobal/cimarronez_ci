@@ -194,20 +194,20 @@
                     $i=0;
                     foreach ($productos as $value) {                                                           
                 ?>
-                <div class="row">
+                <div class="row" style="border-bottom: 1px solid #f305059e;">
                     <div class="col-xs-4 col-md-4 animate-fast">
                         <img src="<?php echo base_url();?>images/<?=$desc;?>/1.png" class="img-responsive" alt="" style="height: 75px;">                        
                     </div>
                     <div class="col-xs-4 col-md-4 animate-fast">
-                        <h2><?=$value->nombre;?></h2>                                              
+                        <h2 style="color:white;"><?=$value->nombre;?></h2>                                              
                     </div>
                     <div class="col-xs-4 col-md-4 animate-fast">
-                        <h4>
+                        <h3 style="color:white;">
                             <?php 
                             $va = str_replace(",","<br/>",$value->precio);    
                             echo $va;                            
                             ?>
-                        </h4>  
+                        </h3>  
                     </div>
                 </div>
                 <?php
