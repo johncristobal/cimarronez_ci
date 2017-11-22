@@ -20,7 +20,7 @@
                                                         <li><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/red.png" alt="" width="25" height="25" style="margin-bottom: 10px;"> Inicio</a></li>
                                                         <!--li><a href="">C.A.C.A.O.</a></li-->
 							<li class="has-dropdown">
-								<a href="">C.A.C.A.O.</a>
+								<a>C.A.C.A.O.</a>
 								<ul class="dropdown">
 									<li><a href="<?php echo base_url();?>nosotros">Nuestros orígenes</a></li>
 									<li><a href="<?php echo base_url();?>nosotros/rumbos">Nuestros rumbos</a></li>
@@ -29,19 +29,18 @@
 								</ul>
 							</li>
                                                         <li class="has-dropdown">
-								<a href="<?php echo base_url();?>productos">PRODUCTOS</a>
+								<a>PRODUCTOS</a>
 								<ul class="dropdown">
                                                                     <li>
-                                                                    <a href="<?php echo base_url();?>productos">Chocolate</a>
+                                                                    <a href="<?php echo base_url();?>productos/categorias/1">Chocolate</a>
                                                                     </li>                                                              
                                                                     <li>
-                                                                    <a href="<?php echo base_url();?>productos">Cacao</a>
+                                                                    <a href="<?php echo base_url();?>productos/categorias/1">Cacao</a>
                                                                     </li>                                                              
-                                                                    <li><a href="<?php echo base_url();?>productos">Vainilla</a></li>
-                                                                    <li><a href="<?php echo base_url();?>productos">Café</a></li>
-                                                                    <li><a href="<?php echo base_url();?>productos">Sal</a></li>
-                                                                    <li><a href="<?php echo base_url();?>productos">Amaranto</a></li>
-                                                                    <li><a href="<?php echo base_url();?>productos">Mezcal</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos/categorias/4">Vainilla</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos/categorias/2">Café</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos/categorias/7">Sal</a></li>
+                                                                    <li><a href="<?php echo base_url();?>productos/categorias/6">Mezcal</a></li>
                                                                     <li><a href="<?php echo base_url();?>productos">Más...</a></li>
 								</ul>
 							</li>

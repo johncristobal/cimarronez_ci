@@ -199,7 +199,7 @@
                         <h2 style="color:white; margin-top: 10px;"><?=$value->nombre;?></h2>
                     </div>
                     <div class="col-xs-4 col-md-4" data-toggle="collapse" data-target="#demo<?=$value->id;?>">
-                        <h4 style="color:white; margin-top: 10px;"><?=$value->descripcion;?></h4>
+                        <h4 style="color:white; margin-top: 10px; padding-left: 8px;"><?=$value->descripcion;?></h4>
                     </div>
                     <div class="col-xs-4 col-md-4">
                         <h3 style="color:white; margin-top: 10px;">
