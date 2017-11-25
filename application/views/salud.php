@@ -39,8 +39,24 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+        <style>
+            .colorlinnk{
+                color: #ff6464;
+            }
+            
+            .medium-font{
+                font-size: 13px !important;
+            }
+            .large-font{
+                font-size: 19px !important;
+            }
+            p{
+                font-size: 21px !important;                
+            }
+        </style>
+        
 	</head>
-	<body>
+	<body oncopy="return false" oncut="return false" onpaste="return false">
 		
 	<div class="fh5co-loader"></div>
 	

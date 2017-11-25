@@ -46,7 +46,7 @@
 </style>
 
 	</head>
-	<body>
+	<body oncopy="return false" oncut="return false" onpaste="return false">
 		
 	<div class="fh5co-loader"></div>
 	

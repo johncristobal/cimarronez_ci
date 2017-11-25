@@ -67,7 +67,7 @@
 	</header>
 
 	
-	<div id="fh5co-blog" class="fh5co-section">
+	<div id="fh5co-blog" class="">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -177,13 +177,13 @@
 
 	<script>
 		Zoomerang
-      .config({
-        maxHeight: 600,
-        maxWidth: 900,
-        bgColor: '#000',
-        bgOpacity: .85
-      })
-      .listen('[data-trigger="zoomerang"]')
+            .config({
+              maxHeight: 600,
+              maxWidth: 900,
+              bgColor: '#000',
+              bgOpacity: .85
+            })
+            .listen('[data-trigger="zoomerang"]')
 	</script>
 
 	</body>

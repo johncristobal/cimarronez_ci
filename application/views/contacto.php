@@ -44,6 +44,16 @@
             .colorlinnk{
                 color: #ff6464;
             }
+            
+            .medium-font{
+                font-size: 13px !important;
+            }
+            .large-font{
+                font-size: 19px !important;
+            }
+            p{
+                font-size: 21px !important;                
+            }
         </style>
         
 	</head>
@@ -79,7 +89,7 @@
 			<div class="row animate-box">
 				<div class="col-md-5">
                                     <h1 style="color: white;">Comunícate con nosotros.</h1>
-					<p>Contáctanos para obtener más información acerca de nuestros productos, de nosotros, nuestras lenguas.</p>
+                                    <p class="large-font">Contáctanos para obtener más información acerca de nuestros productos, de nosotros, nuestras lenguas.</p>
                                         <p>Correo: <a href="mailto:chocolatecimarron@gmail.com" class="colorlinnk">chocolatecimarron@gmail.com</a></p>
                                         <p>Facebook: <a class="colorlinnk" href="https://www.facebook.com/CooperativaAutonomaCimarronez/">Cooperativa Autónoma Cimarronez</a></p>
                                         <p>WhatsApp: <a class="colorlinnk" href="whatsapp://send?phone=525536733317">55 36 73 33 17</a></p>

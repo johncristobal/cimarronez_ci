@@ -129,23 +129,15 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" id="carrus">
-      <div class="item">
-        <img src="<?php echo base_url();?>images/cartel1.png" alt="" style="width:100%;">
-      </div>
-      <div class="item active">
-        <img src="<?php echo base_url();?>images/cartel2.png" alt="" style="width:100%;">
-      </div>
     
       <div class="item">
         <img src="<?php echo base_url();?>images/back1.jpg" alt="" style="width:100%;">
       </div>
-      <div class="item">
+      <div class="item active">
         <img src="<?php echo base_url();?>images/back3.jpg" alt="" style="width:100%;">
       </div>
     </div>
