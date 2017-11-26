@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: transparent;
   z-index: 1001;
   top: 0;
-  padding: 14px 0;
+  /*padding: 14px 0;*/
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;

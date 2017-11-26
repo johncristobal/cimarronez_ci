@@ -70,7 +70,7 @@
 	<div id="fh5co-blog" class="">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box">
 					<h2>Eventos</h2>
 					<p>Entérate de los próximos eventos que Cimarronez ha organizado...</p>
 				</div>
@@ -102,6 +102,21 @@
 								<!--li><i class="icon-heart2"></i>1.2K</li>
 								<li><i class="icon-eye2"></i>2K</li-->
 								<li><a href="<?php echo base_url();?>eventos/ver/2">Leer más<i class=""></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+                                <div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="<?php echo base_url();?>eventos/ver/3" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/brigadas/brigada4.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">2017</span>
+							<h3><a href="<?php echo base_url();?>eventos/ver/3">Informes de brigadas</a></h3>
+							<p>Informes de las diferentes brigadas realizadas este año.</p>
+							<ul class="stuff">
+								<!--li><i class="icon-heart2"></i>1.2K</li>
+								<li><i class="icon-eye2"></i>2K</li-->
+								<li><a href="<?php echo base_url();?>eventos/ver/3">Leer más<i class=""></i></a></li>
 							</ul>
 						</div> 
 					</div>
