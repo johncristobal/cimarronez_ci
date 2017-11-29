@@ -129,11 +129,15 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" id="carrus">
     
+      <div class="item">
+        <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
+      </div>
       <div class="item">
         <img src="<?php echo base_url();?>images/back1.jpg" alt="" style="width:100%;">
       </div>
@@ -174,11 +178,10 @@
 	</div-->
 
         <!--Content-->
-	<div id="fh5co-featured-menu" class="fh5co-section">
+	<!--<div id="fh5co-featured-menu" class="fh5co-section">
 		<div class="container">
 			<div class="row">
                             <div class="col-md-12 fh5co-heading animate-box" style="margin-bottom: 50px;">
-					<h2>Productos</h2>
 					<div class="row">
 						<div class="col-md-6">
 							<p>A continuación verás algunos de nuestros productos como cacao, mezcal, entre otros.</p>
@@ -283,23 +286,47 @@
 						<span class="fh5co-price">$22<sup>.50</sup></span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
 					</div>
-				</div-->
+				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
-	<div id="fh5co-featured-testimony" class="fh5co-section">
+        <div id="fh5co-featured-testimony" class="" style="margin-top: 55px;">
             <div class="container">
                 <div class="row">
                     <a href="<?php echo base_url()?>nosotros/letrascacao">    
-                        <div class="col-md-12 fh5co-heading animate-box text-center">
+                        <div class="col-md-12 fh5co-heading animate-box text-center" style="margin-bottom: 90px !important;">	
                             <h2>Letras de cacao</h2>                                    
                         </div>
                     </a>
                 </div>
             </div>
+        </div>
 
-
+	<div id="fh5co-featured-testimony" class="" style="margin-top: 15px;">
+            <div class="container">
+                <div class="row">
+                    <a href="<?php echo base_url()?>nosotros/rumbos">    
+                        <div class="col-md-12 fh5co-heading animate-box text-center" style="margin-bottom: 90px !important;">					
+                            <h2>Nuestros rumbos</h2>                                    
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div id="fh5co-featured-testimony" class="" style="margin-top: 15px;">
+            <div class="container">
+                <div class="row">
+                    <a href="<?php echo base_url()?>nosotros/originario">    
+                        <div class="col-md-12 fh5co-heading animate-box text-center" style="margin-bottom: 90px !important;">	
+				
+                            <h2>Originario y cimarron</h2>                                    
+                        </div>
+                    </a>
+                </div>
+            </div>
+         </div>           
 	<!--div id="fh5co-slider" class="fh5co-section animate-box">
 		<div class="container">
 			<div class="row">
