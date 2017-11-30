@@ -178,23 +178,23 @@
 	</div-->
 
         <!--Content-->
-	<!--<div id="fh5co-featured-menu" class="fh5co-section">
+	<div id="fh5co-featured-menu" class="">
 		<div class="container">
 			<div class="row">
                             <div class="col-md-12 fh5co-heading animate-box" style="margin-bottom: 50px;">
-					<div class="row">
-						<div class="col-md-6">
-							<p>A continuación verás algunos de nuestros productos como cacao, mezcal, entre otros.</p>
-						</div>
-					</div>
+                                    <div class="row">
+                                            <div class="col-md-6">
+                                                <br>
+                                            </div>
+                                    </div>
 				</div>
 				
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item">
-                                        <a href="<?php echo base_url();?>productos">
-                                        <img src="<?php echo base_url();?>images/mezcal.png" class="img-responsive" alt="" style="height: 175px;">
-                                        <h3>Mezcal</h3>
-                                        <p>La palabra mezcal se deriva de los vocablos náhuatl metl e ixcalli, que significan...</p>
+                                        <a href="<?php echo base_url();?>nosotros/letrascacao">
+                                        <img src="<?php echo base_url();?>images/cacao/cacao1.JPG" class="img-responsive" alt="" style="height: 175px;">
+                                        <h3>Letras cacao</h3>
+                                        <p>Ellas llevan la vida en el pelo...</p>
                                         </a>
                                         <span class="bounce">10 / 10 / 2017</span>                                                
                                     </div>
@@ -286,10 +286,10 @@
 						<span class="fh5co-price">$22<sup>.50</sup></span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
 					</div>
-				</div>
+				</div-->
 			</div>
 		</div>
-	</div>-->
+	</div>
 
         <div id="fh5co-featured-testimony" class="" style="margin-top: 55px;">
             <div class="container">

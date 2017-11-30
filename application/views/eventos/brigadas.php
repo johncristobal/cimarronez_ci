@@ -260,24 +260,7 @@
             </div>
         </div> 
             
-          <div id="" class="animate-box" style="margin-bottom: 20px;">
-            <div class="container">
-                    <div class="row animate-box">
-                        <div class="col-md-3 col-xs-3">
-                            <img src="<?php echo base_url();?>images/brigadas/brigada1.jpg" alt="" style="width: 250px; height: 250px;">
-                        </div>
-                        <div class="col-md-3 col-xs-3">
-                            <img src="<?php echo base_url();?>images/brigadas/brigada2.jpg" alt="" style="width: 250px; height: 250px;">
-                        </div>
-                        <div class="col-md-3 col-xs-3">
-                            <img src="<?php echo base_url();?>images/brigadas/brigada3.jpg" alt="" style="width: 250px; height: 250px;">
-                        </div>
-                        <div class="col-md-3 col-xs-3">
-                            <img src="<?php echo base_url();?>images/brigadas/brigada4.jpg" alt="" style="width: 250px; height: 250px;">
-                        </div>
-                    </div>
-            </div>
-        </div>          
+        
 
 	<!--div id="fh5co-featured-testimony" class="fh5co-section">
 		<div class="container">
