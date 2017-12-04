@@ -43,6 +43,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+      a{
+          color: white !important;
+      }
+  </style>
 	</head>
 	<body style="background: rgb(136, 62, 7)">
 		
@@ -201,30 +206,30 @@
 				</div>
                                 <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item  margin_top">
-                                        <a href="<?php echo base_url();?>productos">
-                                        <img src="<?php echo base_url();?>images/avellana.jpg" class="img-responsive" alt="">
-                                        <h3>Avellana</h3>
-                                        <p>Las avellanas, como todos los vegetales, no tienen colesterol.</p>
+                                        <a href="<?php echo base_url();?>nosotros">
+                                        <img src="<?php echo base_url();?>images/cacao/cacao2.JPG" class="img-responsive" alt="">
+                                        <h3>Nuestros orígenes</h3>
+                                        <p>Desde hace siete años, apartir del a{o 2010, un grupo de compañeros y compañeras....</p>
                                         </a>
                                         <span class="bounce">18 / 11 / 2016</span>                                                
                                     </div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item">
-                                        <a href="<?php echo base_url();?>productos">
-                                        <img src="<?php echo base_url();?>images/cacahuate1.jpg" class="img-responsive" alt="">
-                                        <h3>Cacahuate</h3>
-                                        <p>Los manís o cacahuetes son alimentos naturales con propiedades alimentarias ampliamente reconocidas.</p>
+                                        <a href="<?php echo base_url();?>nosotros/rumbos">
+                                        <img src="<?php echo base_url();?>images/cacao/cacao3.jpg" class="img-responsive" alt="">
+                                        <h3>Nuestros rumbos</h3>
+                                        <p>Más de 5000 mil años de relación de los pueblos con las semillas....</p>
                                         </a>
                                         <span class="bounce">18 / 11 / 2016</span>                                                
                                     </div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item margin_top">
-                                        <a href="<?php echo base_url();?>productos">
-                                        <img src="<?php echo base_url();?>images/almendra1.jpg" class="img-responsive" alt="">
-                                        <h3>Almendra</h3>
-                                        <p>La almendra tiene un elevado valor nutritivo....</p>
+                                        <a href="<?php echo base_url();?>nosotros/originario">
+                                        <img src="<?php echo base_url();?>images/cacao/cacao4.jpg" class="img-responsive" alt="">
+                                        <h3>Originario y cimarron</h3>
+                                        <p>...en las montañas, existe el pensamiento que el Jaguar es guardián del cacao....</p>
                                         </a>
                                         <span class="bounce">18 / 11 / 2016</span>                                                
                                     </div>
@@ -291,7 +296,7 @@
 		</div>
 	</div>
 
-        <div id="fh5co-featured-testimony" class="" style="margin-top: 55px;">
+        <!--div id="fh5co-featured-testimony" class="" style="margin-top: 55px;">
             <div class="container">
                 <div class="row">
                     <a href="<?php echo base_url()?>nosotros/letrascacao">    
@@ -326,7 +331,7 @@
                     </a>
                 </div>
             </div>
-         </div>           
+         </div-->           
 	<!--div id="fh5co-slider" class="fh5co-section animate-box">
 		<div class="container">
 			<div class="row">
