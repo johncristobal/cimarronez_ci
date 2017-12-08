@@ -41,11 +41,27 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+        <script>
+            $(function() {
+              $(".video").click(function () {
+                var theModal = $(this).data("target"),
+                videoSRC = $(this).attr("data-video"),
+                videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+                $(theModal + ' iframe').attr('src', videoSRCauto);
+                $(theModal + ' button.close').click(function () {
+                  $(theModal + ' iframe').attr('src', videoSRC);
+                });
+              });
+            });
+        </script>
+        <style>
+            .space-top{
+                margin-top: 40px;
+            }
+        </style>
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
-	
 	<div id="page">
 	<?php $this->load->view('menu');?>
 
@@ -66,29 +82,47 @@
 		</div>
 	</header>
 
-	
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+        </div>
+            
 	<div id="fh5co-gallery" class="fh5co-section">
 		<div class="container">
 			<div class="row">
                             <div class="col-md-12 fh5co-heading animate-box" style="margin-bottom: 90px;">
-					<h2>Galeria de videos</h2>
-					<div class="row">
-						<div class="col-md-6">
-							<p>Observa nuestra galeria de videos.</p>
-						</div>
-					</div>
-				</div>
-				
+                                <h2>Galeria de videos</h2>
+                                <div class="row">
+                                        <div class="col-md-6">
+                                                <p>Observa nuestra galeria de videos.</p>
+                                        </div>
+                                </div>
+                            </div>
 
-				<div class="col-md-3 col-sm-3 fh5co-gallery_item">
-                                    <div class="fh5co-bg-img" data-trigger="zoomerang">
-                                        <iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe>
-                                    </div>
-                                    <div class="fh5co-bg-img" data-trigger="zoomerang">
-                                        <iframe src="https://www.youtube.com/embed/_Ku4Hub5gQI" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe>
+                            <div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                                    <div class="">
+                                        <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                        <img src="<?php echo base_url();?>images/back3.jpg" alt="" width="170px" height="170px">
                                     </div>
 				</div>
-				<div class="col-md-6 col-sm-6 fh5co-gallery_item">
+                                <div class="col-md-3 col-sm-3 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <span>7º Aniversario - Zapoteco Yalala</span>
+				</div>
+           			<div class="col-md-6 col-sm-6 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <button class="btn btn-danger btn-lg video" data-video="https://www.youtube.com/watch?v=xbAy2JYyY-E" data-toggle="modal" data-target="#videoModal">Reproducir Video</button>
+				</div>
+                            </div>
+                            
+				<!--div class="col-md-6 col-sm-6 fh5co-gallery_item">
                                     <div class="fh5co-bg-img fh5co-gallery_big" data-trigger="zoomerang">
                                         <iframe src="https://www.youtube.com/embed/_Ku4Hub5gQI" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%; width: 100%"></iframe>
                                     </div>
@@ -100,7 +134,7 @@
                                     <div class="fh5co-bg-img" data-trigger="zoomerang">
                                         <iframe src="https://www.youtube.com/embed/GHX6jCX6ibg" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe>
                                     </div>
-				</div>
+				</div-->
 
 				<!--div class="col-md-3 col-sm-3 fh5co-gallery_item">
                                     <div class="fh5co-bg-img" data-trigger="zoomerang">

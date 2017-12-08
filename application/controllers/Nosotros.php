@@ -26,6 +26,7 @@ class nosotros extends CI_Controller{
     }
     public function videos(){
         $this->load->view('videos');        
+        //$this->load->view('videoprueba');        
     }
     
     public function salud(){
