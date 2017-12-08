@@ -45,7 +45,7 @@
             $(function() {
               $(".video").click(function () {
                 var theModal = $(this).data("target"),
-                videoSRC = $(this).attr("data-video"),
+                videoSRC = $(this).attr("data-video");
                 videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
                 $(theModal + ' iframe').attr('src', videoSRCauto);
                 $(theModal + ' button.close').click(function () {
@@ -109,21 +109,118 @@
 				<div class="col-md-3 col-sm-3 col-xs-12 text-center">
                                     <div class="">
                                         <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
-                                        <img src="<?php echo base_url();?>images/back3.jpg" alt="" width="170px" height="170px">
+                                        <img src="<?php echo base_url();?>images/videos/video1.png" alt="" width="240px" height="170px">
                                     </div>
 				</div>
                                 <div class="col-md-3 col-sm-3 col-xs-12 text-center space-top">
                                     <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
-                                    <span>7º Aniversario - Zapoteco Yalala</span>
+                                    <span style="font-size:20px;">7º Aniversario - Zapoteco Yalala</span>
 				</div>
            			<div class="col-md-6 col-sm-6 col-xs-12 text-center space-top">
                                     <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
-                                    <button class="btn btn-danger btn-lg video" data-video="https://www.youtube.com/watch?v=xbAy2JYyY-E" data-toggle="modal" data-target="#videoModal">Reproducir Video</button>
+                                    <button class="btn btn-danger btn-lg video" data-video="https://www.youtube.com/embed/xbAy2JYyY-E" data-toggle="modal" data-target="#videoModal">Reproducir Video</button>
+				</div>
+                            </div>
+                            <div class="row">
+                                <br>
+                            </div>
+
+                            <div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                                    <div class="">
+                                        <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                        <img src="<?php echo base_url();?>images/videos/video2.png" alt="" width="240px" height="170px">
+                                    </div>
+				</div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <span style="font-size:20px;">7º Aniversario - Tzeltal</span>
+				</div>
+           			<div class="col-md-6 col-sm-6 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <button class="btn btn-danger btn-lg video" data-video="https://www.youtube.com/embed/Poe14SqQTj0" data-toggle="modal" data-target="#videoModal">Reproducir Video</button>
+				</div>
+                            </div>
+                            <div class="row">
+                                <br>
+                            </div>
+
+                            <div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                                    <div class="">
+                                        <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                        <img src="<?php echo base_url();?>images/videos/video3.png" alt="" width="240px" height="170px">
+                                    </div>
+				</div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <span style="font-size:20px;">7º Aniversario - Nahuatl</span>
+				</div>
+           			<div class="col-md-6 col-sm-6 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <button class="btn btn-danger btn-lg video" data-video="https://www.youtube.com/embed/dd4DIU9jToQ" data-toggle="modal" data-target="#videoModal">Reproducir Video</button>
 				</div>
                             </div>
                             
+                            <div class="row">
+                                <br>
+                            </div>
+
+                            <div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                                    <div class="">
+                                        <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                        <img src="<?php echo base_url();?>images/videos/video4.png" alt="" width="240px" height="170px">
+                                    </div>
+				</div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <span style="font-size:20px;">7º Aniversario - Mixteco</span>
+				</div>
+           			<div class="col-md-6 col-sm-6 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <button class="btn btn-danger btn-lg video" data-video="https://www.youtube.com/embed/dPIjStG6_UU" data-toggle="modal" data-target="#videoModal">Reproducir Video</button>
+				</div>
+                            </div>
+                            
+                            <div class="row">
+                                <br>
+                            </div>
+
+                            <div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                                    <div class="">
+                                        <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                        <img src="<?php echo base_url();?>images/videos/video5.png" alt="" width="240px" height="170px">
+                                    </div>
+				</div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <span style="font-size:20px;">7º Aniversario - Mazateco</span>
+				</div>
+           			<div class="col-md-6 col-sm-6 col-xs-12 text-center space-top">
+                                    <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                    <button class="btn btn-danger btn-lg video" data-video="https://www.youtube.com/embed/vUkAbpu46iY" data-toggle="modal" data-target="#videoModal">Reproducir Video</button>
+				</div>
+                            </div>
+                            
+                             <div class="row">
+                                <br>
+                            </div>
+
+                            <div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 text-right">
+                                    <div class="">
+                                        <a href="https://www.youtube.com/channel/UC-e3l9E5vWifs3T_aVZMJ4Q">
+                                        <!--iframe src="https://www.youtube.com/embed/dzozOuvNEhw" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%;"></iframe-->
+                                        <h2 style="color:white;">Clic aquí para ver más videos...</h2>
+                                        </a>
+                                    </div>
+				</div>                                
+                            </div>
+                            
 				<!--div class="col-md-6 col-sm-6 fh5co-gallery_item">
-                                    <div class="fh5co-bg-img fh5co-gallery_big" data-trigger="zoomerang">
+                                    <div class="fh5co-bg-img fh5co-gallery_big" data-trigger="">
                                         <iframe src="https://www.youtube.com/embed/_Ku4Hub5gQI" frameborder="0" allowfullscreen="allowfullscreen" style="height: 100%; width: 100%"></iframe>
                                     </div>
 				</div>
@@ -227,14 +324,14 @@
 
 
 	<script>
-		Zoomerang
+		/*Zoomerang
       .config({
         maxHeight: 600,
         maxWidth: 900,
         bgColor: '#000',
         bgOpacity: .85
       })
-      .listen('[data-trigger="zoomerang"]')
+      .listen('[data-trigger="zoomerang"]')*/
 	</script>
 
 	</body>
