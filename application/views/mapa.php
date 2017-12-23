@@ -85,10 +85,12 @@
 	<div id="fh5co-about" class="fh5co-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 img-wrap animate-box">
-                                    <div id="map" style="height: -webkit-fill-available;"></div>
-                                    <div id="info-box">?</div>                                    
-				</div>				
+                            <div class="col-md-7 img-wrap animate-box">
+                                <div id="map" style="height: -webkit-fill-available;"></div>
+                            </div>				
+                            <div class="col-md-5">
+                                <div id="info-box">?</div>                                    
+                            </div>
 			</div>
 		</div>
 	</div>
@@ -148,7 +150,7 @@
                                       });
 
                                       // Load GeoJSON.
-                                      map.data.loadGeoJson('https://storage.googleapis.com/maps-devrel/google.json');
+                                      map.data.loadGeoJson('<?php echo base_url();?>js/map.geojson');
         
                                       // Add some style.
                                       map.data.setStyle(function(feature) {
@@ -161,7 +163,7 @@
                                       // Set mouseover event for each feature.
                                       map.data.addListener('mouseover', function(event) {
                                         document.getElementById('info-box').textContent =
-                                            event.feature.getProperty('letter');
+                                            event.feature.getProperty('pueblo');
                                       });
                                     }
                                   </script>

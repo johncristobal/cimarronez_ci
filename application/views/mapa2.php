@@ -40,7 +40,7 @@
         });
 
         // Load GeoJSON.
-        map.data.loadGeoJson('<?php echo base_url();?>js/mapa2.geojson');
+        map.data.loadGeoJson('<?php echo base_url();?>js/mapa.geojson');
 
         // Add some style.
         map.data.setStyle(function(feature) {
