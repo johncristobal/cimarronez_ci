@@ -48,13 +48,13 @@
       /* Optional: Makes the sample page fill the window. */
       
       #info-box {
-        background-color: white;
+        /*background-color: white;
         border: 1px solid black;
         bottom: 30px;
         height: 20px;
         padding: 10px;
         position: absolute;
-        left: 30px;
+        left: 30px;*/
       }
     </style>
 	</head>
@@ -85,11 +85,12 @@
 	<div id="fh5co-about" class="fh5co-section">
 		<div class="container">
 			<div class="row">
-                            <div class="col-md-7 img-wrap animate-box">
+                            <div class="col-md-8 img-wrap animate-box">
                                 <div id="map" style="height: -webkit-fill-available;"></div>
                             </div>				
-                            <div class="col-md-5">
-                                <div id="info-box">?</div>                                    
+                            <div class="col-md-4">
+                               <h2 id="lugar" style="color:white;"></h2>
+                               <h3 style="color:white;">Cacao: <span id="cacao" style="font-size:18px; font-style: italic;"></span></h3>                                   
                             </div>
 			</div>
 		</div>
@@ -142,32 +143,42 @@
 	</div>
 	
         <script>
-                                    var map;
-                                    function initMap() {
-                                      map = new google.maps.Map(document.getElementById('map'), {
-                                        zoom: 7,
-                                        center: {lat: 17.109028, lng: -96.719564}
-                                      });
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 7,
+        center: {lat: 17.109028, lng: -96.719564}
+      });
 
-                                      // Load GeoJSON.
-                                      map.data.loadGeoJson('<?php echo base_url();?>js/map.geojson');
-        
-                                      // Add some style.
-                                      map.data.setStyle(function(feature) {
-                                        return /** @type {google.maps.Data.StyleOptions} */({
-                                          fillColor: feature.getProperty('color'),
-                                          strokeWeight: 1
-                                        });
-                                      });
+      // Load GeoJSON.
+      map.data.loadGeoJson('<?php echo base_url();?>js/map.geojson');
 
-                                      // Set mouseover event for each feature.
-                                      map.data.addListener('mouseover', function(event) {
-                                        document.getElementById('info-box').textContent =
-                                            event.feature.getProperty('pueblo');
-                                      });
-                                    }
-                                  </script>
-        
+      // Add some style.
+      map.data.setStyle(function(feature) {
+        return /** @type {google.maps.Data.StyleOptions} */({
+          fillColor: feature.getProperty('color'),
+          strokeWeight: 1
+        });
+      });
+
+      // Set mouseover event for each feature.
+      map.data.addListener('click', function(event) {
+        document.getElementById('lugar').textContent =
+            event.feature.getProperty('pueblo');
+        document.getElementById('cacao').textContent =
+            event.feature.getProperty('cacao');
+      });
+
+      // Set mouseover event for each feature.
+      map.data.addListener('mouseover', function(event) {
+        document.getElementById('lugar').textContent =
+            event.feature.getProperty('pueblo');
+        document.getElementById('cacao').textContent =
+            event.feature.getProperty('cacao');
+      });
+    }
+  </script>
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB90BUuYggm4ZpunLxo_slY52Zc5n-ySw&callback=initMap">
     </script>
     

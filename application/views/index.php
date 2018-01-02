@@ -78,7 +78,9 @@
 							<!--li><a href="reservation.html">KAKAW AL XOCOLATL</a></li-->
 							<!--li><a href="about.html">CACAO Y SALUD</a></li-->
 							<!--li><a href="<?php echo base_url();?>nosotros">NOSOTROS</a></li-->
-                                                        <li class="has-dropdown">
+                                                        <li><a href="<?php echo base_url();?>productos">PRODUCTOS</a> </li>
+
+                                                        <!--li class="has-dropdown">
 								<a>PRODUCTOS</a>
 								<ul class="dropdown">
                                                                     <li>
@@ -93,7 +95,7 @@
                                                                     <li><a href="<?php echo base_url();?>productos/categorias/6">Mezcal</a></li>
                                                                     <li><a href="<?php echo base_url();?>productos">Más...</a></li>
 								</ul>
-							</li>
+							</li-->
                                                         <li><a href="<?php echo base_url();?>nosotros/salud">CACAO Y SALUD</a></li>
                                                         <li><a href="<?php echo base_url();?>eventos">EVENTOS</a></li>
                                                         <li><a href="<?php echo base_url();?>nosotros/videos">VIDEOS</a></li>
@@ -134,19 +136,19 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <!--li data-target="#myCarousel" data-slide-to="2"></li-->
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" id="carrus">
     
-      <div class="item">
+      <!--div class="item">
         <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
-      </div>
-      <div class="item">
+      </div-->
+      <div class="item active">
         <img src="<?php echo base_url();?>images/back1.jpg" alt="" style="width:100%;">
       </div>
-      <div class="item active">
+      <div class="item">
         <img src="<?php echo base_url();?>images/back3.jpg" alt="" style="width:100%;">
       </div>
     </div>
@@ -459,18 +461,18 @@
 		</div>
 	</div-->
 	
-	<!--div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(<?php echo base_url();?>images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
+	<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(<?php echo base_url();?>images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Book a Table</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae enim quae vitae cupiditate, sequi quam ea id dolor reiciendis consectetur repudiandae. Rem quam, repellendus veniam ipsa fuga maxime odio? Eaque!</p>
-					<p><a href="reservation.html" class="btn btn-primary btn-outline">Book Now</a></p>
+					<h2>Lenguas y semillas</h2>
+					<!--p>Explora como se dicen diversos productos en diferentes regiones del país</p-->
+                                        <p><a href="<?php echo base_url()?>nosotros/mapa" class="btn btn-primary btn-outline">Ver mapa</a></p>
 				</div>
 			</div>
 		</div>
-	</div-->
+	</div>
 
 	<?php $this->load->view('footer');?>
 	</div>

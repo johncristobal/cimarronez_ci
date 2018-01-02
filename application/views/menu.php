@@ -28,9 +28,9 @@
 									<li><a href="<?php echo base_url();?>nosotros/letrascacao">Letras de cacao</a></li>
 								</ul>
 							</li>
-                                                        <li class="has-dropdown">
-								<a>PRODUCTOS</a>
-								<ul class="dropdown">
+                                                        <li><a href="<?php echo base_url();?>productos">PRODUCTOS</a> 
+								<!--a>PRODUCTOS</a-->
+								<!--ul class="dropdown">
                                                                     <li>
                                                                     <a href="<?php echo base_url();?>productos/categorias/1">Chocolate</a>
                                                                     </li>                                                              
@@ -42,7 +42,7 @@
                                                                     <li><a href="<?php echo base_url();?>productos/categorias/7">Sal</a></li>
                                                                     <li><a href="<?php echo base_url();?>productos/categorias/6">Mezcal</a></li>
                                                                     <li><a href="<?php echo base_url();?>productos">Más...</a></li>
-								</ul>
+								</ul-->
 							</li>
 							<!--li><a href="reservation.html">KAKAW AL XOCOLATL</a></li-->
 							<!--li><a href="about.html">CACAO Y SALUD</a></li-->

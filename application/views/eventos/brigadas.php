@@ -202,7 +202,7 @@
                     </h4>
                     </div>
                     <div class="col-xs-3 col-md-3 panel-title">                    
-                    <span style="text-align:right;">20-22 De octubre de 2017</span>
+                    <span style="text-align:right;">20 al 22 De octubre de 2017</span>
                     </div>
                 </div>
               </div>
@@ -224,7 +224,7 @@
                     </h4>
                     </div>
                     <div class="col-xs-3 col-md-3 panel-title">                    
-                    <span style="text-align:right;">13-19 de Noviembre de 2017</span>
+                    <span style="text-align:right;">13 al 19 de Noviembre de 2017</span>
                     </div>
                 </div>
               </div>
@@ -255,6 +255,32 @@
               <div id="collapse8" class="panel-collapse collapse">
                 <div class="panel-body colorpanel">
                     Istmo de Tehuantepec- Costa y Sierra Sur.
+                </div>
+              </div>
+            </div>
+            
+            <!--final brigada-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-9 col-md-9">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" style="weigth: bold;">Resumen Brigadas 2017</a>
+                    </h4>
+                    </div>
+                    <div class="col-xs-3 col-md-3 panel-title">                    
+                    <span style="text-align:right;">2017</span>
+                    </div>
+                </div>
+              </div>
+              <div id="collapse9" class="panel-collapse collapse">
+                <div class="panel-body colorpanel">
+                    La Cooperativa Autónoma Cimarronez Anticapitalismo Organizado C.A.C.A.O, en colaboración con una decena de 
+                    organizaciones sociales, colectivos y cooperativas, construyó la Brigada Autónoma Tierra y Libertad ante la 
+                    emergencia por los recientes sismos vividos en el mes de septiembre y, en apoyo a nuestros pueblos.
+                    <br>
+                    <a href="<?php echo base_url()?>informes/resumenfinal.pdf">Ver informe</a>
+
                 </div>
               </div>
             </div>
