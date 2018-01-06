@@ -5,7 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Nosotros</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Acerca de C.A.C.A.O." />
+	<meta name="description" content="Mapa de lenguas y semillas en Oaxaca" />
+	<meta name="keywords" content="cacao, oaxaca, mixe, zapoteco, huave" />
 	<meta name="author" content="cimarronez" />
 
 	<!-- 

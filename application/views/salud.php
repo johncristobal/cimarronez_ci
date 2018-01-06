@@ -6,6 +6,7 @@
 	<title>Cacao y salud</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Cacao y salud." />
+	<meta name="keywords" content="salud, chocolate, cacao, cooperativa" />
 	<meta name="author" content="cimarronez" />
 
 	<!-- 

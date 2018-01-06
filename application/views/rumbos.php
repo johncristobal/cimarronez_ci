@@ -6,6 +6,7 @@
 	<title>Nuestros rumbos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Acerca de C.A.C.A.O." />
+	<meta name="keywords" content="chocolate, cacao, cooperativa,rumbos" />
 	<meta name="author" content="cimarronez" />
 
 	<!-- 

@@ -5,7 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Nosotros</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Acerca de C.A.C.A.O." />
+	<meta name="description" content="Letras de cacao" />
+	<meta name="keywords" content="chocolate, cacao, cooperativa, eduardo, galeano" />
 	<meta name="author" content="cimarronez" />
 
 	<!-- 

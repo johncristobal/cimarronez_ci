@@ -5,7 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Galeria</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Galeria" />
+	<meta name="description" content="Galeria de videos" />
+	<meta name="keywords" content="videos, chocolate, cacao, cooperativa, cimarronez" />
 	<meta name="author" content="cimarronez" />
 
 

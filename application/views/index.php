@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>cimarronez</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
+	<meta name="description" content="C.A.C.A.O." />
+	<meta name="keywords" content="cacao, chocolate, montañas, lenguas, semillas" />
+	<meta name="author" content="cimarronez" />
 
 	<!-- 
 	//////////////////////////////////////////////////////
@@ -59,7 +59,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-center logo-wrap" style="background: rgba(0,0,0,0.5);">
-                                            <div id="fh5co-logo"><a href="<?php echo base_url();?>">CIMARRONEZ<img src="<?php echo base_url();?>images/red.png" alt="" width="25" height="25"></a></div>
+                                            <div id="fh5co-logo"><a href="<?php echo base_url();?>index.php">CIMARRONEZ<img src="<?php echo base_url();?>images/red.png" alt="" width="25" height="25"></a></div>
 					</div>
 					<div class="col-xs-12 text-center menu-1 menu-wrap" style="background: rgba(0,0,0,0.5);">
 					<br>

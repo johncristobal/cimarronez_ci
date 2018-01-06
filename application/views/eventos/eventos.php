@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Eventos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Eventos" />
+	<meta name="description" content="Eventos cimarronez" />
 	<meta name="author" content="cimarronez" />
 
 

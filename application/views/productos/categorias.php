@@ -6,6 +6,7 @@
 	<title>Productos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Productos cimarronez" />
+	<meta name="keywords" content="chocolate, cacao, vainilla, artesanías, playeras, cimarronez" />
 	<meta name="author" content="cimarronez" />
 
 	<!-- 

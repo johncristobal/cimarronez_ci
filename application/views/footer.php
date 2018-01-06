@@ -28,7 +28,7 @@
                                                 <li><a href="<?php echo base_url();?>nosotros">Nuestros orígenes</a></li>
                                                 <li><a href="<?php echo base_url();?>nosotros/rumbos">Nuestros rumbos</a></li>
 						<li><a href="<?php echo base_url();?>contacto">Contáctanos</a></li>
-						<li><a href="gallery.html">Videos</a></li>
+						<li><a href="<?php echo base_url();?>nosotros/videos">Videos</a></li>
 					</ul>
 				</div>
 

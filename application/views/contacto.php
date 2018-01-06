@@ -5,7 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Contáctanos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Contacto" />
+	<meta name="description" content="Contacto para C.A.C.A.O" />
+	<meta name="keywords" content="contacto, chocolate, cacao, cooperativa" />
 	<meta name="author" content="cimarronez" />
 
 	<!-- 
