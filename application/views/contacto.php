@@ -134,6 +134,29 @@
 		</div>
 	</div>
 
+        <div class="row contact">
+            <div class="col-md-12">
+                &nbsp;
+            </div>
+        </div>
+ 
+        <div id="fh5co-started" class="fh5co-section animate-box" style="background-color:#a55c14;" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center fh5co-heading">
+                        <h2>¿Quieres cooperar con nosotros...?</h2>
+                        
+                        <!--p>Explora como se dicen diversos productos en diferentes regiones del país</p-->
+                        <p style="font-size:30px !important;">BANCOMER </p>
+                        <p style="font-size:30px !important;">Número de cuenta: 2956405479</p>
+                        <p style="font-size:30px !important;">CLABE: 012 180 02956405479 5</p>
+                        <img src="<?php echo base_url();?>images/credit.svg" alt="" style="width:250px; height: 250px;">
+                    </div>
+                </div>
+            </div>
+	</div>
+
         <footer id="fh5co-footer" role="contentinfo" class="fh5co-section" style="background-color: rgba(0,0,0,0.5);">
 		<div class="container">
 			<div class="row row-pb-md">
