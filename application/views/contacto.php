@@ -148,7 +148,7 @@
                         <h2>¿Quieres cooperar con nosotros...?</h2>
                         
                         <!--p>Explora como se dicen diversos productos en diferentes regiones del país</p-->
-                        <p style="font-size:30px !important;">BANCOMER </p>
+                        <p style="font-size:15px !important;">BANCOMER </p>
                         <p style="font-size:30px !important;">Número de cuenta: 2956405479</p>
                         <p style="font-size:30px !important;">CLABE: 012 180 02956405479 5</p>
                         <img src="<?php echo base_url();?>images/credit.svg" alt="" style="width:250px; height: 250px;">
