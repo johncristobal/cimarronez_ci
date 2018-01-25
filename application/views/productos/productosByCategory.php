@@ -108,6 +108,15 @@
                     background-color: #ce7c28 !important;
                 }
                                 
+                .pane{
+                    background-color: #92681c;
+                    border-radius: 30px;
+                    font-size: 25px;
+                    font-weight: bold;
+                    -webkit-box-shadow: 11px 10px 16px 3px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 11px 10px 16px 3px rgba(0,0,0,0.75);
+                    box-shadow: 11px 10px 16px 3px rgba(0,0,0,0.75);
+                }
         </style>
         
             
@@ -301,6 +310,16 @@
                         </div>                                        
                 
             </div-->
+                
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 text-center">  
+                        <br>
+                        <div class="pane">
+                        Precio de mayoreo comunicarse directamente.
+                        </div>
+                    </div>
+                </div>
+                
 	</div>
             <br>
         

@@ -470,7 +470,7 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Lenguas y semillas</h2>
+					<h2>Lenguas, tierras y semillas</h2>
 					<!--p>Explora como se dicen diversos productos en diferentes regiones del país</p-->
                                         <p><a href="<?php echo base_url()?>nosotros/mapa" class="btn btn-primary btn-outline">Ver mapa</a></p>
 				</div>
