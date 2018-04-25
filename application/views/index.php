@@ -98,6 +98,14 @@
 							</li-->
                                                         <li><a href="<?php echo base_url();?>nosotros/salud">CACAO Y SALUD</a></li>
                                                         <li><a href="<?php echo base_url();?>eventos">EVENTOS</a></li>
+                                                        <li class="has-dropdown">
+                                                            <a>BAÚL DE TALLERES</a>
+                                                                <ul class="dropdown">
+                                                                    <li><a href="<?php echo base_url();?>nosotros/taller/salud">Salud</a></li>
+                                                                    <li><a href="<?php echo base_url();?>nosotros/taller/ambiente">Ambiente</a></li>
+                                                                    <li><a href="<?php echo base_url();?>nosotros/taller/territorio">Geografía Territorio y Cartografía</a></li>
+								</ul>
+                                                        </li>
                                                         <li><a href="<?php echo base_url();?>nosotros/videos">VIDEOS</a></li>
 							<li><a href="<?php echo base_url();?>contacto">CONTÁCTANOS</a></li>
 						</ul>
