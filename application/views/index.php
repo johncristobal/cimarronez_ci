@@ -154,7 +154,7 @@
         <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
       </div-->
       <div class="item active">
-        <img src="<?php echo base_url();?>images/back1.jpg" alt="" style="width:100%;">
+          <a href="<?php echo base_url();?>images/doccimafull.jpeg"><img src="<?php echo base_url();?>images/doccima.jpg" alt="" style="width:100%;"></a>
       </div>
       <div class="item">
         <img src="<?php echo base_url();?>images/back3.jpg" alt="" style="width:100%;">
