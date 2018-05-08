@@ -46,9 +46,11 @@ class nosotros extends CI_Controller{
     }
     
     public function mapaMarkers(){
-//33000 ane
+
+        //33000 ane
         //$handle = $this->utf8_fopen_read("Pueblosrebelionesmac.csv");
         //stream_filter_register("EOL", "EOLStreamFilter");
+
         $handle = fopen("Pueblosrebelionesmachere.csv", "r");
         if ($handle) {
             $mapamark = 0;
@@ -61,19 +63,8 @@ class nosotros extends CI_Controller{
             //$string=str_replace("\r","\n",$line);
             while (($line = fgetcsv($handle,1000,';')) !== false) {
                 // process the line read.
-                //echo $line[230];
-                /*for ($c=0; $c < count($line); $c++) {
-                    echo $line[$c] . "<br />\n";
-                    //si no hay año, continuo
-                    if ($line[$c] == ""){
-                        $c += 7;
-                        continue;
-                    }else{
-                        //hay año, veamos si hay un dia en especifico en la siguiente celda
-                        
-                    }
-                }*/
-                echo "Fin...<br><br>";
+
+                //echo "Fin...<br><br>";
                 
                 do{
                     //checamos si hay coordenada
@@ -81,55 +72,61 @@ class nosotros extends CI_Controller{
                         $indice += 8;
                         $indicecoordenadas += 8;
                         $indicelugar+= 8;
-                        continue;
                     }else{
                         //tenemos coordenada y pueblo, buscamos en url para obtener lat y long 
                         $coordenada = $line[$indicecoordenadas];
                         $lugar = $line[$indicelugar];
                         $masdeunacoordenada = explode(" ", $coordenada);
+                        $masdeunlugar= explode(" ", $lugar);
                         $coordenadaurl = $masdeunacoordenada[0];                         
+                        $lugarurl = $masdeunlugar[0];                         
                         //con el lugar y la coordenada llamamos url
-                        $resultados = $this->callApi($coordenadaurl,$lugar);
+                        $resultados = $this->callApi($coordenadaurl,$lugarurl);
                         if(count($resultados) < 2){
                             //aumentamos para el siguiente fila
                             //si hay menos de dos resultados, entonces no se encontro el lugar
                             $indice += 8;
                             $indicecoordenadas += 8;
                             $indicelugar+= 8;                        
-                            continue;
                         }else{
                             $cero = $resultados["results"];
-                            echo "Lat: ".$cero[0]["geometry"]["location"]["lat"]."<br>";
-                            echo "Long: ".$cero[0]["geometry"]["location"]["lng"]."<br>";
-                            $arreglotemp = array(
-                                "lat" => $cero[0]["geometry"]["location"]["lat"],
-                                "lng" => $cero[0]["geometry"]["location"]["lng"],
-                                "suceso" => $line[$indicelugar-1]
-                            );
-                            
-                            array_push($arreglo,$arreglotemp);
-                            
-                            $indice += 8;
-                            $indicecoordenadas += 8;
-                            $indicelugar+= 8;                        
-                            continue;
-                        }
+                            if(count($cero) == 2){
+                                //echo "Lat: ".$cero[0]["geometry"]["location"]["lat"]."<br>";
+                                //echo "Long: ".$cero[0]["geometry"]["location"]["lng"]."<br>";
+                                $arreglotemp = array(
+                                    "lat" => $cero[0]["geometry"]["location"]["lat"],
+                                    "lng" => $cero[0]["geometry"]["location"]["lng"],
+                                    "suceso" => $line[$indicelugar-1]
+                                );
 
-                        
+                                array_push($arreglo,$arreglotemp);
+
+                                $indice += 8;
+                                $indicecoordenadas += 8;
+                                $indicelugar+= 8;              
+                            }
+                        }
                     }
-                }while($indice <= count($line));             
+                }while($indicecoordenadas <= count($line));             
             }
             fclose($handle);
         } else {
             // error opening the file.
         }
 
-        //header('Content-type: application/json');
-        //$Data = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address=13048+Pachuca%20de%20Soto,M%C3%A9xico&key=AIzaSyAmoFLOpAbHlyRCFVm2OjC3D5UQSPy38jM'),true);
-        //echo $DataM;
-
-        $data['arreglo'] = $arreglo;
-        $this->load->view('mapa/mapa',$data);
+        //$data['arreglo'] = $arreglo;
+        //$this->load->view('mapa/mapa',$data);
+        $xml = '<markers>';
+        foreach($arreglo as $row=>$value){
+          $xml .= '<marker lat="'.$value['lat'].'" lng="'.$value['lng'].'" name="'.$value['suceso'].'"/>';
+        }
+        $xml .= '</markers>';
+        //$this->output->set_content_type('text/xml');
+        //$this->output->set_output($xml);
+        file_put_contents("myxmlfile.xml", $xml);
+        echo "fin";
+        
+        //$this->load->view('mapa/mapa');
     }
     
     public function taller($tipo){
@@ -147,10 +144,44 @@ class nosotros extends CI_Controller{
     }
     
     function callApi($coordenad,$pueblo){
+                
+        $myfile = fopen("testfile.txt", "w");
+
+        if(strlen($coordenad) == 4){
+            $coordenad = "0".$coordenad;
+        }
+        
+        //$myurl = 'https://maps.googleapis.com/maps/api/geocode/json?address='.$coordenad.'+'.$pueblo.',México&key=AIzaSyAmoFLOpAbHlyRCFVm2OjC3D5UQSPy38jM';
+        
+        /*$ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $myurl);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $data = json_decode(curl_exec($ch),true);
+        curl_close($ch);
+
+        sleep (1);
+        return $data;*/
+        
         header('Content-type: application/json');
-        $Data = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address='.$coordenad.'+'.$pueblo.',México&key=AIzaSyAmoFLOpAbHlyRCFVm2OjC3D5UQSPy38jM'),true);        
+        //$myURL = "https://maps.googleapis.com/maps/api/geocode/json?address=".$coordenad."+".$pueblo.",México&";   
+        //$options = array("key"=>"AIzaSyAmoFLOpAbHlyRCFVm2OjC3D5UQSPy38jM");
+        //$myURL .= http_build_query($options,'','&');
+        //$myData = file_get_contents($myURL); // or die(print_r(error_get_last()));
+        $myURL = "https://maps.googleapis.com/maps/api/geocode/json?address=".$coordenad."+".$pueblo.",México&key=AIzaSyAmoFLOpAbHlyRCFVm2OjC3D5UQSPy38jM";
+        fwrite($myfile, $myURL);
+        fclose($myfile);
+        $Data = json_decode(file_get_contents($myURL),true);        
         sleep (1);
         return $Data;
+    }
+    
+    function apigooglemaps(){
+        header('Content-type: application/json');
+        $myURL = "https://maps.googleapis.com/maps/api/geocode/json?address=21140+cholula%20,México&key=AIzaSyAmoFLOpAbHlyRCFVm2OjC3D5UQSPy38jM";
+        $Data = json_decode(file_get_contents($myURL),true);        
+        sleep (1);
+        echo $Data;
+
     }
     
     function utf8_fopen_read($fileName) { 
