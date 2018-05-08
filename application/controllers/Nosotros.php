@@ -44,4 +44,18 @@ class nosotros extends CI_Controller{
     public function mapa(){
         $this->load->view('mapa');
     }
+    
+    public function taller($tipo){
+        switch ($tipo){
+            case "salud":
+                $this->load->view('talleruno');
+                break;
+            case "ambiente":
+                $this->load->view('tallerdos');
+                break;
+            case "territorio":
+                $this->load->view('tallertres');
+                break;
+        }
+    }
 }
