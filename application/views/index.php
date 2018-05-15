@@ -148,8 +148,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" id="carrus">
-    
+    <div class="carousel-inner" id="carrus">    
       <!--div class="item">
         <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
       </div-->
@@ -157,7 +156,7 @@
           <a href="<?php echo base_url();?>images/doccimafull.jpeg"><img src="<?php echo base_url();?>images/doccima.jpg" alt="" style="width:100%;"></a>
       </div>
       <div class="item">
-        <img src="<?php echo base_url();?>images/back3.jpg" alt="" style="width:100%;">
+          <a href="<?php echo base_url();?>images/19mayo.jpg"><img src="<?php echo base_url();?>images/19mayomini.jpg" alt="" style="width:100%;"></a>
       </div>
     </div>
 
