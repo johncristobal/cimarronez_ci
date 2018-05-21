@@ -144,6 +144,7 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
       <!--li data-target="#myCarousel" data-slide-to="2"></li-->
     </ol>
 
@@ -157,6 +158,9 @@
       </div>
       <div class="item">
           <a href="<?php echo base_url();?>images/19mayo.jpg"><img src="<?php echo base_url();?>images/19mayomini.jpg" alt="" style="width:100%;"></a>
+      </div>
+      <div class="item">
+          <a href="https://www.facebook.com/photo.php?fbid=778975868958945&set=pcb.778976735625525&type=3&theater"><img src="<?php echo base_url();?>images/mapacimarronez.png" alt="" style="width:100%;"></a>
       </div>
     </div>
 
