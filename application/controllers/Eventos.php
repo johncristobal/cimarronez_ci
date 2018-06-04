@@ -24,11 +24,13 @@ class eventos extends CI_Controller{
     public function ver($id){
         if($id==1)
         {
-        $this->load->view('eventos/showe');        
+            $this->load->view('eventos/showe');        
         }else if($id==2){
-        $this->load->view('eventos/showe2');            
-        }else{
-        $this->load->view('eventos/brigadas');                        
+            $this->load->view('eventos/showe2');            
+        }else if($id==3){
+            $this->load->view('eventos/brigadas');                        
+        }else if($id==4){
+            $this->load->view('eventos/mapaluna');                        
         }
     }
 }

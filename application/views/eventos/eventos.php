@@ -76,6 +76,21 @@
                             </div>
 			</div>
 			<div class="row">
+                            <div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="<?php echo base_url();?>eventos/ver/4" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/webcimamini.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">2018</span>
+							<h3><a href="<?php echo base_url();?>eventos/ver/4">Presentaciones del mapa Pueblos Orginarios.</a></h3>
+                                                        <p> El rostro oculto del ombligo de la luna.</p>
+							<ul class="stuff">
+								<!--li><i class="icon-heart2"></i>1.2K</li>
+								<li><i class="icon-eye2"></i>2K</li-->
+								<li><a href="<?php echo base_url();?>eventos/ver/4">Leer más<i class="i"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
 				<div class="col-md-4">
 					<div class="fh5co-blog animate-box">
 						<a href="<?php echo base_url();?>images/cartel.jpg" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/cartel1.png);"></a>
