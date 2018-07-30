@@ -146,6 +146,7 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
       <!--li data-target="#myCarousel" data-slide-to="2"></li-->
     </ol>
 
@@ -155,6 +156,9 @@
         <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
       </div-->
       <div class="item active">
+          <a href="<?php echo base_url();?>images/mapa.jpeg"><img src="<?php echo base_url();?>images/mapa2.png" alt="" style="width:100%;"></a>
+      </div>
+      <div class="item">
           <a href="<?php echo base_url();?>eventos/ver/4"><img src="<?php echo base_url();?>images/webcimamini.jpg" alt="" style="width:100%;"></a>
       </div>
       <div class="item">
@@ -523,6 +527,7 @@
 	<!-- jQuery -->
         <?php $this->load->view('scripts');?>
 
+        
 
 	</body>
 </html>
