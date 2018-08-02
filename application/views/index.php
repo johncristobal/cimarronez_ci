@@ -104,6 +104,7 @@
                                                                     <li><a href="<?php echo base_url();?>nosotros/taller/salud">Salud</a></li>
                                                                     <li><a href="<?php echo base_url();?>nosotros/taller/ambiente">Ambiente</a></li>
                                                                     <li><a href="<?php echo base_url();?>nosotros/taller/territorio">Geografía Territorio y Cartografía</a></li>
+                                                                    <li><a href="<?php echo base_url();?>nosotros/taller/solidaridad">Economía Comunitaria y Social Solidaria</a></li>
 								</ul>
                                                         </li>
                                                         <li><a href="<?php echo base_url();?>nosotros/videos">VIDEOS</a></li>

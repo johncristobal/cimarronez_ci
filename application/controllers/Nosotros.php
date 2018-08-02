@@ -140,7 +140,10 @@ class nosotros extends CI_Controller{
             case "territorio":
                 $this->load->view('tallertres');
                 break;
-        }
+            case "solidaridad":
+                $this->load->view('tallercuatro');
+                break;
+            }
     }
     
     function callApi($coordenad,$pueblo){
