@@ -85,6 +85,9 @@
                                 •	Construcción cotidiana de la salud<br>
                                 •	Construcción de espacios saludables y calidad de vida<br>
                                 •	Promoción de la salud <br>
+                                •	Conservatorio salud y autonomía<br>
+                                •	Salud en los espacio de lucha desde una justicia para las mujeres<br>
+                                
                             </p>
                         </div>
                         <div class="col-md-4">
@@ -125,12 +128,22 @@
                             </div>
                             </div><br><br>
                             <p>
-                                •	Alimentación<br>
-                                •	Nutrición en las etapas de la vida<br>
                                 •	Formación y desarrollo en la infancia<br>
                                 •	Cuidado personal y de los cercanos<br>
                                 •	Relaciones de convivencia<br>
                                 •	Espacios saludables<br>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-md-11">
+                            <div class="row" style="text-align: center; background-color: #d25500; border-radius: 25px;">
+                            <span style="font-size: 25px;">Nutrición y salud:</span>
+                            </div>
+                            </div>
+                            <p><br><br>
+                                •	Alimentación<br>
+                                •	Nutrición en las etapas de la vida<br>
+                                •	Lecturas de etiquetas de alimentos<br>
                             </p>
                         </div>
                         <div class="col-md-4">
@@ -141,10 +154,14 @@
                             </div>
                             <p><br><br>
                                 •	Diabetes<br>
-                                •	Obesidad<br>
-                                •	Desnutrición<br>
+                                •	Sobrepeso y obesidad<br>
+                                •	Síndrome Metabólico (hipertensión arterial, obesidad, resistencia a la insulina, <br>
+                                        alteraciones de niveles de glucosa en la sangre, triglicéridos altos y grasas buenas por <br>
+                                        debajo de los niveles normales)
+                                •       Desnutrición<br>
                             </p>
                         </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="col-md-11">
                             <div class="row" style="text-align: center; background-color: #d25500; border-radius: 25px;">
@@ -163,7 +180,20 @@
                                 •	Toma de decisiones<br>
                                 •	Manejo de tensiones y estrés<br>
                             </p>
-                        </div>                        
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-md-11">
+                            <div class="row" style="text-align: center; background-color: #d25500; border-radius: 25px;">
+                            <span style="font-size: 25px;">Medicina alternativa</span>
+                            </div>
+                            </div>
+                            <p><br><br>
+                                •	Elaboración de tinturas y microdosis<br>
+                                •	Conocimiento y uso de plantes para la salud sexual y reproductiva de la mujer<br>
+                                •	Principios de la medicina oriental y adendos a la autonomía de la salud<br>
+                            </p>
+                        </div>
+                    </div>
                 </div>  
             </div>
 	</div>

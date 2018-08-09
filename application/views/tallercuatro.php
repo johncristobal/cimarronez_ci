@@ -66,7 +66,7 @@
 
         <div class="container">
             <div class="row">
-                    <span style="font-size: 35px;">Talleres de medio ambiente</span>                    
+                    <span style="font-size: 35px;">Talleres de Economía Comunitaria y Social Solidaria</span>                    
             </div>                    
         </div>
             
@@ -76,77 +76,51 @@
                         <div class="col-md-4">
                             <div class="col-md-11">
                             <div class="row" style="text-align: center; background-color: #d25500; border-radius: 25px;">
-                            <span style="font-size: 25px;">Planeación ambiental participativa</span>
+                            <span style="font-size: 25px;">Economía Comunitaria</span>
                             </div>
                             </div>
-                            <p><br><br><br>
-                                - Diagnóstico comunitario de bienes naturales<br>
-                                - Planeación integral del cuidado de los bienes naturales y comunes<br>
-                                
+                            <p><br><br>
+                                •   Economía comunitaria y social solidaria versus economía capitalista<br>
+                                •   Tejedores de economía comunitaria y social solidaria<br>
+                                •   Enhebrando el tejido de la economía comunitaria <br>
+                                •   Creación y fortalecimiento de redes de Economía Comunitaria<br>
                             </p>
                         </div>
                         <div class="col-md-4">
                             <div class="col-md-11">
                             <div class="row" style="text-align: center; background-color: #d25500; border-radius: 25px;">
-                                <span style="font-size: 25px;">Seguridad alimentaria, soberanía alimentaria y agricultura sustentable (agroecología)</span>
+                                <span style="font-size: 25px;">Cooperativas y Organización política</span>
                             </div>
                             </div><br>
                             <p>
-                                <br>
-                                - Producción de cultivos originarios<br>
-                                - Bancos locales de semillas colectivas<br>
+                                <br><br>
+                                    •   Qué es una cooperativa<br>
+                                    •   Trabajando en cooperativa<br>
+                                    •   Aportación colectiva y Reciprocidad: Tequio, faena, mano vuelta…<br>
+                                    •   Trabajo igual, salario igual; trabajo diferente, salario diferente<br>
+                                    •   Historia de las cooperativas<br>
+                                    •   Fortalecer la voluntad colectiva-cooperativa-participativa.<br>
+                                    •   ¿Registro jurídico de la cooperativa?<br>
                             </p>
                         </div>
                         <div class="col-md-4">
                             <div class="col-md-11">
                             <div class="row" style="text-align: center; background-color: #d25500; border-radius: 25px;">
-                            <span style="font-size: 25px;">Prácticas agrícolas para la producción sustentable</span>
+                            <span style="font-size: 25px;">Fondos de ahorro y préstamo comunitario</span>
                             </div>
                             </div><br><br><br>  
                             <p>
-                                - Método integrado de plagas y enfermedades<br>
-                                - Fertilización y mejoramiento del suelo<br>
+                                <br><br>
+                                •   Constitución de grupo de trabajo y ahorro<br>
+                                •   Reglamento, principios y acuerdos colectivos para el fondo de ahorro<br>
+                                •   Banco de tiempo<br>
+                                •   Banco de Préstamo<br>
+
                             </p>
                         </div>                        
                 </div>  
                 
-                <div class="row">
-                        <div class="col-md-4">
-                            <div class="col-md-11">
-                            <div class="row" style="text-align: center; background-color: #d25500; border-radius: 25px;">
-                            <span style="font-size: 25px;">Sistemas integrales de producción de los pueblos (sistemas agroforestales)</span>
-                            </div>
-                            </div><br><br>
-                            <p><br><br><br>
-                                -Producción de hortalizas<br>
-                                -Producción de granos básicos<br>
-                                -Producción de frutales<br>
-                                -Huertos de traspatio<br>
-                                -Huertos escolares<br>
-                                -Huertos medicinales<br>
-                                -Producción de animales de traspatio<br>
-                                -Manejo postcosecha de productos<br>
-
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="col-md-11">
-                            <div class="row" style="text-align: center; background-color: #d25500; border-radius: 25px;">
-                            <span style="font-size: 25px;">Tecnologías apropiadas</span>
-                            </div>
-                            </div>
-                            <p><br><br><br>
-                                - Baños secos<br>
-                                - Estufas lorena<br>
-                                - Estufas patzari<br>
-                                - Filtros de aguas grises<br>
-                                - Biodigestores<br>
-                                - Tanques de ferrocemento para captación de agua de lluvia<br>
-                                - Bicimáquinas<br>
-                                - Hornos ecológicos<br>
-                            </p>
-                        </div>                       
-                </div>  
+ 
             </div>
 	</div>
          
