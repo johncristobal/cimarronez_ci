@@ -159,10 +159,10 @@
         <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
       </div-->
       <div class="item active">
-          <a href="<?php echo base_url();?>images/mapa cdmx.jpg"><img src="<?php echo base_url();?>images/cdmx.jpg" alt="" style="width:100%;"></a>
+          <a href="<?php echo base_url();?>images/imagen.jpeg"><img src="<?php echo base_url();?>images/imagen2.png" alt="" style="width:100%;"></a>
       </div>
       <div class="item ">
-          <a href="<?php echo base_url();?>images/imagen.jpeg"><img src="<?php echo base_url();?>images/imagen2.png" alt="" style="width:100%;"></a>
+          <a href="<?php echo base_url();?>images/mapa cdmx.jpg"><img src="<?php echo base_url();?>images/cdmx.jpg" alt="" style="width:100%;"></a>
       </div>
       <div class="item">
           <a href="<?php echo base_url();?>images/mapa.jpeg"><img src="<?php echo base_url();?>images/mapa2.png" alt="" style="width:100%;"></a>

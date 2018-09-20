@@ -86,8 +86,8 @@
                     </div>
                     <div class="form-group">
                         <label>Categoria:</label>
-                        <select name="categoria" id="categoria" class="form-control">
-                            <option value="General">General</option>
+                        <select name="categoria" id="categoria" class="form-control" style="color: #d0caca !important;">
+                            <!--option value="General">General</option-->
                         </select>
                     </div>          
                     <div class="form-group text-right">
