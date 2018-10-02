@@ -96,6 +96,7 @@
                                                                     <li><a href="<?php echo base_url();?>productos">Más...</a></li>
 								</ul>
 							</li-->
+                                                        <li><a href="<?php echo base_url();?>cartografias">CARTOGRAFÍAS</a></li>
                                                         <li><a href="<?php echo base_url();?>nosotros/salud">CACAO Y SALUD</a></li>
                                                         <li><a href="<?php echo base_url();?>eventos">EVENTOS</a></li>
                                                         <li class="has-dropdown">
@@ -148,6 +149,7 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
       <!--li data-target="#myCarousel" data-slide-to="2"></li-->
     </ol>
 
@@ -157,6 +159,9 @@
         <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
       </div-->
       <div class="item active">
+          <a href="<?php echo base_url();?>images/presentacion.jpg"><img src="<?php echo base_url();?>images/presentacion2.png" alt="" style="width:100%;"></a>
+      </div>
+      <div class="item">
           <a href="<?php echo base_url();?>images/mapa.jpeg"><img src="<?php echo base_url();?>images/mapa2.png" alt="" style="width:100%;"></a>
       </div>
       <div class="item">

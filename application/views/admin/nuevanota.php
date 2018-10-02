@@ -89,7 +89,12 @@
                         <select name="categoria" id="categoria" class="form-control">
                             <option value="General">General</option>
                         </select>
-                    </div>          
+                    </div>       
+                    <div class="form-group">
+                        <label>Imagen:</label>
+                        <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);"/>
+                    </div>       
+                                                                                                                                        
                     <div class="form-group text-right">
                         <button class="btn-lg btn-default addnotice">Agregar nota</button>
                     </div>

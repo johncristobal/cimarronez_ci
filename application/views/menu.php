@@ -48,6 +48,7 @@
 							<!--li><a href="about.html">CACAO Y SALUD</a></li-->
 							<!--li><a href="<?php echo base_url();?>nosotros">NOSOTROS</a></li-->
 							<!--li><a href="<?php echo base_url();?>">MEZCAL</a></li-->
+                                                        <li><a href="<?php echo base_url();?>cartografias">CARTOGRAFÍAS</a></li>
                                                         <li><a href="<?php echo base_url();?>nosotros/salud">CACAO Y SALUD</a></li>
                                                         <li><a href="<?php echo base_url();?>eventos">EVENTOS</a></li>
                                                         <li class="has-dropdown">
