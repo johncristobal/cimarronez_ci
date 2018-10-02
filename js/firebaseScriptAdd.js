@@ -33,7 +33,36 @@ var config = {
       var errorMessage = error.message;
       // ...
     });
+    
+    /*leer las categorias y ponerlas en el combo*/
+    var optionsHTML = "";
+    var noticias = firebase.database().ref('categorias');
+    noticias.on('value', function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+            //debugger;
+            var childKey = childSnapshot.key;
+            var childData = childSnapshot.val();
 
+            var select  = $("#categoria");
+            select.html("");
+            optionsHTML += "<option value='"+childKey+"' style='color:gray;'>" + childData + "</option>";
+
+            /*$.each(optionList, function(a, b){
+               optionsHTML += "<option>" + childData + "</option>";
+            });*/
+            select.html(optionsHTML);
+            
+            /*$(".idfirebase").append( );
+            $(".autorfirebase").append( "" );
+            $(".fechafirebase").append( "<p style='font-size:12px;'>"+childData["fecha"]+"</p>" );
+            $(".descripcionfirebase").append( "<p style='font-size:12px;max-height: 15px;'>"+res+"</p>" );
+            $(".updatefirebase").append( "<a href='#' onclick='readDetails();'><img src='"+api+"images/red.png' style='width: 35px; height:35px'></a>");*/
+            // ...
+        });
+        
+    });
+    
+    /*agreaar nota*/    
     $(".addnotice").on("click",function(){        
         var database = firebase.database();
           // Get a key for a new Post.

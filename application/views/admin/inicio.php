@@ -73,6 +73,9 @@
 		</div>
 	</header>
 
+            <div class="container" id="loading">
+                bala baia
+            </div>
         <div class="container" style="padding: 2em 0;">
             <div class="row">
                 <div class="col-md-12 text-right">
