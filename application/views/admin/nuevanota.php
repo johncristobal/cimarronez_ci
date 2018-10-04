@@ -70,31 +70,49 @@
 	</header>
 
         <div class="container" style="padding: 2em 0;">
-            <div class="row">
-                <div class="col-md-8 idfirebase">
+            <div class="row">                
+                <div class="col-md-6 idfirebase">
                     <div class="form-group">
                         <label>Titulo noticia:</label>
                         <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo...">
-                    </div>
+                    </div>                    
+                </div>
+                <div class="col-md-6 idfirebase">
                     <div class="form-group">
                         <label>Autor noticia:</label>
                         <input type="text" class="form-control" id="autor" name="autor" placeholder="Autor...">
                     </div>
-                    <div class="form-group">
-                        <label>Noticia:</label>
-                        <textarea class="form-control" id="noticia" rows="30" name="noticia" placeholder="Noticia..."></textarea>
-                    </div>
+                </div>
+            </div>
+            <div class="row">                
+                <div class="col-md-6 idfirebase">
                     <div class="form-group">
                         <label>Categoria:</label>
                         <select name="categoria" id="categoria" class="form-control" style="color: #d0caca !important;">
                             <!--option value="General">General</option-->
                         </select>
-                    </div>       
+                    </div>                       
+                </div>
+                <div class="col-md-6 idfirebase">
                     <div class="form-group">
-                        <label>Imagen:</label>
-                        <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);"/>
-                    </div>       
-                                                                                                                                        
+                    <label>Imagen:</label>
+                    <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 idfirebase">
+                    <div class="form-group">
+                        <label>Noticia:</label> 
+                        <br>
+                        Nota: Si solo agregara imagen, no incluya texto...
+                        <br>
+                        <textarea class="form-control" id="noticia" rows="10" name="noticia" placeholder="Escribe la noticia aqui..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-right">
                     <div class="form-group text-right">
                         <button class="btn-lg btn-default addnotice">Agregar nota</button>
                     </div>

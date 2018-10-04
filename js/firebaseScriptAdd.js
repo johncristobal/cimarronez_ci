@@ -84,12 +84,13 @@ var config = {
           // Write the new post's data simultaneously in the posts list and the user's post list.
         var updates = {};
         var postData = {
+            id: newPostKey,
             autor: autor,
             titulo: titulo,
             fecha: currentDate,
             estatus: 1,
             imagen: imagen,
-            categoria: categoria,
+            categoria:parseInt(categoria),
             descripcion: noticia
         };
           
@@ -103,7 +104,7 @@ var config = {
                 } else {
                     // Data saved successfully!
                     console.log("Succesfully...");
-                    window.location.href = api+"admin/inicio";
+                    //window.location.href = api+"admin/inicio";
                 }
             }
         );
@@ -141,6 +142,10 @@ var config = {
               uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                 console.log('File available at', downloadURL);
               });
+              
+              //wheb complete upload, back page
+            window.location.href = api+"admin/inicio";
+
             });
         }
          
