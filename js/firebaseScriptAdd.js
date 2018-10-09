@@ -91,7 +91,8 @@ var config = {
             estatus: 1,
             imagen: imagen,
             categoria:parseInt(categoria),
-            descripcion: noticia
+            descripcion: noticia,
+            likes:0
         };
           
         updates['/noticias/' + newPostKey] = postData;
