@@ -47,11 +47,22 @@
     h3{
         color: #000;
     }
+    .load{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(../images/loader.gif) center no-repeat #fff;
+    }
 </style>
+	<?php $this->load->view('head');?>
+
         </head>
-        <body onload="">
+        <body>
 		
-	<div class="fh5co-loader"></div>
+	<div class="load"></div>
 	
 	<div id="page">
 	<?php $this->load->view('admin/menuadmin');?>
@@ -147,7 +158,7 @@
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+            <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -155,11 +166,14 @@
         <script>
             var api = '<?php echo base_url();?>';
         </script>
-        <script src="<?php echo base_url()?>js/firebaseScriptRead.js"/>
-	<?php $this->load->view('head');?>
 
-	<!-- jQuery -->
-	<?php $this->load->view('scripts');?>
+        <script>
+            var tipo = "N";
+        </script>
+        <script src="<?php echo base_url()?>js/firebaseScriptRead.js"/>
+
+        <!-- jQuery -->
+	<?php $this->load->view('scripts');?>   
 
 
 	</body>

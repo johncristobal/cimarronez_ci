@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Nosotros</title>
+	<title>Editoriales</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Acerca de C.A.C.A.O." />
 	<meta name="keywords" content="chocolate, cacao, cooperativa, cimarronez, originario" />
@@ -43,9 +43,15 @@
         background: rgba(0, 0, 0,0.7);
         font-size: 24px;
     }
+    
+    h3{
+        color: #000;
+    }
 </style>
-	<?php $this->load->view('head');?>
-
+        <script>
+            var tipo = "E";
+        </script>
+        <script src="<?php echo base_url()?>js/firebaseScriptRead.js"/>
         </head>
         <body>
 		
@@ -72,56 +78,36 @@
 	</header>
 
         <div class="container" style="padding: 2em 0;">
-            <div class="row">                
-                <div class="col-md-6 idfirebase">
-                    <div class="form-group">
-                        <label>Titulo noticia:</label>
-                        <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo...">
-                    </div>                    
-                </div>
-                <div class="col-md-6 idfirebase">
-                    <div class="form-group">
-                        <label>Autor noticia:</label>
-                        <input type="text" class="form-control" id="autor" name="autor" placeholder="Autor...">
-                    </div>
-                </div>
-            </div>
-            <div class="row">                
-                <div class="col-md-6 idfirebase">
-                    <div class="form-group">
-                        <label>Categoria:</label>
-                        <select name="categoria" id="categoria" class="form-control" style="color: #d0caca !important;">
-                            <!--option value="General">General</option-->
-                        </select>
-                    </div>                       
-                </div>
-                <div class="col-md-6 idfirebase">
-                    <div class="form-group">
-                    <label>Imagen:</label>
-                    <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);"/>
-                    </div>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-md-12 idfirebase">
-                    <div class="form-group">
-                        <label>Noticia:</label> 
-                        <br>
-                        Nota: Si solo agregara imagen, no incluya texto...
-                        <br>
-                        <textarea class="form-control" id="noticia" rows="10" name="noticia" placeholder="Escribe la noticia aqui..."></textarea>
-                    </div>
+                <div class="col-md-12 text-right">
+                    <button class="btn-lg btn-default addedit">Agregar editorial</button>
+                    <br>
                 </div>
             </div>
+            <div class="row"><br></div>
+
             <div class="row">
-                <div class="col-sm-12 text-right">
-                    <div class="form-group text-right">
-                        <button class="btn-lg btn-default addnotice">Agregar nota</button>
-                    </div>
+                <div class="col-md-2 text-center">
+                    <h3>Id</h3>
+                </div>
+                <div class="col-md-2 text-center">
+                    <h3>Autor</h3>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>Editorial</h3>
+                </div>
+                <div class="col-md-2 text-center">
+                    <h3>Fecha</h3>                    
+                </div>
+                <div class="col-md-2 text-center">
+                    <h3>Ver detalles</h3>
                 </div>
             </div>
-        </div>
-                     
+            <div class="filas">
+            </div>
+        </div>    
+        
+         
 	<!--div id="fh5co-featured-testimony" class="fh5co-section">
 		<div class="container">
 			<div class="row">
@@ -173,7 +159,7 @@
         <script>
             var api = '<?php echo base_url();?>';
         </script>
-        <script src="<?php echo base_url()?>js/firebaseScriptAdd.js"/>
+	<?php $this->load->view('head');?>
 
 	<!-- jQuery -->
 	<?php $this->load->view('scripts');?>

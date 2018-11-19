@@ -17,7 +17,8 @@
 					<br>
 						<ul>
 							<!--li class="active"><a href="index.html">Home</a></li-->
-                                                        <li><a href="<?php echo base_url();?>admin/inicio"><img src="<?php echo base_url();?>images/red.png" alt="" width="25" height="25" style="margin-bottom: 10px;"> Inicio</a></li>
+                                                        <li><a href="<?php echo base_url();?>admin/inicio">Noticias</a></li>
+                                                        <li><a href="<?php echo base_url();?>admin/editoriales">Editorial</a></li>
                                                         <!--li><a href="">C.A.C.A.O.</a></li-->
 							<!--li class="has-dropdown">
 								<a>C.A.C.A.O.</a>

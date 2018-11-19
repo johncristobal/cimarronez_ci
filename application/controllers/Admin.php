@@ -26,9 +26,20 @@ class admin extends CI_Controller{
         //validar inicio de sesion
         $this->load->view('admin/inicio');        
     }
+    
+    public function editoriales(){
+        //validar inicio de sesion
+        $this->load->view('admin/editorialesList');        
+    }
+    
     public function nuevanota(){
         //validar inicio de sesion
         $this->load->view('admin/nuevanota');        
+    }
+    
+    public function nuevaeditorial(){
+        //validar inicio de sesion
+        $this->load->view('admin/nuevaedit');        
     }
     
     public function updatenota($id){
@@ -41,7 +52,7 @@ class admin extends CI_Controller{
         redirect('/');
     }    
     
-    //============================edit banners home==============================
+//============================edit banners home==============================
     public function reorderindexbanner(){
         $key = "banner";
         //$back = $this->AdminModel->getParametro($key);
