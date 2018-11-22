@@ -1,22 +1,7 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-var indiceChange;
-    
-function validar(elemento,indice){
-    //del elemento seleccionadosubo y actualizo foto del respectivo indice
-    //alert(elemento);
-    //indiceChange = indice;
-    //$("#message").empty(); // To remove the previous error message
-    indiceChange = elemento.files[0];
-}
-    
 $( document ).ready(function() {
-  // Handler for .ready() called.
-// Initialize Firebase    
-var config = {
+
+    //Initialize Firebase
+    var config = {
       apiKey: "AIzaSyCDIAgpAbKjKaAz7b6tPVU-6LQ3yxqC3L8",
       authDomain: "cimarronez.firebaseapp.com",
       databaseURL: "https://cimarronez.firebaseio.com",
@@ -31,11 +16,39 @@ var config = {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
+      alert(errorCode);
       // ...
     });
-    
-    /*leer las categorias y ponerlas en el combo*/
-    var optionsHTML = "";
+
+//=========================  /*show noticia*/  ================================= 
+    $(".load").show();
+    var noticias = firebase.database().ref('editoriales');
+    noticias.on('value', function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+            //debugger;
+            var childKey = childSnapshot.key;
+            var childData = childSnapshot.val();
+
+            var res = childData["descripcion"].substring(0, 200);
+            var id = "<div class='col-md-2 text-center'><p style='font-size:12px;'>"+childKey+"</p></div>";
+            var autor = "<div class='col-md-2 text-center'><p style='font-size:12px;'>"+childData["autor"]+"</p></div>";
+            var nota = "<div class='col-md-4 text-center'><p style='font-size:12px;'>"+res+"</p></div>";
+            var fecha = "<div class='col-md-2 text-center'><p style='font-size:12px;'>"+childData["fecha"]+"</p></div>";
+            var img = "<div class='col-md-2 text-center'><a href='#' onclick='readDetails();'><img src='"+api+"images/red.png' style='width: 35px; height:35px'></a></div>";
+            $(".filas").append(
+                "<div class='row'>"+
+                id+
+                autor+
+                nota+
+                fecha+
+                img+
+            "</div>");
+        });
+        $(".load").fadeOut('1500');
+    });
+
+//=========================  /*agregar categorias*/  =========================== 
+    /*var optionsHTML = "";
     var noticias = firebase.database().ref('categorias');
     noticias.on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
@@ -47,29 +60,19 @@ var config = {
             select.html("");
             optionsHTML += "<option value='"+childKey+"' style='color:gray;'>" + childData + "</option>";
 
-            /*$.each(optionList, function(a, b){
-               optionsHTML += "<option>" + childData + "</option>";
-            });*/
             select.html(optionsHTML);
+
+        });        
+    });*/
             
-            /*$(".idfirebase").append( );
-            $(".autorfirebase").append( "" );
-            $(".fechafirebase").append( "<p style='font-size:12px;'>"+childData["fecha"]+"</p>" );
-            $(".descripcionfirebase").append( "<p style='font-size:12px;max-height: 15px;'>"+res+"</p>" );
-            $(".updatefirebase").append( "<a href='#' onclick='readDetails();'><img src='"+api+"images/red.png' style='width: 35px; height:35px'></a>");*/
-            // ...
-        });
-        
-    });
-    
-    /*agreaar nota*/    
+//=========================  /*agregar nota*/  =================================  
     $(".addnotice").on("click",function(){        
         var database = firebase.database();
         // Get a key for a new Post.
         var titulo = $("#titulo").val();
         var autor = $("#autor").val();
         var noticia = $("#noticia").val();
-        var categoria = $("#categoria").val();
+        var subtitulo = $("#subtitulo").val();
         
         var imagen = "";
         if (indiceChange != undefined){        
@@ -80,7 +83,7 @@ var config = {
         var twoDigitMonth = ((fullDate.getMonth().length+1) === 1)? (fullDate.getMonth()+1) : '0' + (fullDate.getMonth()+1);
         var currentDate = fullDate.getDate() + "/" + twoDigitMonth + "/" + fullDate.getFullYear();
         
-        var newPostKey = database.ref().child('noticias').push().key;
+        var newPostKey = database.ref().child('editoriales').push().key;
           // Write the new post's data simultaneously in the posts list and the user's post list.
         var updates = {};
         var postData = {
@@ -90,13 +93,13 @@ var config = {
             fecha: currentDate,
             estatus: 1,
             imagen: imagen,
-            categoria:parseInt(categoria),
-            descripcion: noticia,
-            likes:0
+            subtitulo:subtitulo,
+            descripcion: noticia
+            //likes:0
         };
           
-        updates['/noticias/' + newPostKey] = postData;
-
+        updates['/editoriales/' + newPostKey] = postData;
+        $(".load").show();
         var fff =  firebase.database().ref().update(updates,
             function(error){
                 if (error) {
@@ -109,14 +112,14 @@ var config = {
                 }
             }
         );
-
+//=========================  /*upload imagen*/ ================================= 
         if (imagen != ""){
 
             var storage = firebase.storage();
 
             // Create a storage reference from our storage service
             var storageRef = storage.ref();        
-            var uploadTask = storageRef.child('noticias/'+newPostKey+'/foto0.jpg').put(indiceChange);
+            var uploadTask = storageRef.child('editoriales/'+newPostKey+'/foto0.jpg').put(indiceChange);
 
             // Register three observers:
             // 1. 'state_changed' observer, called any time the state changes
@@ -137,29 +140,46 @@ var config = {
               }
             }, function(error) {
               // Handle unsuccessful uploads
+              $(".load").fadeOut('1500');
             }, function() {
               // Handle successful uploads on complete
               // For instance, get the download URL: https://firebasestorage.googleapis.com/...
               uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                 console.log('File available at', downloadURL);
+                $(".load").fadeOut('1500');
               });
               
               //wheb complete upload, back page
-            window.location.href = api+"admin/inicio";
+            window.location.href = api+"admin/editoriales";
 
             });
+        }else{
+            $(".load").fadeOut('1500');
+            window.location.href = api+"admin/editoriales";
         }
          
         console.log(fff);
     });
+    
+    $(".detalles").on("click",function(){
+        //var id = $(this).closest('idfirebase').find('p').attr(id)
+    });
+    
+    $(".addedit").on("click",function(){
+        window.location.href = api+"admin/nuevaeditorial";
+    });
 });
 
-  
-/*function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('noticias/' + userId).set({
-    username: name,
-    email: email,
-    profile_picture : imageUrl
-  });
-}*/
+var indiceChange;
+function validar(elemento,indice){
+    //del elemento seleccionadosubo y actualizo foto del respectivo indice
+    //alert(elemento);
+    //indiceChange = indice;
+    //$("#message").empty(); // To remove the previous error message
+    indiceChange = elemento.files[0];
+}
+
+function readDetails(){
+    //alert($(this));
+}
 

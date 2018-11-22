@@ -24,7 +24,7 @@ class admin extends CI_Controller{
     
     public function inicio(){
         //validar inicio de sesion
-        $this->load->view('admin/inicio');        
+        $this->load->view('admin/notasList');        
     }
     
     public function editoriales(){
@@ -42,15 +42,23 @@ class admin extends CI_Controller{
         $this->load->view('admin/nuevaedit');        
     }
     
-    public function updatenota($id){
-        //validar inicio de sesion
-        echo $id;       
+    public function saveidnota(){
+        $idnota = $this->input->post("idnota");
+        $this->session->set_userdata("idnota",$idnota);
+        echo $idnota;
     }
-    
+
+    public function editarnota(){
+        //validar inicio de sesion
+        $data["idNota"] = $this->session->userdata("idnota");
+        //echo $data["idNota"];
+        $this->load->view('admin/nuevanota',$data);
+    }
+       
     public function adios(){
         //cerrar sesion y destruirla
         redirect('/');
-    }    
+    }
     
 //============================edit banners home==============================
     public function reorderindexbanner(){

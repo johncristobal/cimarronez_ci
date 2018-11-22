@@ -44,10 +44,13 @@
         font-size: 24px;
     }
 </style>
+
+        <?php $this->load->view('head');?>
+
         </head>
-        <body onload="">
+        <body>
 		
-	<div class="fh5co-loader"></div>
+	<div class="load"></div>
 	
 	<div id="page">
 	<?php $this->load->view('admin/menuadmin');?>
@@ -85,9 +88,13 @@
                 </div>
             </div>
             <div class="row">                
-                <div class="col-md-12 idfirebase">                                           
+                <div class="col-md-6 idfirebase">  
+                    <div class="form-group">
+                        <label>Subtitulo editorial:</label>
+                        <input type="text" class="form-control" id="subtitulo" name="subtitulo" placeholder="Subtitulo...">
+                    </div>
                 </div>
-                <div class="col-md-12 idfirebase">
+                <div class="col-md-6 idfirebase">
                     <div class="form-group">
                     <label>Imagen:</label>
                     <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);"/>
@@ -108,51 +115,12 @@
             <div class="row">
                 <div class="col-sm-12 text-right">
                     <div class="form-group text-right">
-                        <button class="btn-lg btn-default addnotice">Agregar nota</button>
+                        <button class="btn-lg btn-default addnotice">Agregar editorial</button>
                     </div>
                 </div>
             </div>
         </div>
-                     
-	<!--div id="fh5co-featured-testimony" class="fh5co-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 fh5co-heading">
-					<h2>Testimony</h2>
-					<div class="row">
-						<div class="col-md-6">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-5 animate-box img-to-responsive">
-						<img src="<?php echo base_url();?>images/person_1.jpg" alt="">
-				</div>
-				<div class="col-md-7 animate-box">
-					<blockquote>
-						<p> &ldquo; Quantum ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam. &rdquo;</p>
-						<p class="author"><cite>&mdash; Jane Smith</cite></p>
-					</blockquote>
-				</div>
-			</div>
-		</div>
-	</div-->
-
-	
-	<!--div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(<?php echo base_url();?>images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Book a Table</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae enim quae vitae cupiditate, sequi quam ea id dolor reiciendis consectetur repudiandae. Rem quam, repellendus veniam ipsa fuga maxime odio? Eaque!</p>
-					<p><a href="mailto:info@yourdomainname.com" class="btn btn-primary btn-outline">Contact Us</a></p>
-				</div>
-			</div>
-		</div>
-	</div-->
-
+                     	
 	<?php $this->load->view('footer');?>
 	</div>
 
@@ -165,8 +133,7 @@
         <script>
             var api = '<?php echo base_url();?>';
         </script>
-        <script src="<?php echo base_url()?>js/firebaseScriptAdd.js"/>
-	<?php $this->load->view('head');?>
+        <script src="<?php echo base_url()?>js/firebaseScriptEditorial.js"></script>
 
 	<!-- jQuery -->
 	<?php $this->load->view('scripts');?>
