@@ -52,6 +52,29 @@ $( document ).ready(function() {
             
             if(snapshot.val().imagen != ""){
                 //cargar la imgen de firebase en img
+                var storage = firebase.storage();
+                var storageRef = storage.ref();
+                var uploadTask = storageRef.child('noticias/'+idnota+'/foto0.jpg').getDownloadURL().then(function(url) {
+                // `url` is the download URL for 'images/stars.jpg'
+
+                // This can be downloaded directly:
+                /*var xhr = new XMLHttpRequest();
+                xhr.responseType = 'blob';
+                xhr.onload = function(event) {
+                  var blob = xhr.response;
+                };
+                xhr.open('GET', url);
+                xhr.send();*/
+
+                // Or inserted into an <img> element:
+                //$('#previewing').attr('src', e.target.result);
+                var img = $('#previewing');//document.getElementById('myimg');
+                $('#previewing').attr('src', url);
+                //img.src = url;
+              }).catch(function(error) {
+                // Handle any errors
+              });
+
             }            
         });        
     }
@@ -103,6 +126,7 @@ $( document ).ready(function() {
         var fullDate = new Date(); 
         var twoDigitMonth = ((fullDate.getMonth().length+1) === 1)? (fullDate.getMonth()+1) : '0' + (fullDate.getMonth()+1);
         var currentDate = fullDate.getDate() + "/" + twoDigitMonth + "/" + fullDate.getFullYear();
+        $(".load").show();
         
         if (idnota != "" && idnota != undefined){
             var postData = {
@@ -118,7 +142,7 @@ $( document ).ready(function() {
             };
             var updates = {};
             updates['/noticias/' + idnota] = postData;
-            $(".load").show();
+            
             var fff =  firebase.database().ref().update(updates,
                 function(error){
                     if (error) {
@@ -127,7 +151,7 @@ $( document ).ready(function() {
                     } else {
                         // Data saved successfully!
                         console.log("Succesfully...");
-                        window.location.href = api+"admin/inicio";
+                        //window.location.href = api+"admin/inicio";
                     }
                 }
             );
@@ -149,7 +173,7 @@ $( document ).ready(function() {
             };
 
             updates['/noticias/' + newPostKey] = postData;
-            $(".load").show();
+            
             var fff =  firebase.database().ref().update(updates,
                 function(error){
                     if (error) {
@@ -160,7 +184,7 @@ $( document ).ready(function() {
                         // Data saved successfully!
                         console.log("Succesfully...");
                         //window.location.href = api+"admin/inicio";
-                        window.location.href = api+"admin/inicio";
+                        //window.location.href = api+"admin/inicio";
                     }
                 }
             );
@@ -171,6 +195,9 @@ $( document ).ready(function() {
 
                 // Create a storage reference from our storage service
                 var storageRef = storage.ref();        
+                if (idnota != "" && idnota != undefined){
+                    newPostKey = idnota;
+                }
                 var uploadTask = storageRef.child('noticias/'+newPostKey+'/foto0.jpg').put(indiceChange);
 
                 // Register three observers:
