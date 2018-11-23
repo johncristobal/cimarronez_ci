@@ -99,16 +99,22 @@
                 </div>
             </div>
             <div class="row">                                
-                <div class="col-md-6 idfirebase">
+                <div class="col-md-4 idfirebase">
                     <div class="form-group">
                     <label>Imagen:</label>
                     <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);"/>
                     </div>
-                </div>                
+                </div>              
+                <div class="col-md-4 idfirebase centered">
+                    <div class="form-group">
+                    <br>
+                    <button class="btn btn-danger" id="deleteImage">Borrar imagen</button>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-12 idfirebase">
-                    <div class="form-group">                 
+                    <div class="">                 
                         <img src="" alt="Imagen para la noticia" id="previewing"/>
                     </div>
                 </div>
@@ -146,7 +152,8 @@
             var api = '<?php echo base_url();?>';
             
         </script>
-        <script src="<?php echo base_url()?>js/firebaseScriptNota.js"/>
+        <script src="<?php echo base_url()?>js/access.js"></script>
+        <script src="<?php echo base_url()?>js/addnota.js"></script>
 
 	<!-- jQuery -->
 	<?php $this->load->view('scripts');?>

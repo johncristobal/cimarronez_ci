@@ -98,8 +98,11 @@
                 <div class="col-md-2 text-center">
                     <h3>Fecha</h3>                    
                 </div>
-                <div class="col-md-2 text-center">
-                    <h3>Ver detalles</h3>
+                <div class="col-md-1 text-center">
+                    <h3></h3>
+                </div>
+                <div class="col-md-1 text-center">
+                    <h3></h3>
                 </div>
             </div>
             <div class="filas">
@@ -119,6 +122,7 @@
             var api = '<?php echo base_url();?>';
         </script>
 
+        <script src="<?php echo base_url()?>js/access.js"></script>
         <script src="<?php echo base_url()?>js/firebaseScriptNota.js"></script>
 
         <!-- jQuery -->
