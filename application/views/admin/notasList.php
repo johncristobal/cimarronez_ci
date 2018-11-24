@@ -38,18 +38,27 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-<style>
-    .infoplay{
-        background: rgba(0, 0, 0,0.7);
-        font-size: 24px;
-    }
-    
-    h3{
-        color: #000;
-    }
 
-</style>
 	<?php $this->load->view('head');?>
+
+        <style>
+        .infoplay{
+            background: rgba(0, 0, 0,0.7);
+            font-size: 24px;
+        }
+
+        h3{
+         color: #ccc3c3;
+         font-family: "Cormorant Garamond", Georgia, serif;
+         font-weight: bold;
+         margin: 0 0 20px 0;
+         font-size: 30px;
+        }   
+        .col-xs-12{
+            height: 20px;
+        }
+
+    </style>
 
         </head>
         <body>
@@ -86,22 +95,22 @@
             <div class="row"><br></div>
 
             <div class="row">
-                <div class="col-md-2 text-center">
+                <!--div class="col-md-2 text-center">
                     <h3>Id</h3>
-                </div>
-                <div class="col-md-2 text-center">
+                </div-->
+                <div class="col-md-2 text-center hidden-xs">
                     <h3>Autor</h3>
                 </div>
-                <div class="col-md-4 text-center">
-                    <h3>Noticia</h3>
+                <div class="col-md-4 text-center hidden-xs">
+                    <h3>Titulo</h3>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-2 text-center hidden-xs">
                     <h3>Fecha</h3>                    
                 </div>
-                <div class="col-md-1 text-center">
+                <div class="col-md-1 text-center hidden-xs">
                     <h3></h3>
                 </div>
-                <div class="col-md-1 text-center">
+                <div class="col-md-1 text-center hidden-xs">
                     <h3></h3>
                 </div>
             </div>

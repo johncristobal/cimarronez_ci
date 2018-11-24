@@ -55,6 +55,20 @@ class admin extends CI_Controller{
         $this->load->view('admin/nuevanota',$data);
     }
        
+        
+    public function saveideditorial(){
+        $idnota = $this->input->post("idnota");
+        $this->session->set_userdata("ideditorial",$idnota);
+        echo $idnota;
+    }
+
+    public function editareditorial(){
+        //validar inicio de sesion
+        $data["idNota"] = $this->session->userdata("ideditorial");
+        //echo $data["idNota"];
+        $this->load->view('admin/nuevaedit',$data);
+    }
+    
     public function adios(){
         //cerrar sesion y destruirla
         redirect('/');

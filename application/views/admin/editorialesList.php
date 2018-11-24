@@ -38,6 +38,7 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+        	<?php $this->load->view('head');?>
 <style>
     .infoplay{
         background: rgba(0, 0, 0,0.7);
@@ -45,10 +46,17 @@
     }
     
     h3{
-        color: #000;
-    }
+         color: #ccc3c3;
+         font-family: "Cormorant Garamond", Georgia, serif;
+         font-weight: bold;
+         margin: 0 0 20px 0;
+         font-size: 30px;
+        }   
+        .col-xs-12{
+            height: 20px;
+        }
 </style>
-	<?php $this->load->view('head');?>
+
 
         </head>
         <body>
@@ -85,20 +93,20 @@
             <div class="row"><br></div>
 
             <div class="row">
-                <div class="col-md-2 text-center">
+                <!--div class="col-md-2 text-center hidden-xs">
                     <h3>Id</h3>
-                </div>
-                <div class="col-md-2 text-center">
+                </div-->
+                <div class="col-md-2 text-center hidden-xs">
                     <h3>Autor</h3>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center hidden-xs">
                     <h3>Editorial</h3>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-2 text-center hidden-xs">
                     <h3>Fecha</h3>                    
                 </div>
-                <div class="col-md-2 text-center">
-                    <h3>Ver detalles</h3>
+                <div class="col-md-2 text-center hidden-xs">
+                    <h3></h3>
                 </div>
             </div>
             <div class="filas">
@@ -118,6 +126,7 @@
             var api = '<?php echo base_url();?>';
         </script>
 
+        <script src="<?php echo base_url()?>js/access.js"></script>
         <script src="<?php echo base_url()?>js/firebaseScriptEditorial.js"></script>
 
 	<!-- jQuery -->

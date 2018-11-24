@@ -46,7 +46,10 @@
 </style>
 
         <?php $this->load->view('head');?>
-
+        <script>
+            //debbuger;
+            var idnota = '<?php if(isset($idNota) && $idNota != "") { echo $idNota; }else{ echo "";} ?>';            
+        </script>
         </head>
         <body>
 		
@@ -74,30 +77,43 @@
 
         <div class="container" style="padding: 2em 0;">
             <div class="row">                
-                <div class="col-md-6 idfirebase">
+                <div class="col-md-4 idfirebase">
                     <div class="form-group">
                         <label>Titulo editorial:</label>
                         <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo...">
                     </div>                    
                 </div>
-                <div class="col-md-6 idfirebase">
+                <div class="col-md-4 idfirebase">
                     <div class="form-group">
                         <label>Autor editorial:</label>
                         <input type="text" class="form-control" id="autor" name="autor" placeholder="Autor...">
                     </div>
                 </div>
-            </div>
-            <div class="row">                
-                <div class="col-md-6 idfirebase">  
+                <div class="col-md-4 idfirebase">  
                     <div class="form-group">
                         <label>Subtitulo editorial:</label>
                         <input type="text" class="form-control" id="subtitulo" name="subtitulo" placeholder="Subtitulo...">
                     </div>
                 </div>
-                <div class="col-md-6 idfirebase">
+            </div>
+            <div class="row">                                
+                <div class="col-md-4 idfirebase">
                     <div class="form-group">
                     <label>Imagen:</label>
                     <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);"/>
+                    </div>
+                </div>
+                <div class="col-md-4 idfirebase centered">
+                    <div class="form-group">
+                    <br>
+                    <button class="btn btn-warning" id="deleteImage">Borrar imagen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 idfirebase">
+                    <div class="">                 
+                        <img src="<?php echo base_url();?>images/galaxy.jpg" alt="Imagen para la noticia" id="previewing" style="width: 100%;"/>
                     </div>
                 </div>
             </div>
@@ -133,8 +149,8 @@
         <script>
             var api = '<?php echo base_url();?>';
         </script>
-        <script src="<?php echo base_url()?>js/firebaseScriptEditorial.js"></script>
-
+        <script src="<?php echo base_url()?>js/access.js"></script>
+        <script src="<?php echo base_url()?>js/addeditorial.js"></script>
 	<!-- jQuery -->
 	<?php $this->load->view('scripts');?>
 

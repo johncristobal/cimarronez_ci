@@ -108,19 +108,20 @@
                 <div class="col-md-4 idfirebase centered">
                     <div class="form-group">
                     <br>
-                    <button class="btn btn-danger" id="deleteImage">Borrar imagen</button>
+                    <button class="btn btn-warning" id="deleteImage">Borrar imagen</button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 idfirebase">
                     <div class="">                 
-                        <img src="" alt="Imagen para la noticia" id="previewing"/>
+                        <img src="<?php echo base_url();?>images/galaxy.jpg" alt="Imagen para la noticia" id="previewing" style="width: 100%;"/>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 idfirebase">
+                    <br>
                     <div class="form-group">
                         <label>Noticia:</label> 
                         <br>
@@ -133,7 +134,7 @@
             <div class="row">
                 <div class="col-sm-12 text-right">
                     <div class="form-group text-right">
-                        <button class="btn-lg btn-default addnotice">Agregar nota</button>
+                        <button class="btn-lg btn-danger addnotice" style="width:250px;">Agregar nota</button>
                     </div>
                 </div>
             </div>
