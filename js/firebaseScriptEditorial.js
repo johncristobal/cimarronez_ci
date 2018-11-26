@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 //=========================  /*show noticia*/  ================================= 
     $(".load").show();
-    var noticias = firebase.database().ref('editoriales');
+    var noticias = firebase.database().ref('editoriales').orderByChild('estatus').equalTo(1);
     noticias.on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             //debugger;
@@ -51,7 +51,7 @@ function deleteNote(id){
                 } else {
                     // Data saved successfully!
                     console.log("Succesfully update...");
-                    window.location.href = api+"admin/inicio";
+                    window.location.href = api+"admin/editoriales";
                 }
             }
         );

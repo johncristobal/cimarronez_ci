@@ -117,7 +117,7 @@ $( document ).ready(function() {
                 fecha: currentDate,
                 estatus: 1,
                 imagen: imagen,
-                subtitutlo:(categoria),
+                subtitutlo:categoria,
                 descripcion: noticia
                 //likes:0
             };
@@ -148,7 +148,7 @@ $( document ).ready(function() {
                 fecha: currentDate,
                 estatus: 1,
                 imagen: imagen,
-                subtitutlo:parseInt(categoria),
+                subtitutlo:categoria,
                 descripcion: noticia
             };
 

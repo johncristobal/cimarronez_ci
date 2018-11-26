@@ -120,6 +120,7 @@
             <div class="row">
                 <div class="col-md-12 idfirebase">
                     <div class="form-group">
+                        <br>
                         <label>Texto editorial:</label> 
                         <br>
                         Nota: Si solo agregara imagen, no incluya texto...
