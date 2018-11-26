@@ -1738,7 +1738,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 54px;
   font-size: 20px;
   font-weight: 300;
-  font-family: "monospace", cursive;
+  /*font-family: "monospace", cursive;*/
   color: #989696;
 }
 .form-control:active, .form-control:focus {
