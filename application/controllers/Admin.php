@@ -35,6 +35,33 @@ class admin extends CI_Controller{
     public function nuevanota(){
         //validar inicio de sesion
         $this->load->view('admin/nuevanota');        
+        /*$url = 'https://fcm.googleapis.com/fcm/send';
+
+        $fields = array (
+                'to' => array (
+                        "/topics/foo-bar"
+                ),
+                'data' => array (
+                        "message" => "Intento nnn"
+                )
+        );
+        $fields = json_encode ( $fields );
+
+        $headers = array (
+                'Authorization: key=' . "AIzaSyAbS9ED0SyTkBaBlE_KQUupo5dPYMCtUto",
+                'Content-Type: application/json'
+        );
+
+        $ch = curl_init ();
+        curl_setopt ( $ch, CURLOPT_URL, $url );
+        curl_setopt ( $ch, CURLOPT_POST, true );
+        curl_setopt ( $ch, CURLOPT_HTTPHEADER, $headers );
+        curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, true );
+        curl_setopt ( $ch, CURLOPT_POSTFIELDS, $fields );
+
+        $result = curl_exec ( $ch );
+        echo $result;
+        curl_close ( $ch );*/
     }
     
     public function nuevaeditorial(){
