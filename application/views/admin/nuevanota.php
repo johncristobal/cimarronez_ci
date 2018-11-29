@@ -146,18 +146,15 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
         <script>
-            var api = '<?php echo base_url();?>';
-            
+            var api = '<?php echo base_url();?>';            
         </script>
-        <script src="<?php echo base_url()?>js/access.js"></script>
-        <script src="<?php echo base_url()?>js/addnota.js"></script>
 
 	<!-- jQuery -->
 	<?php $this->load->view('scripts');?>
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+        <script src="<?php echo base_url()?>js/access.js"></script>
+        <script src="<?php echo base_url()?>js/addnota.js"></script>
 
 
 	</body>
