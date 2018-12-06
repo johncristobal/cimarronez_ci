@@ -125,15 +125,7 @@ class admin extends CI_Controller{
     }
 //============================edit banners home==============================
     public function cambiarbanners(){
-        /*de la tabla parametria pbtengo la caprte de banners
-        * obtengo los archivos de esa carpeta
-        *mostrar una vista con esos banners donde podamos cambiarlos (como edit perfil)
-        *logica similar a subir archivo que ya tenemos...
-        *colocar que no deben ser mayor a 8 mb
-        *enviar y listo banners cambiados...
-        *OJO => opcion para subir nuevo banner
-        *ojo con los nombres          
-         */
+
         //parametro
         $key = "banner";
         //$back = $this->AdminModel->getParametro($key);
@@ -168,23 +160,13 @@ class admin extends CI_Controller{
 
         foreach ($sourcePath as $key => $value) {
             if($value["name"] != "")
-            {                
-                if ($key == "foto9999"){
-                    $this->load->helper('directory');
-                    $map = directory_map($back);
-                    $cantidad = count($map);
-                    $sourcePath = $value["tmp_name"]; // Storing source path of the file in a variable
-                    $targetPath = $back."/banner".($cantidad+1).".png";//.$_FILES['file']['name']; // Target path where file is to be stored
-                    move_uploaded_file($sourcePath,$targetPath); // Moving Uploaded file       
-                    
-                }else{
-                    //si no es 9999, entonces salvo imagen normal
-                    $sourcePath = $value["tmp_name"]; // Storing source path of the file in a variable
-                    $targetPath = $back."/banner".$indice.".png";//.$_FILES['file']['name']; // Target path where file is to be stored
-                    move_uploaded_file($sourcePath,$targetPath) ; // Moving Uploaded file                    
-                }
+            {
+                //si no es 9999, entonces salvo imagen normal
+                $sourcePath = $value["tmp_name"]; // Storing source path of the file in a variable
+                $targetPath = $back."/".$value["name"];//.$_FILES['file']['name']; // Target path where file is to be stored
+                move_uploaded_file($sourcePath,$targetPath) ; // Moving Uploaded file                    
+
             }
-            $indice++;
         }
         
         //redirect('/admin/cambiarbanners');
@@ -224,30 +206,8 @@ class admin extends CI_Controller{
         //$back = $this->AdminModel->getParametro($key);
         $back = "images/banners";
         $this->load->helper('directory');
-        $map = directory_map($back);
 
-        asort($map);        
-        $flageraesd = 0;
-        foreach($map as $file){
-            
-            if($flageraesd == 1){
-                //aqui tenemos que renombraar al resto de los archivos
-                //exacto => obtenermos su numero y le restamos 1
-                $indicetemp = substr($file, 6, 1);
-                $newfile = "banner".($indicetemp-1).".png";
-                
-                rename($back."/".$file, $back."/".$newfile);
-                
-                continue;
-            }
-            
-            if (strpos($file, $idbanner) !== false) {
-                //"encontramos el archivo que hay que eliminar";
-                //lo eliminamos y los archivos restantes tenemos que renombrarlos
-                unlink($back."/".$file);
-                $flageraesd = 1;
-            }
-        }
+        unlink($back."/".$idbanner);
         header('Location: '. base_url()."admin/cambiarbanners", true, 302);
         exit;
         //echo $idbanner;

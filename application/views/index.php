@@ -160,8 +160,11 @@
         <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
       </div-->
       <div class="item active">
-          <a href="<?php echo base_url();?>images/imagen.jpeg"><img src="<?php echo base_url();?>images/imagen2.png" alt="" style="width:100%;"></a>
+          <a href="<?php echo base_url();?>images/banners/lastbanner.png"><img src="<?php echo base_url();?>images/banners/lastbanner.png" alt="" style="width:100%;"></a>
       </div>
+      <!--div class="item">
+          <a href="<?php echo base_url();?>images/imagen.jpeg"><img src="<?php echo base_url();?>images/imagen2.png" alt="" style="width:100%;"></a>
+      </div-->
       <div class="item ">
           <a href="<?php echo base_url();?>images/mapa cdmx.jpg"><img src="<?php echo base_url();?>images/cdmx.jpg" alt="" style="width:100%;"></a>
       </div>
@@ -171,15 +174,15 @@
       <div class="item">
           <a href="<?php echo base_url();?>eventos/ver/4"><img src="<?php echo base_url();?>images/webcimamini.jpg" alt="" style="width:100%;"></a>
       </div>
-      <div class="item">
+      <!--div class="item">
           <a href="<?php echo base_url();?>images/doccimafull.jpeg"><img src="<?php echo base_url();?>images/doccima.jpg" alt="" style="width:100%;"></a>
-      </div>
+      </div-->
       <div class="item">
           <a href="<?php echo base_url();?>images/19mayo.jpg"><img src="<?php echo base_url();?>images/19mayomini.jpg" alt="" style="width:100%;"></a>
       </div>
-      <div class="item">
+      <!--div class="item">
           <a href="https://www.facebook.com/photo.php?fbid=778975868958945&set=pcb.778976735625525&type=3&theater"><img src="<?php echo base_url();?>images/mapacimarronez.png" alt="" style="width:100%;"></a>
-      </div>
+      </div-->
     </div>
 
     <!-- Left and right controls -->

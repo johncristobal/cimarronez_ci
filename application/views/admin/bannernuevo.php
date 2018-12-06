@@ -5,7 +5,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Nosotros</title>
+	<title>Admin | subir nuevo banner</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Acerca de C.A.C.A.O." />
 	<meta name="keywords" content="chocolate, cacao, cooperativa, cimarronez, originario" />
@@ -84,10 +84,10 @@
                     <div class="container">
                         <div class="row">
 
-                            <div class="col-md-12 col-sm-12">
-                                <h3>Agregar nuevo banner</h3>
+                            <div class="col-md-12 col-sm-12 text-left">
+                                <h1 style="color:white;">Agregar nuevo banner</h1>
                             </div>
-                            <div class="col-md-8 col-sm-8">
+                            <div class="col-md-8 col-sm-8 text-left">
                                 <p>
                                     Selecciona un banner de tus archivos para mostrar en la pantalla principal.
                                 </p>
