@@ -38,6 +38,8 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+        <?php $this->load->view('head');?>
+
 <style>
     .infoplay{
         background: rgba(0, 0, 0,0.7);
@@ -49,9 +51,9 @@
     }
 </style>
         </head>
-        <body onload="">
+        <body>
 		
-	<div class="fh5co-loader"></div>
+	<div class="load"></div>
 	
 	<div id="page">
 	<?php $this->load->view('admin/menuadmin');?>
@@ -214,43 +216,32 @@
             </div>
         </div>
         <!-- End container -->
-		
+	                
+	<?php $this->load->view('footer');?>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+        <script>
+            var api = '<?php echo base_url();?>';
+        </script>
+        <script src="<?php echo base_url()?>js/firebaseScriptRead.js"/>
+
+	<!-- jQuery -->
+	<?php $this->load->view('scripts');?>
+        	
     <script type="text/javascript">
-    /*window.onload = function () {
-        var fileupload = document.getElementById("FileUpload1");
-        var filePath = document.getElementById("spnFilePath");
-        var image = document.getElementById("imgFileUpload");
-        image.onclick = function () {
-            fileupload.click();
-        };
-        fileupload.onchange = function () {
-            var fileName = fileupload.value.split('\\')[fileupload.value.split('\\').length - 1];
-            filePath.innerHTML = "<b>Selected File: </b>" + fileName;
-        };
-    };*/
-    
-    /*$("#uploadimage").on('submit',(function(e) {
-        e.preventDefault();
-        //$("#message").empty();
-        //$('#loading').show();
-        $.ajax({
-            url: "<?php echo base_url()?>admin/uploadNewBanners", // Url to which the request is send
-            type: "POST",             // Type of request to be send, called as method
-            data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
-            contentType: false,       // The content type used when sending data to the server.
-            cache: false,             // To unable request pages to be cached
-            processData:false,        // To send DOMDocument or non processed data file it is set to false
-            success: function(data)   // A function to be called if request succeeds
-            {
-                $('#loading').hide();
-                $("#message").html(data);
-            }
-        });
-    }));*/
-            
+                
     var indiceChange = "";
     var ideliminado = "";
 
+    $(document).ready(function(){
+               $(".load").fadeOut('1000'); 
+    
     $('#eliminarbanner').click(function(){
         $.ajax
         ({
@@ -266,6 +257,8 @@
             }
         });
     });
+    });
+
     
     function eliminar(indice){
         //del elemento seleccionadosubo y actualizo foto del respectivo indice
@@ -306,24 +299,7 @@
     };
     
 
-</script>                
-	<?php $this->load->view('footer');?>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-        <script>
-            var api = '<?php echo base_url();?>';
-        </script>
-        <script src="<?php echo base_url()?>js/firebaseScriptRead.js"/>
-	<?php $this->load->view('head');?>
-
-	<!-- jQuery -->
-	<?php $this->load->view('scripts');?>
+</script>
     
           
 </body>

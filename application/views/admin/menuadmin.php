@@ -56,14 +56,14 @@
 								</ul>
                                                         </li>
                                                         <li><a href="<?php echo base_url();?>nosotros/videos">VIDEOS</a></li-->
-                                                        <!--li class="has-dropdown">
+                                                        <li class="has-dropdown">
                                                             <a>Banners</a>
                                                                 <ul class="dropdown">
                                                                     <li><a href="<?php echo base_url();?>admin/nuevobanner">Nuevo banner</a></li>
                                                                     <li><a href="<?php echo base_url();?>admin/cambiarbanners">Cambiar banner</a></li>
                                                                     <li><a href="<?php echo base_url();?>nosotros/taller/territorio">Geografía Territorio y Cartografía</a></li>
 								</ul>
-                                                        </li-->
+                                                        </li>
 							<li><a href="<?php echo base_url();?>admin/adios">Cerrar sesión</a></li>
 						</ul>
 					</div>
