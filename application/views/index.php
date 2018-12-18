@@ -144,14 +144,25 @@
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
+        <?php
+            $indice = 0;
+            foreach($banners as $file){
+                if ($indice == 0){
+        ?> 
+      <li data-target="#myCarousel" data-slide-to="<?= $indice ?>" class="active"></li>
+      <?php
+                }else{
+      ?>
+      <li data-target="#myCarousel" data-slide-to="<?= $indice ?>"></li>
+      <!--li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li-->
       <!--li data-target="#myCarousel" data-slide-to="2"></li-->
+      <?php
+                }
+                $indice++;
+            }
+        ?>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -159,27 +170,53 @@
       <!--div class="item">
         <img src="<?php echo base_url();?>images/brigadas/cartel3.png" alt="" style="width:100%;">
       </div-->
+        <?php
+            $indice = 0;
+            foreach($banners as $file){
+                if ($indice == 0){
+        ?> 
       <div class="item active">
-          <a href="<?php echo base_url();?>images/banners/lastbanner.png"><img src="<?php echo base_url();?>images/banners/lastbanner.png" alt="" style="width:100%;"></a>
+          <a href="<?php echo base_url();?><?= $urlfolder ?>/<?= $file ?>"><img src="<?php echo base_url();?><?= $urlfolder ?>/<?= $file ?>" alt="" style="width:100%; height: 700px; margin: 0 auto;" class="img-responsive center-block"></a>
       </div>
+        <?php
+                }else{
+        ?>
+      <div class="item">
+          <a href="<?php echo base_url();?><?= $urlfolder ?>/<?= $file ?>"><img src="<?php echo base_url();?><?= $urlfolder ?>/<?= $file ?>" alt="" style="width:100%; height: 700px; margin: 0 auto;" class="img-responsive center-block"></a>
+      </div>
+      <!--li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li-->
+      <!--li data-target="#myCarousel" data-slide-to="2"></li-->
+      <?php
+                }
+                $indice ++;
+            }
+        ?>
+      <!--div class="item active">
+          <a href="<?php echo base_url();?>images/banners/1.jpeg"><img src="<?php echo base_url();?>images/banners/1.jpeg" alt="" style="width:100%; height: 700px; margin: 0 auto;" class="img-responsive center-block"></a>
+      </div>
+      <div class="item">
+          <a href="<?php echo base_url();?>images/banners/lastbanner.png"><img src="<?php echo base_url();?>images/banners/lastbanner.png" alt="" style="width:100%; height: 700px; margin: 0 auto;" class="img-responsive center-block"></a>
+      </div-->
       <!--div class="item">
           <a href="<?php echo base_url();?>images/imagen.jpeg"><img src="<?php echo base_url();?>images/imagen2.png" alt="" style="width:100%;"></a>
       </div-->
-      <div class="item ">
-          <a href="<?php echo base_url();?>images/mapa cdmx.jpg"><img src="<?php echo base_url();?>images/cdmx.jpg" alt="" style="width:100%;"></a>
+      <!--div class="item ">
+          <a href="<?php echo base_url();?>images/banners/mapa cdmx.jpg"><img src="<?php echo base_url();?>images/banners/mapa cdmx.jpg" alt="" style="width:100%;height: 700px; margin: 0 auto;" class="img-responsive center-block"></a>
       </div>
       <div class="item">
-          <a href="<?php echo base_url();?>images/mapa.jpeg"><img src="<?php echo base_url();?>images/mapa2.png" alt="" style="width:100%;"></a>
-      </div>
-      <div class="item">
-          <a href="<?php echo base_url();?>eventos/ver/4"><img src="<?php echo base_url();?>images/webcimamini.jpg" alt="" style="width:100%;"></a>
-      </div>
+          <a href="<?php echo base_url();?>images/banners/mapa.jpeg"><img src="<?php echo base_url();?>images/banners/mapa.jpeg" alt="" style="width:100%;height: 700px; margin: 0 auto;" class="img-responsive center-block"></a>
+      </div-->
+      <!--div class="item">
+          <a href="<?php echo base_url();?>eventos/ver/4"><img src="<?php echo base_url();?>images/webcimamini.jpg" alt="" style="width:100%; height: 700px; margin: 0 auto;" class="img-responsive center-block"></a>
+      </div-->
       <!--div class="item">
           <a href="<?php echo base_url();?>images/doccimafull.jpeg"><img src="<?php echo base_url();?>images/doccima.jpg" alt="" style="width:100%;"></a>
       </div-->
-      <div class="item">
+      <!--div class="item">
           <a href="<?php echo base_url();?>images/19mayo.jpg"><img src="<?php echo base_url();?>images/19mayomini.jpg" alt="" style="width:100%;"></a>
-      </div>
+      </div-->
       <!--div class="item">
           <a href="https://www.facebook.com/photo.php?fbid=778975868958945&set=pcb.778976735625525&type=3&theater"><img src="<?php echo base_url();?>images/mapacimarronez.png" alt="" style="width:100%;"></a>
       </div-->

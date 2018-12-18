@@ -102,6 +102,30 @@ class admin extends CI_Controller{
     }
     
 //============================edit banners home==============================
+    public function mapas(){
+        //validar inicio de sesion
+        $this->load->view('admin/mapasList');        
+    }
+    
+    public function nuevomapa(){
+        //validar inicio de sesion
+        $this->load->view('admin/nuevomapa');        
+    }
+        
+    public function saveidmapa(){
+        $idnota = $this->input->post("idmapa");
+        $this->session->set_userdata("idmapa",$idnota);
+        echo $idnota;
+    }
+
+    public function editarmapa(){
+        //validar inicio de sesion
+        $data["idMapa"] = $this->session->userdata("idmapa");
+        //echo $data["idNota"];
+        $this->load->view('admin/nuevomapa',$data);
+    }
+    
+//============================edit banners home==============================
     public function reorderindexbanner(){
         $key = "banner";
         //$back = $this->AdminModel->getParametro($key);
@@ -190,7 +214,7 @@ class admin extends CI_Controller{
             if($value["name"] != "")
             {                
                 $sourcePath = $value["tmp_name"]; // Storing source path of the file in a variable
-                $targetPath = $back."/banner".$indice.".png";//.$_FILES['file']['name']; // Target path where file is to be stored
+                $targetPath = $back."/"+$value["name"];//banner".$indice.".png";//.$_FILES['file']['name']; // Target path where file is to be stored
                 move_uploaded_file($sourcePath,$targetPath) ; // Moving Uploaded file
             }
             $indice++;

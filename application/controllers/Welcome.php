@@ -20,6 +20,24 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('index');
+            
+            $key = "banner";
+            //$back = $this->AdminModel->getParametro($key);
+            $back = "images/banners";
+
+            //files
+            $this->load->helper('directory');
+            $map = directory_map($back);
+            asort($map);        
+            /*foreach($map as $file){
+                if(is_string($file)){
+                    echo $file;
+                }
+            }*/
+            $data["banners"] = $map;
+            $data["urlfolder"] = $back;
+            //vista con banners
+            //$this->load->view('admin/banners',$data);
+            $this->load->view('index',$data);
 	}
 }

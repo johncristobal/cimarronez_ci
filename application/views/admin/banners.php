@@ -146,8 +146,8 @@
                         </p>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                        <a class="btn btn-info savebanner" id="eliminarbanner" value="Eliminar"/>Eliminar</a>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                        <a class="btn btn-danger savebanner" id="eliminarbanner" value="Eliminar"/>Eliminar</a>
                       </div>
                     </div>
                   </div>
