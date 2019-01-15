@@ -85,8 +85,8 @@
 		<div class="container">
                     
                     <div class="row">
-										<h2 style="color: white;">Cacao y Salud…</h2>
-                                                                                <br>
+                                <h2 style="color: white;">Cacao y Salud…</h2>
+                                <br>
 
 				<div class="col-md-3 col-sm-6 col-xs-12 fh5co-item-wrap animate-box">
                                     <div class="fh5co-item">

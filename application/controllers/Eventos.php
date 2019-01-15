@@ -31,6 +31,13 @@ class eventos extends CI_Controller{
             $this->load->view('eventos/brigadas');                        
         }else if($id==4){
             $this->load->view('eventos/mapaluna');                        
+        }else if($id==5){
+            $this->load->helper('directory');
+            $back = "images/oaxaca";
+            $map = directory_map($back);
+            $data["map"] = $map;
+
+            $this->load->view('eventos/oaxaca',$data);                        
         }
     }
 }
