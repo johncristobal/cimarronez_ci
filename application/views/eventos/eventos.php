@@ -140,7 +140,7 @@
                     <div class="row">
                                 <div class="col-sm-4 col-md-3">
 					<div class="fh5co-blog animate-box">
-						<a href="<?php echo base_url();?>eventos/ver/3" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/oaxaca/4.jpeg);"></a>
+						<a href="<?php echo base_url();?>eventos/ver/3" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/brigadas/brigada3.jpg);"></a>
 						<div class="blog-text">
 							<span class="posted_on">2017</span>
 							<h3><a href="<?php echo base_url();?>eventos/ver/3">Informes de brigadas</a></h3>
@@ -155,7 +155,7 @@
 				</div>
 				<div class="col-sm-4 col-md-3">
 					<div class="fh5co-blog animate-box">
-						<a href="<?php echo base_url();?>images/brigadas/quinto.png" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/oaxaca/4.jpeg);"></a>
+						<a href="<?php echo base_url();?>images/brigadas/quinto.png" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/brigadas/quinto.png);"></a>
 						<div class="blog-text">
 							<span class="posted_on">2017</span>
 							<h3><a href="<?php echo base_url();?>images/brigadas/quinto.png">5º Aniversario cimarronez</a></h3>
@@ -170,7 +170,7 @@
 				</div>
                                 <div class="col-sm-4 col-md-3">
 					<div class="fh5co-blog animate-box">
-						<a href="<?php echo base_url();?>images/brigadas/sexto.jpg" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/oaxaca/4.jpeg);"></a>
+						<a href="<?php echo base_url();?>images/brigadas/sexto.jpg" class="blog-bg" style="background-image: url(<?php echo base_url();?>images/brigadas/sexto.jpg);"></a>
 						<div class="blog-text">
 							<span class="posted_on">2017</span>
 							<h3><a href="<?php echo base_url();?>images/brigadas/sexto.jpg">6º Aniversario cimarronez</a></h3>
