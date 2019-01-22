@@ -264,4 +264,40 @@ class admin extends CI_Controller{
         header('Location: '. base_url()."admin/cambiarbanners", true, 302);
         exit;
     }
+    
+    function sendGCM($message) {
+
+        $url = 'https://fcm.googleapis.com/fcm/send';
+        $id = "f1qdQHnfMWY:APA91bEgdAYvm6-jAUJNUdlFzWBzaGL-8xMcrCus7ALNIcxY4n6ZLy5K0vX-VWS71L3VMpI2DL6j3ywhnHeeLRWIMpxRQs0MJ25fJmEEW9LMQ95OYsPKGnjxdCogU22MuAFkDBqPYUuc";
+
+        $field = array (
+            /*'registration_ids' => array (
+                    "cimarronez.org.periodico"
+            ),*/
+            'data' => array (
+                    "text" => $message,
+                    "title" => "NCAS",
+                    "idpush" => 1
+            )            
+        );
+        
+        $fields = json_encode ( $field );
+
+        $headers = array (
+                'Authorization: key=' . "AIzaSyAbS9ED0SyTkBaBlE_KQUupo5dPYMCtUto",
+                'Content-Type: application/json'
+        );
+
+        $ch = curl_init ();
+        curl_setopt ( $ch, CURLOPT_URL, $url );
+        curl_setopt ( $ch, CURLOPT_POST, true );
+        curl_setopt ( $ch, CURLOPT_HTTPHEADER, $headers );
+        curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, true );
+        curl_setopt ( $ch, CURLOPT_POSTFIELDS, $fields );
+
+        $result = curl_exec ( $ch );
+        echo $result;
+        curl_close ( $ch );
+        }
+
 }

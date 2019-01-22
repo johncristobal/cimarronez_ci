@@ -75,8 +75,7 @@ $( document ).ready(function() {
         });        
     }
     else{
-        $(".load").fadeOut('1500');
-        
+        $(".load").fadeOut('1500');        
     }
     
     $("#deleteImage").on("click",function(){
@@ -88,7 +87,7 @@ $( document ).ready(function() {
     });
     
 //=========================  /*agregar nota*/  =================================  
-    $(".addnotice").on("click",function(){  
+    $(".addnotice").on("click",function(){
         
         //si idnota es != "", entonces es actualizar
         //si no agregar...
@@ -100,7 +99,7 @@ $( document ).ready(function() {
         var categoria = $("#categoria").val();
 
         var imagen = "";
-        if (indiceChange != undefined){        
+        if (indiceChange != undefined){
             var imagen = "foto0.jpg";
             //$("#foto0").files[0];
         }
@@ -171,7 +170,7 @@ $( document ).ready(function() {
                 }
             );
         }
-//=========================  /*upload imagen*/ =================================
+//=========================  /*delete imagen*/ =================================
         if(borrarfoto){
             borrarfoto = false;
             // Create a reference to the file to delete
@@ -189,10 +188,8 @@ $( document ).ready(function() {
             }).catch(function(error) {
               // Uh-oh, an error occurred!
             });
-        }
-
-//============================= after delete photo and save iamge, now launch push==========        
-        
+        }        
+//==============================upload image================================================
         if (imagen != "" && indiceChange != "1"){
 
             var storage = firebase.storage();
@@ -202,6 +199,7 @@ $( document ).ready(function() {
             if (idnota != "" && idnota != undefined){
                 newPostKey = idnota;
             }
+            
             var uploadTask = storageRef.child('noticias/'+newPostKey+'/foto0.jpg').put(indiceChange);
 
             // Register three observers:
@@ -224,21 +222,23 @@ $( document ).ready(function() {
             }, function(error) {
               // Handle unsuccessful uploads
               $(".load").fadeOut('1500');
+              post(noticia,titulo);
             }, function() {
               // Handle successful uploads on complete
               // For instance, get the download URL: https://firebasestorage.googleapis.com/...
               uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                 console.log('File available at', downloadURL);
-                $(".load").fadeOut('1500');
+                //$(".load").fadeOut('1500');
+                 post(noticia,titulo);
               });
+           
 
-              //wheb complete upload, back page
-            window.location.href = api+"admin/inicio";
-
+    
             });
         }else{
-            $(".load").fadeOut('1500');
-            window.location.href = api+"admin/inicio";
+            post(noticia,titulo);
+            //$(".load").fadeOut('1500');
+            //window.location.href = api+"admin/inicio";
         }
 
         console.log(fff);
@@ -278,3 +278,62 @@ function imageIsLoaded(e) {
     //$('#previewing').attr('width', '250px');
     //$('#previewing').attr('height', '230px');
 };
+
+//============================= after delete photo and save iamge, now launch push==========        
+function post(mensaje, titulo) {
+    var tokens = [];
+
+    var noticias = firebase.database().ref('tokens').orderByChild('estatus').equalTo(1);
+    noticias.on('value', function(snapshot) {
+
+        snapshot.forEach(function(childSnapshot) {
+            //debugger;
+            var childKey = childSnapshot.key;
+            var childData = childSnapshot.val();
+
+            var res = childData["token"];
+            tokens.push(res);
+        });
+
+        $.ajax({
+            type : 'POST',
+            url : "https://fcm.googleapis.com/fcm/send",
+            headers : {
+                Authorization : 'key=' + 'AIzaSyAbS9ED0SyTkBaBlE_KQUupo5dPYMCtUto'
+            },
+            contentType : 'application/json',
+            data : 
+                JSON.stringify(
+                    {
+                        "registration_ids": tokens,//["dBa2H8mVbKQ:APA91bE5RVk6ZxqV_b1btSUh3zS2DBkc9S-96iOsT4Az1qKlJoIQxRYcvKxojh3R4FDQq1B_CEGkru9PhLxNJl1DxqwVMrwVZFI1EHmBgo-rz2KHpT92WwM17SWNms9JglRLNEU1mWqt","f1qdQHnfMWY:APA91bEgdAYvm6-jAUJNUdlFzWBzaGL-8xMcrCus7ALNIcxY4n6ZLy5K0vX-VWS71L3VMpI2DL6j3ywhnHeeLRWIMpxRQs0MJ25fJmEEW9LMQ95OYsPKGnjxdCogU22MuAFkDBqPYUuc"],
+                        //"topic" : "foo-bar",            
+                        //"to" : "/topics/foo-bar",
+                        "priority" : "high",
+                        /*"notification" : {
+                            "body" : "This is a Firebase Cloud Messaging Topic Message!",
+                            "title" : "FCM Message",
+                        }*/
+                        "data":
+                        {
+                            "text": mensaje,
+                            "title" : titulo
+                        }
+                    }
+                ),            
+            success : function(response) {
+
+                console.log("push yes");
+                console.log(response);
+                //wheb complete upload, back page
+                $(".load").fadeOut('1500');
+                window.location.href = api+"admin/inicio";
+
+            },
+            error : function(xhr, status, error) {
+                console.log("push no");
+                console.log(xhr.error);                   
+            }
+        }); 
+    });
+}
+       

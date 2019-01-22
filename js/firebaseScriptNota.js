@@ -35,8 +35,11 @@ $( document ).ready(function() {
                 delet+
             "</div>");
         });
+                       
         $(".load").fadeOut('1500');
     });
+    
+    
     
     $(".addnota").on("click",function(){
         window.location.href = api+"admin/nuevanota";
@@ -66,7 +69,7 @@ function deleteNote(id){
     }
 }
 
-function readDetails(id){
+    function readDetails(id){
     
     //ajax to save in session id nota
     //$("#message").empty();
@@ -87,29 +90,6 @@ function readDetails(id){
         }
     });
     //idnota = id;    
-}
+    }
 
-function post() {
-        $.ajax({
-            type : 'POST',
-            url : "https://fcm.googleapis.com/fcm/send",
-            headers : {
-                Authorization : 'key=' + 'AIzaSyAbS9ED0SyTkBaBlE_KQUupo5dPYMCtUto'
-            },
-            contentType : 'application/json',
-            data : JSON.stringify({"to": "videos", "data": {"message": "This is push for video!"}})
-            /*data : {
-              "to": "/topics/videos",
-              "data": {
-                "message": "This is push for video!"
-               }
-            }*/,
-            success : function(response) {
-                console.log(response);
-            },
-            error : function(xhr, status, error) {
-                console.log(xhr.error);                   
-            }
-        }); 
-        }
-        
+     
