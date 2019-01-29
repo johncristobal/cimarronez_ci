@@ -2,6 +2,7 @@
 var indiceChange;
 var idnota;
 var borrarfoto = false;
+var tempIndex = 0;
 
 $( document ).ready(function() {    
 
@@ -45,16 +46,7 @@ $( document ).ready(function() {
                 var storageRef = storage.ref();
                 var uploadTask = storageRef.child('noticias/'+idnota+'/foto0.jpg').getDownloadURL().then(function(url) {
                 // `url` is the download URL for 'images/stars.jpg'
-
-                // This can be downloaded directly:
-                /*var xhr = new XMLHttpRequest();
-                xhr.responseType = 'blob';
-                xhr.onload = function(event) {
-                  var blob = xhr.response;
-                };
-                xhr.open('GET', url);
-                xhr.send();*/
-
+                
                 // Or inserted into an <img> element:
                 //$('#previewing').attr('src', e.target.result);
                 var img = $('#previewing');//document.getElementById('myimg');
@@ -100,8 +92,11 @@ $( document ).ready(function() {
 
         var imagen = "";
         if (indiceChange != undefined){
-            var imagen = "foto0.jpg";
-            //$("#foto0").files[0];
+            for(var i=0;i<indiceChange.length;i++){
+                if(indiceChange[i] != undefined){
+                    imagen += "foto"+i+".jpg,";
+                }
+            }
         }
 
         var fullDate = new Date(); 
@@ -199,42 +194,51 @@ $( document ).ready(function() {
             if (idnota != "" && idnota != undefined){
                 newPostKey = idnota;
             }
-            
-            var uploadTask = storageRef.child('noticias/'+newPostKey+'/foto0.jpg').put(indiceChange);
+            var tempind = indiceChange.length;
+            for(var i=0;i<indiceChange.length;i++){
+                if(indiceChange[i] != undefined){
+                    var uploadTask = storageRef.child('noticias/'+newPostKey+'/foto'+i+'.jpg').put(indiceChange[i]);
 
-            // Register three observers:
-            // 1. 'state_changed' observer, called any time the state changes
-            // 2. Error observer, called on failure
-            // 3. Completion observer, called on successful completion
-            uploadTask.on('state_changed', function(snapshot){
-              // Observe state change events such as progress, pause, and resume
-              // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-              var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-              console.log('Upload is ' + progress + '% done');
-              switch (snapshot.state) {
-                case firebase.storage.TaskState.PAUSED: // or 'paused'
-                  console.log('Upload is paused');
-                  break;
-                case firebase.storage.TaskState.RUNNING: // or 'running'
-                  console.log('Upload is running');
-                  break;
-              }
-            }, function(error) {
-              // Handle unsuccessful uploads
-              $(".load").fadeOut('1500');
-              post(noticia,titulo);
-            }, function() {
-              // Handle successful uploads on complete
-              // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-              uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
-                console.log('File available at', downloadURL);
-                //$(".load").fadeOut('1500');
-                 post(noticia,titulo);
-              });
-           
+                    // Register three observers:
+                    // 1. 'state_changed' observer, called any time the state changes
+                    // 2. Error observer, called on failure
+                    // 3. Completion observer, called on successful completion
+                    uploadTask.on('state_changed', function(snapshot){
+                      // Observe state change events such as progress, pause, and resume
+                      // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+                      var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                      console.log('Upload is ' + progress + '% done');
+                      switch (snapshot.state) {
+                        case firebase.storage.TaskState.PAUSED: // or 'paused'
+                          console.log('Upload is paused');
+                          break;
+                        case firebase.storage.TaskState.RUNNING: // or 'running'
+                          console.log('Upload is running');
+                          break;
+                      }
+                    }, function(error) {
+                      // Handle unsuccessful uploads
+                        $(".load").fadeOut('1500');
+                        if(tempind == i)
+                        {
+                            post(noticia,titulo);
+                        }
+                      //post(noticia,titulo);
+                    }, function() {
+                        // Handle successful uploads on complete
+                        // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+                        uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                          console.log('File available at', downloadURL);
 
-    
-            });
+                          if(tempind == i)
+                          {
+                              post(noticia,titulo);
+                          }
+                           
+                        });
+                    });
+                }
+            }
         }else{
             post(noticia,titulo);
             //$(".load").fadeOut('1500');
@@ -250,34 +254,57 @@ function validar(elemento){
     //alert(elemento);
     //indiceChange = indice;
     //$("#message").empty(); // To remove the previous error message
-    indiceChange = elemento.files[0];
-    var file = elemento.files[0];
-    var imagefile = file.type;
-    var match= ["image/jpeg","image/png","image/jpg"];
-    if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2])))
-    {
-        $('#previewing').attr('src','<?php echo base_url();?>img/profile.jpg');
-        //$("#message").html("<p id='error'>Please Select A valid Image File</p>"+"<h4>Note</h4>"+"<span id='error_message'>Only jpeg, jpg and png Images type allowed</span>");
-        return false;
-    }
-    else
-    {
-        var reader = new FileReader();
-        reader.onload = imageIsLoaded;
-        reader.readAsDataURL(elemento.files[0]);
-    }
+    indiceChange = elemento.files;
+    $("#imagenes").empty();
+    //var file = elemento.files[0];
+    for(var i=0;i<elemento.files.length;i++){
+    //elemento.files.forEach(function(file) {
+        var file = elemento.files[i];
+        var imagefile = file.type;
+        var match= ["image/jpeg","image/png","image/jpg"];
+        if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2])))
+        {
+            //$('#previewing').attr('src','<?php echo base_url();?>img/profile.jpg');
+            //$("#message").html("<p id='error'>Please Select A valid Image File</p>"+"<h4>Note</h4>"+"<span id='error_message'>Only jpeg, jpg and png Images type allowed</span>");
+            //return false;
+            console.log("nothing");
+        }
+        else
+        {
+            //tempIndex = i;
+            var reader = new FileReader();
+            reader.onload = imageIsLoaded;
+            //reader.readAsDataURL(elemento.files[0]);
+            reader.readAsDataURL(file);
+        }
+    }//);
 }
+ 
     
 function imageIsLoaded(e) {
     //$("#foto"+indiceChange).css("color","green");
     //$('#image_preview').css("display", "none");
+
+    //$("#deleteImage").show();
+    $("#imagenes").append(
+        "<div class='row' id='row"+tempIndex+"'>"+
+            "<div class='col-xs-4 col-sm-4'>"+
+                "<img src='"+e.target.result+"' width='100%' height='30%' id='imagen"+tempIndex+"'>"+   
+            "</div>"+
+            "<div class='col-xs-6 col-sm-6'><button class='btn btn-danger' onclick='borrariamgen("+tempIndex+")'>Borrar imagen</button></div>"+
+        "</div><br>");
+    tempIndex++;
     
-    $("#deleteImage").show();
-    $('#previewing').attr('src', e.target.result);
+    //$('#previewing').attr('src', e.target.result);
     
     //$('#previewing').attr('width', '250px');
     //$('#previewing').attr('height', '230px');
 };
+
+function borrariamgen(i){
+    indiceChange[i] = undefined;
+    $("#row"+i).hide();
+}
 
 //============================= after delete photo and save iamge, now launch push==========        
 function post(mensaje, titulo) {

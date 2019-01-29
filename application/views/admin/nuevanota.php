@@ -102,7 +102,7 @@
                 <div class="col-md-4 idfirebase">
                     <div class="form-group">
                     <label>Imagen:</label>
-                    <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);"/>
+                    <input type="file" value="Imagen para la noticia" name="foto0" id="foto0" onchange="validar(this,0);" multiple/>
                     </div>
                 </div>              
                 <div class="col-md-4 idfirebase centered">
@@ -112,13 +112,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 idfirebase">
+            <div id="imagenes">
+                
+            </div>
+            <!--div class="row" id="imagenes">
+                <!--div class="col-md-12 idfirebase">
                     <div class="">                 
                         <img src="<?php echo base_url();?>images/galaxy.jpg" alt="Imagen para la noticia" id="previewing" style="width: 100%;"/>
                     </div>
                 </div>
-            </div>
+                
+            </div-->
             <div class="row">
                 <div class="col-md-12 idfirebase">
                     <br>
