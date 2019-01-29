@@ -254,8 +254,14 @@ function validar(elemento){
     //alert(elemento);
     //indiceChange = indice;
     //$("#message").empty(); // To remove the previous error message
-    indiceChange = elemento.files;
-    $("#imagenes").empty();
+    if(indiceChange == undefined){
+        tempIndex = 0;
+        indiceChange = elemento.files;
+    }else{
+        indiceChange.dataTransfer.files.push(elemento.files);
+        tempIndex = indiceChange.lenght;
+    }
+    //$("#imagenes").empty();
     //var file = elemento.files[0];
     for(var i=0;i<elemento.files.length;i++){
     //elemento.files.forEach(function(file) {
