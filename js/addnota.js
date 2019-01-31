@@ -1,8 +1,9 @@
     
-var indiceChange;
+var indiceChange = [];
 var idnota;
 var borrarfoto = false;
 var tempIndex = 0;
+//var indices = [];
 
 $( document ).ready(function() {    
 
@@ -38,28 +39,73 @@ $( document ).ready(function() {
             $("#categoria").val(snapshot.val().categoria).change();
             
             if(snapshot.val().imagen != ""){
-                indiceChange = "1";
-                $("#deleteImage").show();
+                indiceChange = [];
+                //$("#deleteImage").show();
+                var array = snapshot.val().imagen.split(',');
+                //tempIndex = 0;
+                var tempcont = 0;
+                var tempind = array.length;
+                array.forEach(function(childSnapshot) {
+                    //cargar la imgen de firebfirebase.storagease en img
+                    if(childSnapshot == ""){
+                        $(".load").fadeOut('1500');
+                        return;
+                    }
+                    
+                    var idfoto = childSnapshot.substring(4,childSnapshot.indexOf("."));
 
-                //cargar la imgen de firebfirebase.storagease en img
-                var storage = firebase.storage();
-                var storageRef = storage.ref();
-                var uploadTask = storageRef.child('noticias/'+idnota+'/foto0.jpg').getDownloadURL().then(function(url) {
-                // `url` is the download URL for 'images/stars.jpg'
-                
-                // Or inserted into an <img> element:
-                //$('#previewing').attr('src', e.target.result);
-                var img = $('#previewing');//document.getElementById('myimg');
-                $('#previewing').attr('src', url);
-                $(".load").fadeOut('1500');
+                    //indices.push(idfoto);
+                    
+                    var storage = firebase.storage();
+                    var storageRef = storage.ref();
+                    var uploadTask = storageRef.child('noticias/'+idnota+'/'+childSnapshot).getDownloadURL().then(function(url) {
+                    // `url` is the download URL for 'images/stars.jpg'
 
-                //img.src = url;
-              }).catch(function(error) {
-                // Handle any errors
-                alert(error);
-                $(".load").fadeOut('1500');
+                    // Or inserted into an <img> element:
+                    //$('#previewing').attr('src', e.target.result);
+                        //$('#previewing').attr('src', url);
+                        //$(".load").fadeOut('1500');
+                        $("#imagenes").append(
+                        "<div class='row' id='"+idfoto+"'>"+
+                            "<div class='col-xs-4 col-sm-4'>"+
+                                "<img src='"+url+"' width='100%' height='30%' id='imagen"+idfoto+"'>"+   
+                            "</div>"+
+                            "<div class='col-xs-6 col-sm-6'><button class='btn btn-danger' onclick=\"borrariamgen('"+idfoto+"')\">Borrar imagen</button></div>"+
+                        "</div><br>");
 
-              });
+                        tempcont++;
+                        indiceChange[idfoto] = url;
+
+                        if (idfoto > tempIndex){
+                            tempIndex = idfoto;
+                        }
+                        
+                        if(tempind == tempcont){
+                            $(".load").fadeOut('1500');
+                            //tengo el ultimo id de la base                            
+                        }
+                        //arreglo.push(childSnapshot);
+                    }).catch(function(error) {
+                        // Handle any errors
+                        alert(error);
+                    $(".load").fadeOut('1500');
+
+                    });
+            
+                    //cargar la imgen de firebfirebase.storagease en img
+                    /*var storage = firebase.storage();
+                    var storageRef = storage.ref();
+                    var uploadTask = storageRef.child('noticias/'+idnota+'/foto0.jpg').getDownloadURL().then(function(url) {
+                    // `url` is the download URL for 'images/stars.jpg'
+
+                    // Or inserted into an <img> element:
+                    //$('#previewing').attr('src', e.target.result);
+                    $('#previewing').attr('src', url);
+                    $(".load").fadeOut('1500');*/
+
+                    //img.src = url;
+
+                });
             }    
             else{
                 $(".load").fadeOut('1500');
@@ -70,13 +116,13 @@ $( document ).ready(function() {
         $(".load").fadeOut('1500');        
     }
     
-    $("#deleteImage").on("click",function(){
+    /*$("#deleteImage").on("click",function(){
         //borramos imagene y ponemos indice en undefined
         indiceChange = undefined;
         borrarfoto = true;
         $("#deleteImage").hide();
         $('#previewing').attr('src','<?php echo base_url();?>images/galaxy.jpg');
-    });
+    });*/
     
 //=========================  /*agregar nota*/  =================================  
     $(".addnotice").on("click",function(){
@@ -91,8 +137,9 @@ $( document ).ready(function() {
         var categoria = $("#categoria").val();
 
         var imagen = "";
-        if (indiceChange != undefined){
+        if (indiceChange.length > 0){
             for(var i=0;i<indiceChange.length;i++){
+                //if(indiceChange[i] != undefined || (typeof indiceChange[i] != "string")){
                 if(indiceChange[i] != undefined){
                     imagen += "foto"+i+".jpg,";
                 }
@@ -103,8 +150,10 @@ $( document ).ready(function() {
         var twoDigitMonth = ((fullDate.getMonth().length+1) === 1)? (fullDate.getMonth()+1) : '0' + (fullDate.getMonth()+1);
         var currentDate = fullDate.getDate() + "/" + twoDigitMonth + "/" + fullDate.getFullYear();
         $(".load").show();
-        
+        var newPostKey = "";
         if (idnota != "" && idnota != undefined){
+            newPostKey = idnota; 
+
             var postData = {
                 id: idnota,
                 autor: autor,
@@ -132,8 +181,7 @@ $( document ).ready(function() {
                 }
             );
         }else{
-
-            var newPostKey = database.ref().child('noticias').push().key;
+            newPostKey = database.ref().child('noticias').push().key;
               // Write the new post's data simultaneously in the posts list and the user's post list.
             var updates = {};
             var postData = {
@@ -164,40 +212,24 @@ $( document ).ready(function() {
                     }
                 }
             );
-        }
-//=========================  /*delete imagen*/ =================================
-        if(borrarfoto){
-            borrarfoto = false;
-            // Create a reference to the file to delete
-            var storage = firebase.storage();
-            if (idnota != "" && idnota != undefined){
-                newPostKey = idnota;
-            }
-            // Create a storage reference from our storage service
-            var storageRef = storage.ref(); 
-            var desertRef = storageRef.child('noticias/'+newPostKey+'/foto0.jpg');//.getDownloadURL().then(function(url) {
-
-            // Delete the file
-            desertRef.delete().then(function() {
-              // File deleted successfully
-            }).catch(function(error) {
-              // Uh-oh, an error occurred!
-            });
-        }        
+        } 
 //==============================upload image================================================
-        if (imagen != "" && indiceChange != "1"){
+        if (imagen != ""){
 
             var storage = firebase.storage();
 
             // Create a storage reference from our storage service
-            var storageRef = storage.ref();        
+            var storageRef = storage.ref();  
+            /*var newPostKey = "";
             if (idnota != "" && idnota != undefined){
                 newPostKey = idnota;
-            }
+            }*/
+            
             var tempind = indiceChange.length;
             for(var i=0;i<indiceChange.length;i++){
-                if(indiceChange[i] != undefined){
-                    var uploadTask = storageRef.child('noticias/'+newPostKey+'/foto'+i+'.jpg').put(indiceChange[i]);
+                if(indiceChange[i] != undefined && (typeof indiceChange[i] != "string")){
+                //if(indiceChange[i] != undefined){
+                    var uploadTask = storageRef.child('noticias/'+newPostKey+'/foto'+i+'.jpg').put(indiceChange[i][0]);
 
                     // Register three observers:
                     // 1. 'state_changed' observer, called any time the state changes
@@ -233,10 +265,13 @@ $( document ).ready(function() {
                           if(tempind == i)
                           {
                               post(noticia,titulo);
-                          }
-                           
+                          }                           
                         });
                     });
+                }
+                if(tempind == i)
+                {
+                    post(noticia,titulo);
                 }
             }
         }else{
@@ -244,7 +279,6 @@ $( document ).ready(function() {
             //$(".load").fadeOut('1500');
             //window.location.href = api+"admin/inicio";
         }
-
         console.log(fff);
     });    
 });
@@ -254,13 +288,23 @@ function validar(elemento){
     //alert(elemento);
     //indiceChange = indice;
     //$("#message").empty(); // To remove the previous error message
-    if(indiceChange == undefined){
+    
+    indiceChange.push(elemento.files);
+    if(tempIndex == 0){
+        tempIndex = indiceChange.length-1;
+    }else{
+        tempIndex++;
+    }
+    
+    /*if(indiceChange.length == 0){
         tempIndex = 0;
         indiceChange = elemento.files;
     }else{
-        indiceChange.dataTransfer.files.push(elemento.files);
-        tempIndex = indiceChange.lenght;
-    }
+        tempIndex = indiceChange.length;
+        indiceChange.push(elemento.files);
+        //indiceChange.dataTransfer.files.push(elemento.files);
+    }*/
+    
     //$("#imagenes").empty();
     //var file = elemento.files[0];
     for(var i=0;i<elemento.files.length;i++){
@@ -285,31 +329,51 @@ function validar(elemento){
         }
     }//);
 }
- 
     
 function imageIsLoaded(e) {
     //$("#foto"+indiceChange).css("color","green");
     //$('#image_preview').css("display", "none");
 
     //$("#deleteImage").show();
+    //indices.push(tempIndex);
+    
     $("#imagenes").append(
-        "<div class='row' id='row"+tempIndex+"'>"+
+        "<div class='row' id='"+tempIndex+"'>"+
             "<div class='col-xs-4 col-sm-4'>"+
                 "<img src='"+e.target.result+"' width='100%' height='30%' id='imagen"+tempIndex+"'>"+   
             "</div>"+
-            "<div class='col-xs-6 col-sm-6'><button class='btn btn-danger' onclick='borrariamgen("+tempIndex+")'>Borrar imagen</button></div>"+
+            "<div class='col-xs-6 col-sm-6'><button class='btn btn-danger' onclick=\"borrariamgen('"+tempIndex+"')\">Borrar imagen</button></div>"+
         "</div><br>");
     tempIndex++;
     
     //$('#previewing').attr('src', e.target.result);
-    
     //$('#previewing').attr('width', '250px');
     //$('#previewing').attr('height', '230px');
 };
 
+//=========================  /*delete imagen*/ =================================
 function borrariamgen(i){
     indiceChange[i] = undefined;
-    $("#row"+i).hide();
+    //[i] = undefined;
+    $("#"+i).hide();
+    
+    // Create a reference to the file to delete
+    if (idnota != "" && idnota != undefined){
+        var storage = firebase.storage();
+        var newPostKey = idnota;
+        // Create a storage reference from our storage service
+        var storageRef = storage.ref(); 
+        var desertRef = storageRef.child('noticias/'+newPostKey+'/foto'+i+'.jpg');//.getDownloadURL().then(function(url) {
+
+        // Delete the file
+        desertRef.delete().then(function() {
+            alert("Imagen eliminada!");
+          // File deleted successfully
+        }).catch(function(error) {
+            // Uh-oh, an error occurred!
+            //alert("Error al eliminar imagen");
+        });
+    }
 }
 
 //============================= after delete photo and save iamge, now launch push==========        
