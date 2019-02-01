@@ -226,9 +226,11 @@ $( document ).ready(function() {
             }*/
             
             var tempind = indiceChange.length;
+            var flag = false;
             for(var i=0;i<indiceChange.length;i++){
                 if(indiceChange[i] != undefined && (typeof indiceChange[i] != "string")){
-                //if(indiceChange[i] != undefined){
+                    flag = true;
+                    //if(indiceChange[i] != undefined){
                     var uploadTask = storageRef.child('noticias/'+newPostKey+'/foto'+i+'.jpg').put(indiceChange[i][0]);
 
                     // Register three observers:
@@ -269,10 +271,9 @@ $( document ).ready(function() {
                         });
                     });
                 }
-                if(tempind == i)
-                {
-                    post(noticia,titulo);
-                }
+            }
+            if(!flag){
+                post(noticia,titulo);
             }
         }else{
             post(noticia,titulo);
