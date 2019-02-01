@@ -292,9 +292,9 @@ function validar(elemento){
     indiceChange.push(elemento.files);
     if(tempIndex == 0){
         tempIndex = indiceChange.length-1;
-    }else{
-        tempIndex++;
-    }
+    }/*else{
+       tempIndex++;
+    }*/
     
     /*if(indiceChange.length == 0){
         tempIndex = 0;
@@ -337,6 +337,7 @@ function imageIsLoaded(e) {
     //$("#deleteImage").show();
     //indices.push(tempIndex);
     
+    tempIndex++;
     $("#imagenes").append(
         "<div class='row' id='"+tempIndex+"'>"+
             "<div class='col-xs-4 col-sm-4'>"+
@@ -344,7 +345,6 @@ function imageIsLoaded(e) {
             "</div>"+
             "<div class='col-xs-6 col-sm-6'><button class='btn btn-danger' onclick=\"borrariamgen('"+tempIndex+"')\">Borrar imagen</button></div>"+
         "</div><br>");
-    tempIndex++;
     
     //$('#previewing').attr('src', e.target.result);
     //$('#previewing').attr('width', '250px');
