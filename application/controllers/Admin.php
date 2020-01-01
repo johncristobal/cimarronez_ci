@@ -224,7 +224,7 @@ class admin extends CI_Controller{
         header('Location: '. base_url()."admin/cambiarbanners", true, 302);
         exit;
     }
-//============================delete banners home==============================    
+//============================delete banners home============================== V1#S2rCF5qRQ   
     public function deletebanner($idbanner){
         $key = "banner";
         //$back = $this->AdminModel->getParametro($key);
